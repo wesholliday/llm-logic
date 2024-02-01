@@ -2,7 +2,7 @@
 
 ## Supplementary Material for "Conditional and Modal Reasoning in Large Language Models"
 
-This repository contains the supplementary material for the paper "Conditional and Modal Reasoning in Large Language Models" by Wesley H. Holliday (wesholliday@berkeley.edu) and Matthew Mandelkern (mandelkern@nyu.edu).
+Paper by Wesley H. Holliday (wesholliday@berkeley.edu) and Matthew Mandelkern (mandelkern@nyu.edu) available at https://arxiv.org/abs/2401.17169.
 
 ### Contents
 
@@ -22,6 +22,4 @@ To replicate the experiments or explore the results, open and run the "llm-logic
 
 For any queries related to the paper or the supplementary material, please write to wesholliday@berkeley.edu.
 
----
 
-*This README is part of the supplementary material for "Conditional and Modal Reasoning in Large Language Models".*
