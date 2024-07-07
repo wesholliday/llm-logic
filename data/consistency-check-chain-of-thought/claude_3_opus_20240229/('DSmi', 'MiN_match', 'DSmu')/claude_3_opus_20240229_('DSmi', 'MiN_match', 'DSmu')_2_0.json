@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\nQuestion 3: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are given that either the keys are in the drawer or they must be dangling in the cabinet. \n- We are also given that the keys might not be dangling in the cabinet.\n- \"Might not\" doesn't necessarily mean they are not in the cabinet. It just means it's possible they are not.\n- So we can't definitively conclude the keys are in the drawer. They could still possibly be in the cabinet.\n\nQuestion 2:\n- We are given that the keys might not be dangling in the cabinet.\n- If something \"might not\" be the case, then it logically follows that it's not the case that it \"must\" be so.\n- \"Might not\" and \"must\" are logically incompatible.\n- Therefore, yes, we can infer that it's not the case that the keys must be dangling in the cabinet.\n\nQuestion 3:\n- We are given that either the keys are in the drawer or they must be dangling in the cabinet.\n- We are also given that it's not the case that the keys must be dangling in the cabinet.\n- If the keys aren't definitely in the cabinet, and the only other option is the drawer, then they must be in the drawer.\n- The two premises together allow us to logically conclude the keys are in the drawer.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

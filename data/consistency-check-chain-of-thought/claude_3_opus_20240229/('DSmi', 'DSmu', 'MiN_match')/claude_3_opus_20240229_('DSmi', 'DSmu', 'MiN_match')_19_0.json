@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: We are told that either the sunglasses are in her bag or they must be on her head. We are also told that the sunglasses might not be on her head. This leaves open the possibility that the sunglasses are not on her head, in which case they would have to be in her bag given the initial either/or statement. However, \"might not be on her head\" does not rule out the possibility that they are on her head. So we cannot definitively conclude the sunglasses are in her bag.\n\nQuestion 2: Here we are told that either the sunglasses are in her bag or they must be on her head. We are then told it is not the case that the sunglasses must be on her head. This rules out one of the two possibilities from the initial statement. Therefore, by process of elimination, the sunglasses must be in her bag. We can logically infer this.\n\nQuestion 3: If the sunglasses might not be on her head, this means it's possible they are not on her head. However, this is not the same as saying it is definitely not the case that they must be on her head. There is a subtle difference between \"might not be\" and \"must not be\". \"Might not be\" allows for the possibility of \"not being\" but does not necessitate it. So we cannot infer the stronger claim that it's not the case that the sunglasses must be on her head.\n\nAnswer: no, yes, no"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 2: From 'The missing puzzle piece might not be blending in on the floor', can we infer 'It's not the case that the missing puzzle piece must be blending in on the floor'?\nQuestion 3: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: Yes, we can infer that the missing puzzle piece is in the box. The first statement presents two possibilities: either the piece is in the box or it's blending in on the floor. The second statement eliminates the possibility of it blending in on the floor. Therefore, the only remaining possibility is that the piece is in the box.\n\nQuestion 2: Yes, we can infer that it's not the case that the missing puzzle piece must be blending in on the floor. If the piece might not be blending in on the floor, then it cannot be the case that it must be blending in on the floor. \"Might not\" contradicts \"must\".\n\nQuestion 3: No, we cannot definitively infer that the missing puzzle piece is in the box. While the first statement presents the two possibilities (in the box or blending in on the floor), the second statement only says that the piece might not be blending in on the floor. This leaves open the possibility that it could still be blending in on the floor. We don't have enough information to rule out that possibility and conclude with certainty that the piece is in the box.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

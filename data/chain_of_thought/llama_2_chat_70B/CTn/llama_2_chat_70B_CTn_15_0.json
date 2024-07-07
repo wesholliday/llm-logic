@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If Sam took a plane, then Erin did not take a train', can we infer 'If Erin took a train, then Sam did not take a plane'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nMy reasoning is as follows:\n\n1. If Sam took a plane, then Erin did not take a train (given statement)\n2. If Erin took a train, then Sam did not take a plane (proposed inference)\n3. Consider the truth of the statements:\n\t* If Sam took a plane, then Erin did not take a train (true)\n\t* If Erin took a train, then Sam did not take a plane (false)\n4. Since the truth of the proposed inference (step 3) is different from the given statement (step 1), we cannot infer \"If Erin took a train, then Sam did not take a plane\" from \"If Sam took a plane, then Erin did not take a train\".\n\nAnswer: No",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'The notebook might not be sitting on the nightstand', can we infer 'It's not the case that the notebook must be sitting on the nightstand'?\nQuestion 2: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 3: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 4: From 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook might not be sitting on the nightstand'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4o-2024-05-13",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step.\n\n**Question 1:**\n- Statement: \"The notebook might not be sitting on the nightstand.\"\n- We need to infer: \"It's not the case that the notebook must be sitting on the nightstand.\"\n- Analysis: If the notebook might not be sitting on the nightstand, it means there is a possibility that it is not there. Therefore, it is not necessarily the case that the notebook must be on the nightstand.\n- Conclusion: Yes, we can infer that.\n\n**Question 2:**\n- Statements: \"Either the notebook is in the drawer or it must be sitting on the nightstand\" and \"The notebook might not be sitting on the nightstand.\"\n- We need to infer: \"The notebook is in the drawer.\"\n- Analysis: The first statement is a disjunction (either-or). The second statement indicates that it is possible the notebook is not on the nightstand, which means it is not necessarily on the nightstand. Given the disjunction, if the notebook is not necessarily on the nightstand, it must be in the drawer.\n- Conclusion: Yes, we can infer that.\n\n**Question 3:**\n- Statements: \"Either the notebook is in the drawer or it must be sitting on the nightstand\" and \"It's not the case that the notebook must be sitting on the nightstand.\"\n- We need to infer: \"The notebook is in the drawer.\"\n- Analysis: The first statement is a disjunction (either-or). The second statement negates the necessity of the notebook being on the nightstand. Therefore, if it is not necessarily on the nightstand, it must be in the drawer.\n- Conclusion: Yes, we can infer that.\n\n**Question 4:**\n- Statement: \"It's not the case that the notebook must be sitting on the nightstand.\"\n- We need to infer: \"The notebook might not be sitting on the nightstand.\"\n- Analysis: If it is not necessarily the case that the notebook must be on the nightstand, then it is possible that it is not on the nightstand.\n- Conclusion: Yes, we can infer that.\n\nAnswer: yes, yes, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

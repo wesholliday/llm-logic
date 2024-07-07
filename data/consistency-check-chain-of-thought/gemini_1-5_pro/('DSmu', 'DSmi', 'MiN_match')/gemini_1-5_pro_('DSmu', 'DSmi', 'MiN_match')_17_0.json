@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 2: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 3: From 'The notebook might not be sitting on the nightstand', can we infer 'It's not the case that the notebook must be sitting on the nightstand'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1:**\n\n* **Premise 1:** Either the notebook is in the drawer or it must be sitting on the nightstand.\n* **Premise 2:** It's not the case that the notebook must be sitting on the nightstand. \n\nThis is a classic disjunctive syllogism. If one option of an \"either/or\" statement is false, the other must be true. Since the notebook MUST be in one of the two locations, and it's not on the nightstand, it must be in the drawer.\n\n**Question 2:**\n\n* **Premise 1:** Either the notebook is in the drawer or it must be sitting on the nightstand.\n* **Premise 2:** The notebook might not be sitting on the nightstand.\n\nHere, the second premise only introduces possibility. The notebook \"might not\" be on the nightstand, but it also \"might\" be. This doesn't definitively rule out the nightstand, so we can't definitively conclude the notebook is in the drawer.\n\n**Question 3:**\n\n* **Premise:** The notebook might not be sitting on the nightstand.\n\nSaying something \"might not\" happen is different from saying it \"must not\" happen. The premise allows for the possibility that the notebook IS on the nightstand. Therefore, we cannot infer \"It's not the case that the notebook must be sitting on the nightstand.\"\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

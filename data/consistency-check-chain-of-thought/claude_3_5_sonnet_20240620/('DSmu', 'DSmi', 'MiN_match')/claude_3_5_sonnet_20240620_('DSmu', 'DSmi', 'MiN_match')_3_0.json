@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 2: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'The cat might not be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 3: From 'The cat might not be playing in the bedroom', can we infer 'It's not the case that the cat must be playing in the bedroom'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first premise states: \"Either the cat is napping on the couch or it must be playing in the bedroom.\"\nThe second premise states: \"It's not the case that the cat must be playing in the bedroom.\"\n\nThis is a classic example of disjunctive syllogism. We have two options, and we're told that one of them is false. Therefore, the other must be true. Since it's not the case that the cat must be playing in the bedroom, the only remaining option is that the cat is napping on the couch.\n\nQuestion 2:\nThe first premise is the same as in Question 1.\nThe second premise is different: \"The cat might not be playing in the bedroom.\"\n\nThis is trickier. Saying the cat \"might not\" be playing in the bedroom is not the same as saying it \"must not\" be playing there. It leaves open the possibility that the cat could be playing in the bedroom. Therefore, we can't definitively conclude that the cat is napping on the couch.\n\nQuestion 3:\nWe're given: \"The cat might not be playing in the bedroom.\"\nWe're asked if we can infer: \"It's not the case that the cat must be playing in the bedroom.\"\n\nIf something might not be the case, then it cannot be a must. In other words, if there's a possibility that the cat is not playing in the bedroom, then it cannot be true that the cat must be playing in the bedroom. Therefore, we can make this inference.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 2: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 3: From 'The scarf might not be draped on the coat rack', can we infer 'It's not the case that the scarf must be draped on the coat rack'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement is an \"either-or\" statement: \"Either the scarf is stuffed in my backpack or it must be draped on the coat rack.\"\nThe second statement says: \"The scarf might not be draped on the coat rack.\"\nThis second statement doesn't completely rule out the possibility of the scarf being on the coat rack. It only says it might not be there. Therefore, we can't definitively conclude that the scarf must be in the backpack.\n\nQuestion 2:\nAgain, we have the same \"either-or\" statement.\nThe second statement here is stronger: \"It's not the case that the scarf must be draped on the coat rack.\"\nThis rules out the second part of the \"either-or\" statement. If it's not the case that the scarf must be on the coat rack, then by logical necessity, it must be in the backpack.\n\nQuestion 3:\n\"The scarf might not be draped on the coat rack\" is a statement about possibility.\n\"It's not the case that the scarf must be draped on the coat rack\" is a statement about necessity.\nIf something might not be the case, then it logically follows that it's not necessarily the case. Therefore, we can infer the second statement from the first.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

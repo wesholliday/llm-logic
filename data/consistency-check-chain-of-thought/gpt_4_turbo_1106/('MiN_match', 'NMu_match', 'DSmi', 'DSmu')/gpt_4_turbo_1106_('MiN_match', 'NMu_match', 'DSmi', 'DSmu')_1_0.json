@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "NMu_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 2: From 'It's not the case that the book must be resting on the table', can we infer 'The book might not be resting on the table'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 4: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: \"The book might not be resting on the table\" implies uncertainty about the location of the book. It suggests that there is a possibility that the book is not on the table. This statement does not confirm the book's location; it only opens up the possibility that the book may be elsewhere. Therefore, it is true that \"It's not the case that the book must be resting on the table,\" because \"must\" implies necessity, and the original statement denies such necessity.\n\nQuestion 2: \"It's not the case that the book must be resting on the table\" indicates that there is no necessity for the book to be on the table. This means that there is at least one possibility where the book is not on the table. Therefore, from this statement, we can infer that \"The book might not be resting on the table,\" because the possibility is acknowledged.\n\nQuestion 3: \"Either the book is on the shelf or it must be resting on the table\" is a statement of two exclusive possibilities. If we also know that \"The book might not be resting on the table,\" we cannot definitively conclude that \"The book is on the shelf\" because \"might not be\" does not eliminate the possibility that the book could still be on the table. It only suggests that there is a possibility that the book is not on the table, but it does not confirm it.\n\nQuestion 4: \"Either the book is on the shelf or it must be resting on the table\" combined with \"It's not the case that the book must be resting on the table\" allows us to infer that \"The book is on the shelf.\" Since the necessity of the book being on the table is denied, and the only other option presented is that the book is on the shelf, we can conclude that the book must be on the shelf.\n\nAnswer: yes, yes, no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

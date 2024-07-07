@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 2: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?\nQuestion 3: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nThe first premise states \"Either the cookies are in the jar or they must be hidden in the pantry\". This is a disjunction, meaning at least one of the two options must be true. The second premise \"It's not the case that the cookies must be hidden in the pantry\" negates the second option in the disjunction. If the second option is false, then for the disjunction to be true, the first option \"The cookies are in the jar\" must be true. Therefore, from these two premises, we can infer that \"The cookies are in the jar\".\n\nQuestion 2:\n\"The cookies might not be hidden in the pantry\" suggests that it's possible the cookies are not in the pantry, but it doesn't rule out the possibility that they are in the pantry. On the other hand, \"It's not the case that the cookies must be hidden in the pantry\" is a stronger statement. It means the cookies are not necessarily in the pantry, i.e., they could be somewhere else. While the two statements are related, \"The cookies might not be hidden in the pantry\" does not logically entail \"It's not the case that the cookies must be hidden in the pantry\". The former allows for the possibility of the cookies being in the pantry, while the latter rules out the necessity of them being there.\n\nQuestion 3:\nThis question combines the premises from Questions 1 and 2. \"Either the cookies are in the jar or they must be hidden in the pantry\" is a disjunction, and \"The cookies might not be hidden in the pantry\" suggests the second option in the disjunction might be false. However, as discussed in Question 2, \"might not\" is not strong enough to definitively negate the second option. There is still a possibility, however small, that the cookies are in the pantry. Therefore, we cannot infer with certainty that \"The cookies are in the jar\". The premises allow for this possibility but do not guarantee it.\n\nAnswer: yes, no, no"
+        }
+    ]
+}

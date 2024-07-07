@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 3: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is an \"either-or\" statement: \"Either the milk is on the counter or it must be chilling in the fridge.\"\nThe second statement says: \"The milk might not be chilling in the fridge.\"\nThis second statement doesn't completely rule out the possibility of the milk being in the fridge. It only suggests that it's possible it's not in the fridge.\nBecause there's still a possibility that the milk is in the fridge, we can't definitively conclude that it must be on the counter.\n\nQuestion 2:\nAgain, we have the either-or statement: \"Either the milk is on the counter or it must be chilling in the fridge.\"\nThe second statement here is stronger: \"It's not the case that the milk must be chilling in the fridge.\"\nThis statement rules out the second part of the either-or statement.\nIf it's not the case that the milk must be in the fridge, and we know it must be either on the counter or in the fridge, then we can conclude it must be on the counter.\n\nQuestion 3:\nThe statement \"The milk might not be chilling in the fridge\" suggests uncertainty.\nThe statement \"It's not the case that the milk must be chilling in the fridge\" is stronger, ruling out the necessity of the milk being in the fridge.\nIf something might not be the case, then it's certainly not the case that it must be true.\nTherefore, we can infer the stronger statement from the weaker one.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

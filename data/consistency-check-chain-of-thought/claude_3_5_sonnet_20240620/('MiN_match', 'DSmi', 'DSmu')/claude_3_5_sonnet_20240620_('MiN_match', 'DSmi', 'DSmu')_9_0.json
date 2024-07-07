@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\nQuestion 2: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 3: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe statement \"The missing sock might not be under the bed\" implies that there's a possibility that the sock is not under the bed. This is logically equivalent to saying \"It's not the case that the missing sock must be under the bed.\" If something might not be true, then it's not necessarily true. Therefore, we can indeed infer the second statement from the first.\n\nQuestion 2:\nWe have two premises here:\n1. \"Either the missing sock is in the laundry basket or it must be under the bed\"\n2. \"The missing sock might not be under the bed\"\n\nThe first premise gives us two options, and the second premise tells us that one of these options (it must be under the bed) might not be true. However, \"might not be\" doesn't completely rule out the possibility that it's under the bed. It only introduces doubt. Therefore, we can't conclusively say that the sock is in the laundry basket. We don't have enough information to make that inference with certainty.\n\nQuestion 3:\nAgain, we have two premises:\n1. \"Either the missing sock is in the laundry basket or it must be under the bed\"\n2. \"It's not the case that the missing sock must be under the bed\"\n\nThis time, the second premise definitively rules out one of the options from the first premise. If it's not the case that the sock must be under the bed, and we know it must be either in the laundry basket or under the bed, then we can logically conclude that it must be in the laundry basket.\n\nNow, I'm ready to answer all the questions:\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

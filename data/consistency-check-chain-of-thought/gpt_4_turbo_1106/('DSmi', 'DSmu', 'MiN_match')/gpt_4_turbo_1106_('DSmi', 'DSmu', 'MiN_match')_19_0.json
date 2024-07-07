@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have two premises: \"Either the sunglasses are in her bag or they must be perched on her head\" and \"The sunglasses might not be perched on her head.\" The first premise presents a disjunction, meaning one of the two conditions must be true. The second premise introduces uncertainty about the second condition but does not definitively exclude it. Since the second premise does not confirm that the sunglasses are definitely not on her head, we cannot conclusively infer that they must be in her bag.\n\nQuestion 2: Again, we have the same first premise, but the second premise is now \"It's not the case that the sunglasses must be perched on her head.\" This time, the second premise definitively excludes the possibility of the sunglasses being perched on her head. Since the first premise tells us it's either one situation or the other, and the second premise rules out one of those situations, we can infer that the sunglasses must be in her bag.\n\nQuestion 3: The premise \"The sunglasses might not be perched on her head\" suggests that there is a possibility that the sunglasses are not on her head. This is equivalent to saying \"It's not the case that the sunglasses must be perched on her head,\" because if there was a must, there wouldn't be a possibility of the contrary. Therefore, we can infer that it's not the case that the sunglasses must be perched on her head.\n\nAnswer: no, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

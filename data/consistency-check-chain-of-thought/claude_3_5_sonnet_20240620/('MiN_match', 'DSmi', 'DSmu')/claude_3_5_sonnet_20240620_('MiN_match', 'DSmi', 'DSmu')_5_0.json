@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The phone might not be ringing in the kitchen', can we infer 'It's not the case that the phone must be ringing in the kitchen'?\nQuestion 2: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'The phone might not be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 3: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone is in the living room'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\n\"The phone might not be ringing in the kitchen\" implies that there's a possibility that the phone is not ringing in the kitchen. If something might not be happening, then it's not necessarily happening. Therefore, it's not the case that the phone must be ringing in the kitchen. The statement \"It's not the case that the phone must be ringing in the kitchen\" is a logical inference from the given statement.\n\nQuestion 2:\nWe have two premises here:\n1. \"Either the phone is in the living room or it must be ringing in the kitchen\"\n2. \"The phone might not be ringing in the kitchen\"\n\nThe first premise gives us two options, and the second premise tells us that one of these options (the phone must be ringing in the kitchen) might not be true. However, \"might not be\" doesn't completely rule out the possibility. It only introduces doubt. We can't definitively conclude that the phone is in the living room based on these premises alone.\n\nQuestion 3:\nAgain, we have two premises:\n1. \"Either the phone is in the living room or it must be ringing in the kitchen\"\n2. \"It's not the case that the phone must be ringing in the kitchen\"\n\nThis time, the second premise directly negates one of the options in the first premise. If it's not the case that the phone must be ringing in the kitchen, and we know it must be either in the living room or ringing in the kitchen, we can logically conclude that it must be in the living room.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

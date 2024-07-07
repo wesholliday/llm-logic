@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "NMu_match",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 2: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 3: From 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf might not be draped on the coat rack'?\nQuestion 4: From 'The scarf might not be draped on the coat rack', can we infer 'It's not the case that the scarf must be draped on the coat rack'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: We have a logical disjunction (an \"either/or\" statement) and a negation of one of the disjuncts. The original statement is \"Either the scarf is stuffed in my backpack or it must be draped on the coat rack.\" The additional information is \"It's not the case that the scarf must be draped on the coat rack.\" If the second part of the disjunction is not true, then the first part must be true to satisfy the original statement. Therefore, we can infer that \"The scarf is stuffed in my backpack.\"\n\nQuestion 2: The statement \"The scarf might not be draped on the coat rack\" introduces a possibility but does not negate the second part of the original disjunction with certainty. It suggests that there is a possibility that the scarf is not on the coat rack, but it does not confirm that the scarf is definitely not on the coat rack. Therefore, we cannot infer with certainty that \"The scarf is stuffed in my backpack\" because the scarf could still be on the coat rack.\n\nQuestion 3: The statement \"It's not the case that the scarf must be draped on the coat rack\" indicates that it is not a necessity for the scarf to be on the coat rack. This implies that there is at least a possibility that the scarf is not on the coat rack. Therefore, we can infer that \"The scarf might not be draped on the coat rack.\"\n\nQuestion 4: The statement \"The scarf might not be draped on the coat rack\" suggests uncertainty or possibility, but it does not assert with certainty that the scarf is not on the coat rack. It does not exclude the possibility that the scarf could still be on the coat rack. Therefore, from this statement alone, we cannot infer the stronger statement \"It's not the case that the scarf must be draped on the coat rack,\" which would require a definitive negation of the necessity.\n\nAnswer: yes, no, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

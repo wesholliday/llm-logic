@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Sue chose pizza, then Bob chose pasta. Also, Sue chose pizza. Can we infer that Bob chose pasta?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 3 instruct 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break it down step by step:\n\n1. We are given the conditional statement: \"If Sue chose pizza, then Bob chose pasta.\" This can be represented as \"Sue chooses pizza \u2192 Bob chooses pasta\".\n2. We are also given the fact: \"Sue chose pizza\".\n\nNow, let's analyze the situation:\n\nSince Sue chose pizza (given fact), we can apply the conditional statement. The conditional statement says that if Sue chooses pizza, then Bob chooses pasta. Therefore, we can conclude that Bob indeed chose pasta.\n\nAnswer: yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

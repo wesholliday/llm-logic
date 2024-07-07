@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'It's not the case that the umbrella must be tucked away in the closet', can we infer 'The umbrella is in the car'?\nQuestion 2: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'The umbrella might not be tucked away in the closet', can we infer 'The umbrella is in the car'?\nQuestion 3: From 'The umbrella might not be tucked away in the closet', can we infer 'It's not the case that the umbrella must be tucked away in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1:**\n\n* **Premise 1:** Either the umbrella is in the car or it must be tucked away in the closet.\n* **Premise 2:** It's not the case that the umbrella must be tucked away in the closet. \n\nThis is a classic disjunctive syllogism. If one option in an \"either/or\" statement is false, the other must be true. Since the umbrella doesn't *have* to be in the closet, it must be in the car.\n\n**Question 2:**\n\n* **Premise 1:** Either the umbrella is in the car or it must be tucked away in the closet.\n* **Premise 2:** The umbrella might not be tucked away in the closet.\n\nHere, the second premise only introduces possibility.  Just because the umbrella *might not* be in the closet doesn't automatically mean it's in the car. It could be somewhere else entirely.\n\n**Question 3:**\n\n* **Premise:** The umbrella might not be tucked away in the closet.\n\nSaying something \"might not\" happen is different from saying it's definitely *not* the case. The umbrella could still be in the closet even if there's a possibility of it being elsewhere.\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

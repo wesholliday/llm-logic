@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 3: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, the statement \"Either the milk is on the counter or it must be chilling in the fridge\" presents two possibilities. The additional statement \"It's not the case that the milk must be chilling in the fridge\" negates the second possibility, leaving only the first possibility that the milk is on the counter. Therefore, we can infer that the milk is on the counter.\n\nFor Question 2, the statement \"Either the milk is on the counter or it must be chilling in the fridge\" again presents two possibilities. However, the additional statement \"The milk might not be chilling in the fridge\" does not definitively negate the possibility that the milk is chilling in the fridge; it only suggests that it's possible the milk is not chilling in the fridge. Since this does not rule out the possibility that the milk is chilling in the fridge, we cannot definitively infer that the milk is on the counter.\n\nFor Question 3, the statement \"The milk might not be chilling in the fridge\" implies that there is a possibility that the milk is not chilling in the fridge. This contrasts with the statement \"It's not the case that the milk must be chilling in the fridge,\" which definitively states that the milk is not necessarily in the fridge. The possibility (might not be) does not equate to a certainty (must not be), so we cannot infer that \"It's not the case that the milk must be chilling in the fridge\" based solely on the possibility that the milk might not be chilling in the fridge.\n\nAnswer: yes, no, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

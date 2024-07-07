@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The watch might not be on his wrist', can we infer 'It's not the case that the watch must be on his wrist'?\nQuestion 2: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 3: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1: \n\"The watch might not be on his wrist\" means there's a possibility the watch is not on his wrist. \n\"It's not the case that the watch must be on his wrist\" means the watch is not necessarily on his wrist.\nThese two statements are logically equivalent. If there's a possibility the watch is not on his wrist, then it's not necessarily on his wrist. So yes, we can infer the second statement from the first.\n\nQuestion 2:\n\"Either the watch is charging on the dresser or it must be on his wrist\" presents two possibilities. \n\"It's not the case that the watch must be on his wrist\" eliminates one of those possibilities.\nIf the watch must not be on his wrist, and those are the only two options, then yes, we can infer that the watch is charging on the dresser.\n\nQuestion 3:\nAgain, \"Either the watch is charging on the dresser or it must be on his wrist\" presents two possibilities.\n\"The watch might not be on his wrist\" means there's a possibility the watch is not on his wrist, but it doesn't eliminate the possibility entirely.\nSince there's still a possibility the watch is on his wrist, we cannot definitively conclude that the watch is charging on the dresser. The information is insufficient to make that inference.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

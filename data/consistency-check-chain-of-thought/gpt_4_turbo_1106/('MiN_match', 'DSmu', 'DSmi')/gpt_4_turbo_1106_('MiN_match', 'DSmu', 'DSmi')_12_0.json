@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\nQuestion 2: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 3: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: The statement \"The toy might not be sitting on the bookshelf\" implies that there is a possibility that the toy is not on the bookshelf. This means that it is not certain that the toy is on the bookshelf. Therefore, it is true that \"It's not the case that the toy must be sitting on the bookshelf,\" because \"must\" implies certainty, which is contradicted by \"might not.\"\n\nQuestion 2: The statement \"Either the toy is in the toy box or it must be sitting on the bookshelf\" presents two possibilities. If we know that \"It's not the case that the toy must be sitting on the bookshelf,\" then the only remaining possibility from the original statement is that \"The toy is in the toy box.\" Therefore, we can infer that the toy is in the toy box.\n\nQuestion 3: The statement \"Either the toy is in the toy box or it must be sitting on the bookshelf\" again presents two possibilities. However, the additional information \"The toy might not be sitting on the bookshelf\" does not eliminate the possibility that the toy is on the bookshelf; it only suggests that there is a possibility that the toy is not there. Since there is no certainty provided by \"might not,\" we cannot definitively conclude that \"The toy is in the toy box\" based solely on this information.\n\nAnswer: yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

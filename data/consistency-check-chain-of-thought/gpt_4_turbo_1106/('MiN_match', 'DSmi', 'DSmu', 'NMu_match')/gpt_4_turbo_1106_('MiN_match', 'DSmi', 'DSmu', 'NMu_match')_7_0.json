@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\nQuestion 2: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 3: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 4: From 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control might not be hiding under the couch'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: The statement \"The remote control might not be hiding under the couch\" suggests that there is a possibility that the remote control is not under the couch. This implies uncertainty about the location of the remote control. The inference \"It's not the case that the remote control must be hiding under the couch\" means that it is not a certainty that the remote control is under the couch. Since the original statement casts doubt on the remote control being under the couch, it supports the inference that it is not certain to be there. So the answer to question 1 is 'yes'.\n\nQuestion 2: The statement \"Either the remote control is on the coffee table or it must be hiding under the couch\" presents two possibilities. If we also know that \"The remote control might not be hiding under the couch,\" we are left with uncertainty because \"might not be\" does not eliminate the possibility that it could still be under the couch. Since we cannot eliminate the possibility of the remote being under the couch, we cannot definitively conclude that it is on the coffee table. So the answer to question 2 is 'no'.\n\nQuestion 3: This time, we have the statement \"Either the remote control is on the coffee table or it must be hiding under the couch\" combined with \"It's not the case that the remote control must be hiding under the couch.\" The latter statement definitively eliminates the possibility of the remote control being under the couch. Since the only other option presented is that the remote control is on the coffee table, we can infer that it must be there. So the answer to question 3 is 'yes'.\n\nQuestion 4: The statement \"It's not the case that the remote control must be hiding under the couch\" indicates that there is no certainty about the remote control being under the couch. This is equivalent to saying that the remote control might not be hiding under the couch, as both statements express a lack of certainty about the remote control's location under the couch. So the answer to question 4 is 'yes'.\n\nAnswer: yes, no, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'The phone might not be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 2: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 3: From 'The phone might not be ringing in the kitchen', can we infer 'It's not the case that the phone must be ringing in the kitchen'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\", where A is \"the phone is in the living room\" and B is \"it must be ringing in the kitchen\".\nThe second statement says \"The phone might not be ringing in the kitchen\". This doesn't completely rule out B, it just says it's possible that B is false.\nSince B might still be true, we can't definitively conclude that A must be true.\nTherefore, we cannot infer with certainty that \"The phone is in the living room\".\n\nQuestion 2:\nAgain, we have the disjunction \"Either A or B\".\nThe second statement here is stronger: \"It's not the case that the phone must be ringing in the kitchen\". This directly negates B.\nIn a disjunction, if one part is false, the other must be true for the whole statement to be true.\nSince B is false, A must be true for the original disjunction to hold.\nTherefore, we can infer that \"The phone is in the living room\".\n\nQuestion 3:\n\"The phone might not be ringing in the kitchen\" means there's a possibility it's not ringing in the kitchen.\n\"It's not the case that the phone must be ringing in the kitchen\" means it's not necessary that the phone is ringing in the kitchen.\nIf something might not be the case, then it's certainly not necessary that it is the case.\nTherefore, we can infer the second statement from the first.\n\nNow, I'm ready to answer all the questions:\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

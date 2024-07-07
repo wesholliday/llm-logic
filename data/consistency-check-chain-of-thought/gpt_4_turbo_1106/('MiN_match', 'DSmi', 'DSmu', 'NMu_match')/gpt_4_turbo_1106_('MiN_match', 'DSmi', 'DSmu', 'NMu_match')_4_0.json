@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?\nQuestion 2: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 3: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 4: From 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies might not be hidden in the pantry'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"The cookies might not be hidden in the pantry\" suggests that there is a possibility that the cookies are not in the pantry. This implies uncertainty about the location of the cookies. The inference \"It's not the case that the cookies must be hidden in the pantry\" means that it is not a certainty that the cookies are in the pantry. Since the original statement allows for the possibility that the cookies are not in the pantry, it is consistent with the idea that it is not a certainty (or a must) that they are there. Therefore, the inference is valid.\n\nQuestion 2: The statement \"Either the cookies are in the jar or they must be hidden in the pantry\" presents two possibilities. If we know that \"The cookies might not be hidden in the pantry,\" we are dealing with a possibility that the cookies are not in the pantry, but this does not eliminate the possibility that they could still be there. Since there is still a possibility that the cookies are in the pantry, we cannot definitively conclude that \"The cookies are in the jar\" based solely on the information given. Therefore, the inference is not valid.\n\nQuestion 3: If we know \"Either the cookies are in the jar or they must be hidden in the pantry\" and also that \"It's not the case that the cookies must be hidden in the pantry,\" we can infer that the cookies are not necessarily in the pantry. Since the second premise eliminates the pantry as a must, the only remaining option from the first premise is that \"The cookies are in the jar.\" Therefore, the inference is valid.\n\nQuestion 4: The statement \"It's not the case that the cookies must be hidden in the pantry\" indicates that there is no necessity for the cookies to be in the pantry. This implies that there is at least a possibility that the cookies are not in the pantry. Therefore, we can infer that \"The cookies might not be hidden in the pantry,\" since this is consistent with the absence of necessity. Hence, the inference is valid.\n\nAnswer: yes, no, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

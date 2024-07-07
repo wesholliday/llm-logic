@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 2: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 3: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first premise states: \"Either the remote control is on the coffee table or it must be hiding under the couch.\"\nThe second premise states: \"It's not the case that the remote control must be hiding under the couch.\"\nThis is a classic example of disjunctive syllogism. If we have two options, and we know one is false, then the other must be true. Since we know it's not under the couch, it must be on the coffee table.\n\nQuestion 2:\nThe first premise is the same as in Question 1.\nThe second premise is different: \"The remote control might not be hiding under the couch.\"\nThis is not as strong as the statement in Question 1. \"Might not be\" doesn't rule out the possibility that it is under the couch. Therefore, we can't definitively conclude that it's on the coffee table.\n\nQuestion 3:\nWe need to consider the relationship between \"might not be\" and \"must be.\"\nIf something \"might not be\" true, then it cannot be the case that it \"must be\" true.\n\"Might not be\" implies a possibility of not being, which contradicts \"must be.\"\nTherefore, from \"might not be,\" we can indeed infer \"it's not the case that it must be.\"\n\nNow, I'm ready to answer all the questions:\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

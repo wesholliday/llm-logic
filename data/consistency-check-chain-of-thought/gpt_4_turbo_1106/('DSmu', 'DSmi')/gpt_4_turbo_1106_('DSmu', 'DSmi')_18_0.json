@@ -1,0 +1,18 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 2: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\n",
+    "system_prompt": "You will see a series of 2 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 2 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, we have two statements:\n\n1. Either the watch is charging on the dresser or it must be on his wrist.\n2. It's not the case that the watch must be on his wrist.\n\nFrom these two statements, we can infer that if it's not the case that the watch must be on his wrist, then the only other option given by the first statement is that the watch is charging on the dresser. Therefore, the answer to the first question is 'yes'.\n\nFor Question 2, we have:\n\n1. Either the watch is charging on the dresser or it must be on his wrist.\n2. The watch might not be on his wrist.\n\nThe second statement here indicates a possibility that the watch is not on his wrist, but it does not exclude the possibility that the watch could still be on his wrist. Since there is uncertainty about the location of the watch (it might or might not be on his wrist), we cannot definitively conclude that the watch is charging on the dresser based solely on the information given. Therefore, the answer to the second question is 'no'.\n\nAnswer: yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

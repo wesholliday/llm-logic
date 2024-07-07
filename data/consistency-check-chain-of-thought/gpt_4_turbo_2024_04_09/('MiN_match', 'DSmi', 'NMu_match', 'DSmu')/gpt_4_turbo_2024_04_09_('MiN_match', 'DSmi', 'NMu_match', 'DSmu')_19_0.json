@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "NMu_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses might not be perched on her head'?\nQuestion 4: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"The sunglasses might not be perched on her head\" suggests that there is a possibility that the sunglasses are not on her head. The phrase \"It's not the case that the sunglasses must be perched on her head\" means that it is not necessarily true that the sunglasses are on her head. Since the first statement introduces a possibility of the sunglasses not being on her head, it aligns with the second statement that it is not a necessity. Therefore, the inference is valid.\n\nQuestion 2: The statement \"Either the sunglasses are in her bag or they must be perched on her head\" presents two exclusive possibilities. The additional information \"The sunglasses might not be perched on her head\" introduces uncertainty about the sunglasses being on her head but does not confirm they are not there. Since there remains a possibility (however slight) that the sunglasses could still be on her head, we cannot definitively conclude that they are in her bag based solely on the possibility that they might not be on her head. Therefore, the inference is not valid.\n\nQuestion 3: The statement \"It's not the case that the sunglasses must be perched on her head\" implies that there is no necessity for the sunglasses to be on her head. This aligns with the idea that \"The sunglasses might not be perched on her head,\" which suggests uncertainty or possibility of the sunglasses not being on her head. Thus, the inference from the necessity not being there to the possibility of absence is valid.\n\nQuestion 4: Given the statement \"Either the sunglasses are in her bag or they must be perched on her head\" and the information \"It's not the case that the sunglasses must be perched on her head,\" we can conclude that the necessity of the sunglasses being on her head is ruled out. This leaves the only other option provided by the initial statement, which is that the sunglasses are in her bag. Therefore, the inference is valid.\n\nAnswer: yes, no, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

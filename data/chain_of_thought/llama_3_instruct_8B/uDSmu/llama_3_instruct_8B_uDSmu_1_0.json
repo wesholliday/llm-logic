@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Either Fido is inside or Fido must be in the garden. Also, it's not the case that Fido must be in the garden. Can we infer that Fido is inside?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "llama 3 instruct 8B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break down the given information:\n\n1. Either Fido is inside or Fido must be in the garden.\n2. It's not the case that Fido must be in the garden.\n\nFrom statement (1), we know that there are only two possibilities for Fido's location: either he is inside or he must be in the garden.\n\nFrom statement (2), we know that it's not possible for Fido to be in the garden. This means that the second possibility from statement (1) is ruled out.\n\nSince one of the possibilities has been eliminated, and the other possibility is still valid (\"Fido is inside\"), we can conclude that Fido must indeed be inside.\n\nAnswer: yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

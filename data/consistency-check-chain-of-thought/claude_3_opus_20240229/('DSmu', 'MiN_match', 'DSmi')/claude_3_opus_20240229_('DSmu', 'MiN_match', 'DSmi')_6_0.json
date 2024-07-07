@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'It's not the case that the umbrella must be tucked away in the closet', can we infer 'The umbrella is in the car'?\nQuestion 2: From 'The umbrella might not be tucked away in the closet', can we infer 'It's not the case that the umbrella must be tucked away in the closet'?\nQuestion 3: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'The umbrella might not be tucked away in the closet', can we infer 'The umbrella is in the car'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \nThe first premise states that either the umbrella is in the car or it must be in the closet. The second premise negates the second option, saying it's not the case that the umbrella must be in the closet. If we assume these premises are true, then by process of elimination, the only remaining possibility is that the umbrella is in the car. So yes, we can validly infer that the umbrella is in the car.\n\nQuestion 2:\nThe premise states that the umbrella might not be in the closet. This allows for the possibility that the umbrella is not in the closet, but doesn't rule out that it could still be in the closet. In contrast, the conclusion states that it's not the case that the umbrella must be in the closet. This is a stronger claim, asserting that it's not necessarily in the closet. The premise leaves open the possibility that it may or may not be in the closet, while the conclusion eliminates the possibility that it must be. So no, we cannot validly make this inference.\n\nQuestion 3:\nThis combines the first premise from Question 1 (either in car or must be in closet) with the premise from Question 2 (might not be in closet). The second premise here introduces uncertainty about the umbrella being in the closet, but doesn't eliminate that possibility entirely like the second premise in Question 1 did. So we no longer have enough information to conclude with certainty that the umbrella must be in the car. It might be, but it also might still be in the closet. We can't validly make that inference.\n\nAnswer: yes,no,no"
+        }
+    ]
+}

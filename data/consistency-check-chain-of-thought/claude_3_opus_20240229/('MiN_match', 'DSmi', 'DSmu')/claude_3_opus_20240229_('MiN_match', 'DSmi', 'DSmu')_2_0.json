@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 3: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \nFrom 'The keys might not be dangling in the cabinet', we can infer 'It's not the case that the keys must be dangling in the cabinet'. \n'Might not' is the negation of 'must', so if the keys might not be dangling in the cabinet, then it cannot be the case that they must be dangling in the cabinet.\n\nQuestion 2:\nFrom 'Either the keys are in the drawer or they must be dangling in the cabinet' and 'The keys might not be dangling in the cabinet', we cannot infer 'The keys are in the drawer'.\n'The keys might not be dangling in the cabinet' allows for the possibility that the keys are not in the cabinet, but it doesn't rule out the possibility completely. They still could be in the cabinet, just not necessarily. So we can't conclude for certain that they must be in the drawer.\n\nQuestion 3:\nFrom 'Either the keys are in the drawer or they must be dangling in the cabinet' and 'It's not the case that the keys must be dangling in the cabinet', we can infer 'The keys are in the drawer'.\nWe know the keys must be in one of two places - the drawer or the cabinet. And we know it's not the case that they must be in the cabinet. So by process of elimination, they must be in the drawer.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

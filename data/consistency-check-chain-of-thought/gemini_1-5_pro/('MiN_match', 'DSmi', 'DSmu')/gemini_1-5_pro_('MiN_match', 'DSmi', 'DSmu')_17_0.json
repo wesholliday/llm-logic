@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The notebook might not be sitting on the nightstand', can we infer 'It's not the case that the notebook must be sitting on the nightstand'?\nQuestion 2: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 3: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'The notebook might not be sitting on the nightstand', can we infer 'It's not the case that the notebook must be sitting on the nightstand'?**\n\nReasoning: \"Might not\" implies there's a possibility the notebook isn't on the nightstand. If it's possible the notebook isn't there, then it can't be definitely true (\"must\") that it is there.\n\n**Question 2: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?**\n\nReasoning: We're given two possibilities, and told one of them might not be true. Since it's \"either/or\", if one possibility is ruled out, the other must be true.\n\n**Question 3: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?**\n\nReasoning: This is the same logic as Question 2, just phrased slightly differently.  We're eliminating one possibility, leaving only the other.\n\n**Answer: yes, yes, yes** \n"
+        }
+    ]
+}

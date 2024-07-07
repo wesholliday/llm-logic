@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 2: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\nQuestion 3: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: We are told that either the remote is on the coffee table or it must be under the couch. We are also told it might not be under the couch. If it might not be under the couch, that means it's possible it's not under the couch. But if it's not under the couch, based on the first statement, it has to be on the coffee table. So yes, we can infer the remote is on the coffee table.\n\nQuestion 2: If the remote might not be under the couch, that means it's possible it's not under the couch. If it's possible it's not under the couch, then it cannot be the case that it must be under the couch. \"Must\" implies certainty, while \"might not\" allows for the possibility of it not being there. So yes, we can infer it's not the case that the remote must be under the couch.\n\nQuestion 3: We established in Question 2 that \"The remote might not be under the couch\" allows us to infer \"It's not the case that the remote must be under the couch\". Combining this with the first statement \"Either the remote is on the coffee table or it must be under the couch\", if it's not the case that it must be under the couch, the only remaining possibility is that it's on the coffee table. So yes, we can infer the remote is on the coffee table.\n\nAnswer: yes, yes, yes"
+        }
+    ]
+}

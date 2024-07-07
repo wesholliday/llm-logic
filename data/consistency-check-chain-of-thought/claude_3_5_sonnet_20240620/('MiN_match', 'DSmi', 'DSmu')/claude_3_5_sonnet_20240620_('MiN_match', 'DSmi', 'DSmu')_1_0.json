@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 2: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\n\"The book might not be resting on the table\" implies that there's a possibility that the book is not on the table. If we negate this, we get \"It's not the case that the book might not be resting on the table,\" which is equivalent to saying \"The book must be resting on the table.\" \n\nTherefore, \"The book might not be resting on the table\" is indeed equivalent to \"It's not the case that the book must be resting on the table.\" We can infer one from the other.\n\nQuestion 2:\nWe have two premises:\n1. \"Either the book is on the shelf or it must be resting on the table\"\n2. \"The book might not be resting on the table\"\n\nThe second premise tells us that it's possible the book is not on the table. This contradicts the possibility that the book \"must\" be resting on the table. Given that one of the two options in the first premise must be true, and we've ruled out the second option, we can conclude that the first option must be true: the book is on the shelf.\n\nQuestion 3:\nWe have two premises:\n1. \"Either the book is on the shelf or it must be resting on the table\"\n2. \"It's not the case that the book must be resting on the table\"\n\nThe second premise directly contradicts the second part of the disjunction in the first premise. Since one of the two options in the first premise must be true, and we've ruled out the second option, we can conclude that the first option must be true: the book is on the shelf.\n\nNow, I'm ready to answer all the questions:\n\nAnswer: yes, yes, yes"
+        }
+    ]
+}

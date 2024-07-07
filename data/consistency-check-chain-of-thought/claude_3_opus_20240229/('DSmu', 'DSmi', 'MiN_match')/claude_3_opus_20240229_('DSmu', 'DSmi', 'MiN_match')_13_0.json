@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 3: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nPremise 1: Either the milk is on the counter or it must be chilling in the fridge.\nPremise 2: It's not the case that the milk must be chilling in the fridge.\nThe premises form a disjunctive syllogism. Premise 1 gives two possibilities, and Premise 2 eliminates one of those possibilities. Therefore, the remaining possibility must be true. So yes, we can infer that the milk is on the counter.\n\nQuestion 2: \nPremise 1: Either the milk is on the counter or it must be chilling in the fridge.\nPremise 2: The milk might not be chilling in the fridge.\nHere, Premise 2 does not definitively eliminate the possibility of the milk being in the fridge. \"Might not\" allows for the possibility that the milk is in the fridge. Therefore, we cannot infer with certainty that the milk is on the counter. The answer is no.\n\nQuestion 3:\nPremise: The milk might not be chilling in the fridge.\nConclusion: It's not the case that the milk must be chilling in the fridge.\nIf something \"might not\" be the case, then it cannot be said that it \"must\" be the case. \"Must\" implies certainty, while \"might not\" allows for uncertainty. Therefore, yes, we can infer that it's not the case that the milk must be chilling in the fridge.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

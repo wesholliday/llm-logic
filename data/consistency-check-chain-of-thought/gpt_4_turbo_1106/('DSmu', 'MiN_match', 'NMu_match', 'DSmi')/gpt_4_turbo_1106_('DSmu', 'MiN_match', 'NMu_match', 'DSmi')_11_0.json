@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "NMu_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 2: From 'The jacket might not be hanging in the closet', can we infer 'It's not the case that the jacket must be hanging in the closet'?\nQuestion 3: From 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket might not be hanging in the closet'?\nQuestion 4: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'The jacket might not be hanging in the closet', can we infer 'The jacket is draped over the chair'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: We have two premises: \"Either the jacket is draped over the chair or it must be hanging in the closet\" and \"It's not the case that the jacket must be hanging in the closet.\" If it's not the case that the jacket must be hanging in the closet, then the only other option given by the first premise is that the jacket is draped over the chair. Therefore, we can infer that the jacket is draped over the chair.\n\nQuestion 2: The statement \"The jacket might not be hanging in the closet\" implies that there is a possibility that the jacket is not hanging in the closet. This does not necessarily mean that it must not be hanging in the closet, just that it's possible that it isn't. However, the statement \"It's not the case that the jacket must be hanging in the closet\" is a definitive statement that the jacket definitely isn't required to be hanging in the closet. The possibility (might not be) does not entail certainty (it's not the case that it must be), so we cannot infer the second statement from the first.\n\nQuestion 3: If \"It's not the case that the jacket must be hanging in the closet,\" this means there is no necessity for the jacket to be hanging in the closet. This allows for the possibility that the jacket might not be hanging in the closet. Therefore, we can infer that \"The jacket might not be hanging in the closet.\"\n\nQuestion 4: The premises are \"Either the jacket is draped over the chair or it must be hanging in the closet\" and \"The jacket might not be hanging in the closet.\" The second premise introduces uncertainty about the jacket hanging in the closet but does not rule it out completely. Since it does not rule out the possibility that the jacket is hanging in the closet, we cannot definitively conclude that the jacket is draped over the chair based on these premises alone.\n\nAnswer: yes, no, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

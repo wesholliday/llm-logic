@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'Bob did not choose pasta' together with 'If Sue chose pizza, then Bob chose pasta', can we infer 'Sue did not choose pizza'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing '### Answer:' followed by 'yes' or 'no'.",
+    "model": "code llama instruct 7B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: We are given the premises \"Bob did not choose pasta\" and \"If Sue chose pizza, then Bob chose pasta\".\n\nReasoning: The first premise states that Bob did not choose pasta. The second premise states that if Sue chose pizza, then Bob chose pasta. Therefore, we can infer that if Sue chose pizza, then Bob did not choose pasta. This means that if Sue chose pizza, then Bob did not choose pizza.\n\nStep 2: We are asked to infer \"Sue did not choose pizza\".\n\nReasoning: Based on the previous reasoning, we can infer that if Sue chose pizza, then Bob did not choose pizza. Therefore, if Sue did not choose pizza, then Bob did not choose pizza either. This means that Sue did not choose pizza.\n\n### Answer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

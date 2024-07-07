@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The missing puzzle piece might not be blending in on the floor', can we infer 'It's not the case that the missing puzzle piece must be blending in on the floor'?\nQuestion 2: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 3: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe statement \"The missing puzzle piece might not be blending in on the floor\" implies that there's a possibility that the piece is not blending in. This is equivalent to saying \"It's not necessarily true that the piece is blending in.\" Therefore, we can indeed infer that \"It's not the case that the missing puzzle piece must be blending in on the floor.\"\n\nQuestion 2:\nWe have two premises:\n1. \"Either the missing puzzle piece is in the box or it must be blending in on the floor\"\n2. \"It's not the case that the missing puzzle piece must be blending in on the floor\"\n\nThe first premise gives us two options, and the second premise eliminates one of those options. By logical deduction, if one of the two options must be true, and we know that one isn't true, then the other must be true. Therefore, we can infer that \"The missing puzzle piece is in the box.\"\n\nQuestion 3:\nWe have two premises:\n1. \"Either the missing puzzle piece is in the box or it must be blending in on the floor\"\n2. \"The missing puzzle piece might not be blending in on the floor\"\n\nWhile the second premise suggests that the piece might not be blending in, it doesn't completely rule out the possibility that it is. The word \"might\" indicates uncertainty, not a definite negative. Therefore, we cannot conclusively infer that the piece must be in the box. The piece could still be blending in on the floor, even if there's a possibility that it's not.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

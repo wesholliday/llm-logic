@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If Tom watched football, then Jen watched basketball' together with 'Tom did not watch football', can we infer 'Jen did not watch basketball'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "llama 3 instruct 8B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break it down step by step:\n\n1. We have two statements:\n\t* If Tom watched football, then Jen watched basketball\n\t* Tom did not watch football\n2. From the first statement, we can infer that if Tom didn't watch football, then Jen didn't watch basketball (since the condition is reversed).\n3. Since Tom did not watch football (second statement), we can apply the inference from step 2: Jen did not watch basketball.\n\nAnswer: yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

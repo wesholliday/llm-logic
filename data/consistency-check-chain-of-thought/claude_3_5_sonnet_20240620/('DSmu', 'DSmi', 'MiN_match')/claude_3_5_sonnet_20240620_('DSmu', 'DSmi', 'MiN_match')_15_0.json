@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\nQuestion 2: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\nQuestion 3: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer that the pen is in the bag.\n\nQuestion 2:\nThe first statement is the same disjunction: \"Either A or B\"\nThe second statement is different: \"The pen might not be on my desk\"\nThis doesn't definitively negate B. It only suggests a possibility that B is false.\nWe can't make a definitive conclusion about A based on this information.\nSo no, we cannot infer that the pen is in the bag.\n\nQuestion 3:\n\"The pen might not be on my desk\" implies uncertainty about the pen's location.\n\"It's not the case that the pen must be on my desk\" also implies uncertainty about the pen's location.\nThe first statement (might not be) logically implies the second statement (not must be).\nIf something might not be true, then it's not the case that it must be true.\nSo yes, we can infer the second statement from the first.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

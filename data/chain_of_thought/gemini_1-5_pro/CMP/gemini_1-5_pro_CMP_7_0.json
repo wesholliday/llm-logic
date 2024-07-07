@@ -1,0 +1,11 @@
+{
+    "user_prompt": "Suppose that tidal power, solar power, and wind power are the leading renewable energy sources. Forecasts indicate it\u2019s likely tidal power will generate the most electricity this year, followed by solar power, with wind power capacity lagging significantly behind. These are the only major sources, so if solar power doesn\u2019t generate the most electricity, then if tidal power doesn\u2019t, wind power will. Moreover, tidal power likely will generate the most electricity and hence solar power likely won't. Does it follow that it's likely that, if tidal power doesn't generate the most electricity, wind power will?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Here is my reasoning:\n\n1. **Premise 1:** If solar power doesn't generate the most electricity, and tidal power doesn't either, then wind power will.\n2. **Premise 2:** Tidal power is likely to generate the most electricity.\n3. **Premise 3:** Therefore, solar power likely won't generate the most electricity.\n\nWe are asked to determine if the following conclusion is likely: If tidal power doesn't generate the most electricity, wind power will.\n\n4. **Consider the scenario where tidal power does NOT generate the most.** Premise 3 tells us solar power likely won't be the top source either. \n5. **Refer back to Premise 1:** If neither tidal nor solar is the top source, then wind power MUST be.\n\n**Answer: yes** \n"
+        }
+    ]
+}

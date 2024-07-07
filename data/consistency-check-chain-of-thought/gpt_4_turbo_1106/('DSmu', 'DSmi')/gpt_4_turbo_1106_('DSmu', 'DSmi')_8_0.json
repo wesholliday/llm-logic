@@ -1,0 +1,18 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 2: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\n",
+    "system_prompt": "You will see a series of 2 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 2 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, we have a logical disjunction (an \"either/or\" statement) and a negation of one of the disjuncts. The disjunction states that either the puzzle piece is in the box or it is blending in on the floor. The second statement negates the second part of the disjunction, saying it is not the case that the puzzle piece must be blending in on the floor. If it's not blending in on the floor, and those were the only two options presented, then it must be in the box. Therefore, we can infer that the missing puzzle piece is in the box.\n\nFor Question 2, the disjunction is the same, but the second statement is different. It says the puzzle piece might not be blending in on the floor, which implies uncertainty rather than a definitive negation. Since there is a possibility that the puzzle piece is not blending in on the floor, but it's not certain, we cannot definitively conclude that the puzzle piece is in the box. There is still a possibility that it could be blending in on the floor.\n\nAnswer: yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

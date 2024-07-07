@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "NMu_match",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'It's not the case that the book must be resting on the table', can we infer 'The book might not be resting on the table'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 4: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Please respond with 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "no,yes,yes,no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 2: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 3: From 'The notebook might not be sitting on the nightstand', can we infer 'It's not the case that the notebook must be sitting on the nightstand'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement gives us two possibilities: the notebook is either in the drawer or on the nightstand.\nThe second statement tells us that the notebook might not be on the nightstand.\nHowever, \"might not be\" doesn't mean \"is not\". It only introduces uncertainty.\nWe can't conclude with certainty that the notebook is in the drawer because it could still be on the nightstand.\n\nQuestion 2:\nAgain, we have two possibilities: the notebook is either in the drawer or on the nightstand.\nThe second statement says it's not the case that the notebook must be on the nightstand.\nThis effectively eliminates the second option, leaving only the first option as true.\nTherefore, we can conclude that the notebook is in the drawer.\n\nQuestion 3:\n\"The notebook might not be sitting on the nightstand\" introduces uncertainty about its location on the nightstand.\n\"It's not the case that the notebook must be sitting on the nightstand\" is a stronger statement, ruling out the necessity of it being on the nightstand.\nIf something might not be true, then it's correct to say that it's not necessarily true.\nTherefore, we can infer the second statement from the first.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

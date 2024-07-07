@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The umbrella might not be tucked away in the closet', can we infer 'It's not the case that the umbrella must be tucked away in the closet'?\nQuestion 2: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'It's not the case that the umbrella must be tucked away in the closet', can we infer 'The umbrella is in the car'?\nQuestion 3: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'The umbrella might not be tucked away in the closet', can we infer 'The umbrella is in the car'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\n\"The umbrella might not be tucked away in the closet\" implies that there's a possibility the umbrella is not in the closet. This is equivalent to saying it's not necessary (or not a must) that the umbrella is in the closet. Therefore, we can indeed infer \"It's not the case that the umbrella must be tucked away in the closet\" from the given statement.\n\nQuestion 2:\nWe have two premises:\n1. \"Either the umbrella is in the car or it must be tucked away in the closet\"\n2. \"It's not the case that the umbrella must be tucked away in the closet\"\n\nThe first premise gives us two options, and the second premise eliminates one of those options. Therefore, we can logically conclude that the remaining option must be true: \"The umbrella is in the car\".\n\nQuestion 3:\nWe have two premises:\n1. \"Either the umbrella is in the car or it must be tucked away in the closet\"\n2. \"The umbrella might not be tucked away in the closet\"\n\nWhile the second premise suggests that the umbrella might not be in the closet, it doesn't completely rule out the possibility that it is in the closet. Therefore, we cannot definitively conclude that the umbrella must be in the car. The uncertainty in the second premise doesn't allow us to make a definitive inference.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

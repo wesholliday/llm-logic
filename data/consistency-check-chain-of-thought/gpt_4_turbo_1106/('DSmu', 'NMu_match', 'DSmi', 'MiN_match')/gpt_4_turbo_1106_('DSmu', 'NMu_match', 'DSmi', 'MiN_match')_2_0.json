@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "NMu_match",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys might not be dangling in the cabinet'?\nQuestion 3: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 4: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have a logical disjunction: \"Either the keys are in the drawer or they must be dangling in the cabinet.\" This means that at least one of the conditions must be true. We also have a negation: \"It's not the case that the keys must be dangling in the cabinet.\" This means that the second condition is false. Since in a disjunction if one condition is false the other must be true to satisfy the statement, we can infer that the keys are in the drawer. So the answer is 'yes'.\n\nQuestion 2: The statement \"It's not the case that the keys must be dangling in the cabinet\" implies that there is no necessity for the keys to be dangling in the cabinet. This does not necessarily mean they are not there, just that they are not required to be there. Therefore, it is possible that the keys might not be dangling in the cabinet. So the answer is 'yes'.\n\nQuestion 3: We have the same logical disjunction as in Question 1, and the statement \"The keys might not be dangling in the cabinet\" introduces a possibility that the keys are not in the cabinet. However, this does not confirm that the keys are definitely not in the cabinet, just that there is a possibility they are not. Since we do not have a definitive statement that the keys are not in the cabinet, we cannot infer with certainty that they are in the drawer. So the answer is 'no'.\n\nQuestion 4: The statement \"The keys might not be dangling in the cabinet\" suggests that there is uncertainty about the location of the keys. It does not assert that the keys must not be in the cabinet, just that it's a possibility they are not. This is different from saying \"It's not the case that the keys must be dangling in the cabinet,\" which is a definitive statement that the keys are not necessarily in the cabinet. Therefore, from the possibility that the keys might not be dangling, we cannot infer the certainty that they must not be dangling. So the answer is 'no'.\n\nAnswer: yes, yes, no, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

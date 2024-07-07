@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 3: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The first statement is a logical disjunction that suggests there are two possibilities for the location of the keys: they are either in the drawer or dangling in the cabinet. The second statement introduces uncertainty about the keys dangling in the cabinet but does not rule it out completely. Since the possibility of the keys being in the cabinet is not eliminated, we cannot definitively conclude that the keys are in the drawer.\n\nQuestion 2: The first statement is the same as in Question 1. However, the second statement now definitively states that it is not the case that the keys must be dangling in the cabinet. This means that the possibility of the keys being in the cabinet is ruled out. Since the disjunction in the first statement must be true and one possibility (dangling in the cabinet) is ruled out, we are left with the only other possibility: the keys are in the drawer.\n\nQuestion 3: The statement 'The keys might not be dangling in the cabinet' introduces the possibility that the keys are not in the cabinet, but it does not assert this as a fact. It leaves open the possibility that the keys could still be dangling in the cabinet. Therefore, from this statement alone, we cannot infer that it is definitively not the case that the keys must be dangling in the cabinet.\n\nAnswer: no, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "NMu_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The cat might not be playing in the bedroom', can we infer 'It's not the case that the cat must be playing in the bedroom'?\nQuestion 2: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 3: From 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat might not be playing in the bedroom'?\nQuestion 4: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'The cat might not be playing in the bedroom', can we infer 'The cat is napping on the couch'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: \"The cat might not be playing in the bedroom\" implies uncertainty about the cat's activity. It suggests that there is a possibility that the cat is not playing in the bedroom. This statement contrasts with \"It's not the case that the cat must be playing in the bedroom,\" which definitively states that there is no necessity for the cat to be playing in the bedroom. The first statement does not assert that the cat must be playing in the bedroom, so we can infer that it is not necessarily the case that the cat must be playing there.\n\nQuestion 2: We have two statements: \"Either the cat is napping on the couch or it must be playing in the bedroom\" and \"It's not the case that the cat must be playing in the bedroom.\" The second statement negates one of the options in the first statement, leaving us with the only remaining possibility that the cat is napping on the couch. Therefore, we can infer that the cat is napping on the couch.\n\nQuestion 3: \"It's not the case that the cat must be playing in the bedroom\" means that there is no requirement or certainty that the cat is playing in the bedroom. This implies that there is a possibility that the cat is not playing in the bedroom, which is what \"The cat might not be playing in the bedroom\" suggests. Therefore, we can infer that the cat might not be playing in the bedroom from the given statement.\n\nQuestion 4: The statement \"Either the cat is napping on the couch or it must be playing in the bedroom\" presents two possibilities. The additional information \"The cat might not be playing in the bedroom\" introduces uncertainty about the second option but does not eliminate it entirely, as \"might not\" is not a definitive negation. Since there is still a possibility that the cat could be playing in the bedroom, we cannot definitively infer that the cat is napping on the couch based solely on the possibility that it might not be playing in the bedroom.\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 2: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\nQuestion 3: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement gives us two possibilities: the sock is either in the laundry basket or under the bed.\nThe second statement tells us that the sock might not be under the bed. This doesn't completely rule out the possibility of it being under the bed, it just says it's not certain.\nSince we're not certain the sock isn't under the bed, we can't definitively conclude it must be in the laundry basket.\n\nQuestion 2:\nThe statement \"The missing sock might not be under the bed\" implies uncertainty.\nIf something might not be the case, then it cannot be said that it must be the case.\nTherefore, we can indeed infer that it's not the case that the missing sock must be under the bed.\n\nQuestion 3:\nThe first statement again gives us two possibilities: the sock is either in the laundry basket or it must be under the bed.\nThe second statement tells us that it's not the case that the sock must be under the bed.\nThis eliminates the second possibility from the first statement.\nTherefore, if it's not the case that the sock must be under the bed, the only remaining option is that it's in the laundry basket.\n\nNow, I'm ready to answer all the questions:\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

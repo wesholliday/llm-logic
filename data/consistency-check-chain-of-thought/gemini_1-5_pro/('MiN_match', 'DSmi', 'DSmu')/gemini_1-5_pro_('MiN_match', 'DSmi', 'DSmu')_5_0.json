@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The phone might not be ringing in the kitchen', can we infer 'It's not the case that the phone must be ringing in the kitchen'?\nQuestion 2: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'The phone might not be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 3: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone is in the living room'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'The phone might not be ringing in the kitchen', can we infer 'It's not the case that the phone must be ringing in the kitchen'?**\n\n* **Reasoning:** \"The phone might not be ringing in the kitchen\" implies that it's possible the phone is not ringing there. This directly contradicts the statement \"the phone must be ringing in the kitchen\". \n\n**Question 2: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'The phone might not be ringing in the kitchen', can we infer 'The phone is in the living room'?**\n\n* **Reasoning:** We're given two possibilities, and told one of them *might* not be true. This makes the other possibility more likely, but doesn't definitively prove it. The phone could be somewhere else entirely.\n\n**Question 3: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone is in the living room'?**\n\n* **Reasoning:**  This time, we're told one of the possibilities is definitely NOT true. Since we're given only two options, the remaining option MUST be correct.\n\n**Answer: yes, no, yes** \n"
+        }
+    ]
+}

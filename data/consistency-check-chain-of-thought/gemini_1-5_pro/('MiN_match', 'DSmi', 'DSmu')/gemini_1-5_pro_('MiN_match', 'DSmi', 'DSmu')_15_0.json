@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?\nQuestion 2: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\nQuestion 3: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?**\n\n* **Reasoning:** \"The pen might not be on my desk\" implies that there's a possibility the pen is elsewhere. This directly contradicts the statement \"the pen must be on my desk\". \n\n**Question 2: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?**\n\n* **Reasoning:** We're given two pieces of information:\n    * The pen can only be in two places: my bag or my desk.\n    * There's a chance the pen is NOT on my desk. \n    * Since the pen has to be in one of those two places, and it might not be on the desk, we can conclude it must be in the bag.\n\n**Question 3: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?**\n\n* **Reasoning:** This is very similar to question 2.\n    * The pen can only be in the bag or on the desk.\n    * We're told the pen is definitely NOT on the desk.\n    * Therefore, it must be in the bag.\n\n**Answer: yes, yes, yes** \n"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement says \"Either the sunglasses are in her bag or they must be perched on her head.\" This is an exclusive or statement.\nThe second statement says \"The sunglasses might not be perched on her head.\" This doesn't rule out the possibility that they are on her head, it just says it's not certain.\nGiven these two pieces of information, we can't definitively conclude that the sunglasses are in her bag. They could still be on her head, even though it's not certain.\n\nQuestion 2:\nAgain, we have the statement \"Either the sunglasses are in her bag or they must be perched on her head.\"\nThe second statement here is \"It's not the case that the sunglasses must be perched on her head.\" This rules out one of the two possibilities in the first statement.\nSince one option is ruled out, and we know it must be one or the other, we can conclude that the sunglasses are in her bag.\n\nQuestion 3:\n\"The sunglasses might not be perched on her head\" means there's a possibility they're not on her head.\n\"It's not the case that the sunglasses must be perched on her head\" means it's not certain or necessary that they're on her head.\nIf something might not be the case, then it's definitely not the case that it must be true. Therefore, we can infer the second statement from the first.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

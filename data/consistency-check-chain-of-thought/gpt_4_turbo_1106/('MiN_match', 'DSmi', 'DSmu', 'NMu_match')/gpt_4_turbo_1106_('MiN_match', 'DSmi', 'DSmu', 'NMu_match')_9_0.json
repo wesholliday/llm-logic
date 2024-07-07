@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\nQuestion 2: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 3: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 4: From 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock might not be under the bed'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"The missing sock might not be under the bed\" suggests that there is a possibility that the sock is not under the bed. The inference \"It's not the case that the missing sock must be under the bed\" is saying that it is not a certainty that the sock is under the bed. Since the original statement allows for the possibility that the sock is not under the bed, it aligns with the inference that the sock's location under the bed is not a must. Therefore, the inference is valid.\n\nQuestion 2: The statement \"Either the missing sock is in the laundry basket or it must be under the bed\" presents two possibilities. The additional information \"The missing sock might not be under the bed\" does not eliminate the possibility that the sock could still be under the bed; it just suggests that it's not certain. Since we cannot be sure that the sock is not under the bed, we cannot definitively conclude that it is in the laundry basket. Therefore, the inference is not valid.\n\nQuestion 3: The statement \"Either the missing sock is in the laundry basket or it must be under the bed\" again presents two exclusive possibilities. The additional statement \"It's not the case that the missing sock must be under the bed\" negates the possibility of the sock being under the bed as a certainty. If it must not be under the bed, then the only remaining option from the original statement is that the sock is in the laundry basket. Therefore, the inference is valid.\n\nQuestion 4: The statement \"It's not the case that the missing sock must be under the bed\" indicates that there is no certainty that the sock is under the bed. This aligns with the idea that \"The missing sock might not be under the bed,\" which acknowledges the possibility that the sock is not under the bed. Therefore, the inference is valid.\n\nAnswer: yes, no, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

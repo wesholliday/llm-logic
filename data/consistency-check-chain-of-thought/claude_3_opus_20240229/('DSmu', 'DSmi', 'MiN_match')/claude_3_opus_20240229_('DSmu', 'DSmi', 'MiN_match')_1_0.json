@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 3: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are given that either the book is on the shelf or it must be resting on the table. This is a disjunction (an \"or\" statement).\n- We are also given that it's not the case that the book must be resting on the table. In other words, the second part of the disjunction is false.\n- In a disjunction, if one part is false, the other part must be true for the whole statement to be true.\n- Therefore, we can infer that the book is on the shelf. The answer is yes.\n\nQuestion 2:\n- Again, we have the disjunction that either the book is on the shelf or it must be resting on the table.\n- This time, we are given that the book might not be resting on the table. This is different from saying it must not be on the table.\n- If the book might not be on the table, it's still possible that it is on the table. We don't have enough information to rule out the second part of the disjunction.\n- Therefore, we cannot infer with certainty that the book is on the shelf. The answer is no.\n\nQuestion 3:\n- We are given that the book might not be resting on the table.\n- If something might not be the case, it means it's not necessarily the case. It's not the same as saying it must not be the case.\n- Therefore, we cannot infer that it's not the case that the book must be resting on the table. The answer is no.\n\nAnswer: yes, no, no"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 2: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 3: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\". The second statement negates B: \"Not B\". In logic, when we have \"A or B\" and \"Not B\", we can conclude A. This is a valid logical inference known as disjunctive syllogism. Therefore, we can indeed infer that the sunglasses are in her bag.\n\nQuestion 2:\n\"The sunglasses might not be perched on her head\" implies that it's possible they are not on her head. This is equivalent to saying \"It's not necessarily true that the sunglasses are perched on her head.\" This is the same as saying \"It's not the case that the sunglasses must be perched on her head.\" So yes, we can infer the second statement from the first.\n\nQuestion 3:\nThis is trickier. We have \"Either A or B\" and \"B might not be true\". However, \"B might not be true\" is not the same as \"B is definitely not true\". It only suggests a possibility that B is false, not a certainty. Without being certain that B is false, we cannot conclude with certainty that A must be true. Therefore, we cannot make this inference.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

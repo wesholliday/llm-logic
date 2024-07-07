@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If Ben ate pasta, then Kate ate the salad' together with 'Ben did not eat pasta', can we infer 'Kate did not eat the salad'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "code llama instruct 13B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: Identify the premises.\nThe given premises are:\n\n* If Ben ate pasta, then Kate ate the salad.\n* Ben did not eat pasta.\n\nStep 2: Evaluate the argument.\nWe can infer that Kate did not eat the salad by using modus tollens. Modus tollens is a logical rule that states \"if p implies q, and not-p, then not-q.\" In this case, we have \"If Ben ate pasta, then Kate ate the salad\" (p implies q), and \"Ben did not eat pasta\" (not-p). Therefore, we can conclude that \"Kate did not eat the salad\" (not-q).\n\nAnswer: yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 2: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 3: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are told \"Either the newspaper is in the driveway or it must be sitting on the porch\". This means at least one of those two statements must be true.\n- We are also told \"The newspaper might not be sitting on the porch\". This means it's possible the newspaper is not on the porch. \n- However, just because it might not be on the porch doesn't necessarily mean it is in the driveway. It could be somewhere else entirely.\n- Therefore, we cannot definitively infer that the newspaper is in the driveway.\n\nQuestion 2:\n- Again, we have \"Either the newspaper is in the driveway or it must be sitting on the porch\". \n- This time, we also have \"It's not the case that the newspaper must be sitting on the porch\". This means the newspaper is not definitely on the porch.\n- If the newspaper is not definitely on the porch, and we know it must be either in the driveway or on the porch, then it must be in the driveway.\n- Therefore, we can infer that the newspaper is in the driveway.\n\nQuestion 3:\n- \"The newspaper might not be sitting on the porch\" means there's a possibility it's not on the porch.\n- \"It's not the case that the newspaper must be sitting on the porch\" means it's not definitely on the porch.\n- These two statements are similar but not identical. Just because something might not be the case doesn't mean it definitely isn't the case.\n- Therefore, we cannot infer the second statement from the first with certainty.\n\nAnswer: no, yes, no"
+        }
+    ]
+}

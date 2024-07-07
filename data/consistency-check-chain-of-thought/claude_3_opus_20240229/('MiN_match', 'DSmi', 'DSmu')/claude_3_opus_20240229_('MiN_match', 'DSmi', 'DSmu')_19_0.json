@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: Yes, we can infer 'It's not the case that the sunglasses must be perched on her head' from 'The sunglasses might not be perched on her head'. If they might not be perched on her head, then it cannot be the case that they must be perched on her head.\n\nQuestion 2: No, we cannot infer 'The sunglasses are in her bag' from the given statements. 'The sunglasses might not be perched on her head' only tells us it's possible they are not on her head, but doesn't rule out the possibility completely. So we can't definitively conclude they must be in the bag.\n\nQuestion 3: Yes, in this case we can infer 'The sunglasses are in her bag'. If we know it's not the case that the sunglasses must be perched on her head, that eliminates one of the two possibilities given in the \"either/or\" statement. The only remaining possibility is that the sunglasses are in her bag.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

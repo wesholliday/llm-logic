@@ -1,0 +1,11 @@
+{
+    "user_prompt": "Suppose that increases to minimum wage, paid family leave, and student loan forgiveness are the most likely new laws. Only one new law will be passed this session. Congress watchers expect a minimum wage hike is most probable, followed by paid family leave, with loan forgiveness being much less likely. These are the only likely new laws, so if paid leave doesn't happen, then if a minimum wage hike doesn't happen, loan forgiveness will happen. Moreover, a minimum wage hike likely will happen and hence paid leave likely won't happen. Does it follow that it's likely that, if a minimum wage hike doesn't happen, loan forgiveness will?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break down the information provided:\n\n* **Possible Laws:** Minimum wage hike (MW), Paid family leave (PFL), Student loan forgiveness (SLF)\n* **Likelihood:** MW > PFL > SLF \n* **Only one law will pass.**\n* **If PFL doesn't happen and MW doesn't happen, then SLF will happen.**\n* **MW is likely, therefore PFL is unlikely.**\n\nWe need to determine if the following statement follows logically:\n\n**If a minimum wage hike doesn't happen, loan forgiveness will likely happen.**\n\nLet's consider the scenario where MW doesn't happen.  We know that only one law can pass. If MW doesn't pass, it's down to PFL or SLF.  We're told PFL is unlikely if MW is likely. However, we are evaluating the scenario *given* that MW *doesn't* happen. This makes the information about the relationship between MW and PFL irrelevant.\n\nWithout information about the likelihood of PFL *given* that MW doesn't happen, we can't definitively say whether SLF is likely.  It's possible, but not necessarily likely.\n\n**Answer: no** \n"
+        }
+    ]
+}

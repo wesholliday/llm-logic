@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 2: From 'The scarf might not be draped on the coat rack', can we infer 'It's not the case that the scarf must be draped on the coat rack'?\nQuestion 3: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?**\n\n* **Reasoning:** The first statement presents two possibilities, and the second statement casts doubt on one of those possibilities.  If the scarf might not be on the coat rack, then the only remaining possibility is that it's in the backpack.\n\n**Question 2: From 'The scarf might not be draped on the coat rack', can we infer 'It's not the case that the scarf must be draped on the coat rack'?**\n\n* **Reasoning:** Yes, these are logically equivalent. If something \"might not\" be the case, then it \"is not necessarily\" the case.\n\n**Question 3: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?**\n\n* **Reasoning:** This is the same logical structure as Question 1, just phrased slightly differently.  We're eliminating one possibility, leaving only the other.\n\n**Answer: yes, yes, yes** \n"
+        }
+    ]
+}

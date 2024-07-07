@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "NMu_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\nQuestion 2: From 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock might not be under the bed'?\nQuestion 3: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 4: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: \"The missing sock might not be under the bed\" implies uncertainty about the location of the sock. It suggests that there is a possibility that the sock is not under the bed. This statement does not confirm the sock's location; it only opens up the possibility that the sock could be elsewhere. Therefore, it is true that from this statement, we can infer that \"It's not the case that the missing sock must be under the bed,\" because the word \"must\" implies certainty, which is contradicted by the possibility that the sock might not be there.\n\nQuestion 2: \"It's not the case that the missing sock must be under the bed\" means that there is no necessity for the sock to be under the bed. This statement negates any certainty about the sock being under the bed. From this, we can infer that \"The missing sock might not be under the bed,\" because if it's not certain that the sock is under the bed, then it's possible that it might not be there.\n\nQuestion 3: \"Either the missing sock is in the laundry basket or it must be under the bed\" is a statement of two possibilities, one of which must be true. When we add the information \"It's not the case that the missing sock must be under the bed,\" we eliminate the second possibility, leaving us with only one option: the missing sock is in the laundry basket. Therefore, we can infer that \"The missing sock is in the laundry basket.\"\n\nQuestion 4: \"Either the missing sock is in the laundry basket or it must be under the bed\" again presents two possibilities. The additional statement \"The missing sock might not be under the bed\" does not eliminate the possibility that the sock could still be under the bed; it only suggests that it might not be. Since there is still a possibility that the sock is under the bed, we cannot definitively infer that \"The missing sock is in the laundry basket\" based solely on the information given.\n\nNow, I will provide the answers to all four questions:\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

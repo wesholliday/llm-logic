@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?\nQuestion 2: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 3: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?**\n\nReasoning: \"Might not\" implies that there's a possibility the newspaper is not on the porch. If there's a possibility it's not on the porch, then it's not guaranteed (\"must\") to be on the porch.\n\n**Question 2: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?**\n\nReasoning: We're given that the newspaper is either in the driveway or definitely on the porch. We're also told it might not be on the porch. Since it has to be in one of those two places, if it's potentially not on the porch, it must be in the driveway.\n\n**Question 3: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?**\n\nReasoning: This is very similar to question 2. We're told the newspaper is either in the driveway or definitely on the porch. The second statement tells us it's not definitely on the porch.  Therefore, it must be in the driveway.\n\n**Answer: yes, yes, yes** \n"
+        }
+    ]
+}

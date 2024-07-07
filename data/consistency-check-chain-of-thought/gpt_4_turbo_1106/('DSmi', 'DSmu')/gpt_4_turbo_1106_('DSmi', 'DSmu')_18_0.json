@@ -1,0 +1,18 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 2: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\n",
+    "system_prompt": "You will see a series of 2 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 2 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, the statement \"Either the watch is charging on the dresser or it must be on his wrist\" presents two possibilities. The additional statement \"The watch might not be on his wrist\" introduces uncertainty about the second possibility but does not eliminate it entirely. \"Might not\" implies that there is a possibility that the watch is not on his wrist, but it does not confirm that the watch is definitely not on his wrist. Therefore, we cannot conclusively infer that the watch is charging on the dresser because the possibility that it is on his wrist has not been ruled out.\n\nFor Question 2, the statement \"Either the watch is charging on the dresser or it must be on his wrist\" again presents two possibilities. The additional statement \"It's not the case that the watch must be on his wrist\" negates the necessity of the watch being on his wrist. This means that the watch being on his wrist is not a must, which implies that this possibility is ruled out. Since the two possibilities are mutually exclusive and one has been negated, we can infer that the watch is charging on the dresser.\n\nAnswer: no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 2: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 3: From 'The missing puzzle piece might not be blending in on the floor', can we infer 'It's not the case that the missing puzzle piece must be blending in on the floor'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1:**\n\n* **Premise 1:** Either the missing puzzle piece is in the box or it must be blending in on the floor.\n* **Premise 2:** It's not the case that the missing puzzle piece must be blending in on the floor. \n\nThis is a classic disjunctive syllogism. If one option of an \"either/or\" statement is false, the other must be true.\n\n**Question 2:**\n\n* **Premise 1:** Either the missing puzzle piece is in the box or it must be blending in on the floor.\n* **Premise 2:** The missing puzzle piece might not be blending in on the floor.\n\nHere, the second premise introduces uncertainty. Just because it *might not* be blending in doesn't mean it's definitely not.  We can't definitively say the piece is in the box.\n\n**Question 3:**\n\n* **Premise:** The missing puzzle piece might not be blending in on the floor.\n\nSaying something *might not* happen is different from saying it's definitely *not* happening. We cannot infer the stronger statement.\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

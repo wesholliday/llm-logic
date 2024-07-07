@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 2: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 3: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: The first premise states that the missing sock is either in the laundry basket or under the bed. The second premise negates the possibility that the sock must be under the bed. If it's not the case that the sock must be under the bed, then by the process of elimination using the first premise, the only remaining possibility is that the sock is in the laundry basket. Therefore, we can validly infer that the missing sock is in the laundry basket.\n\nQuestion 2: The first premise is the same as in Question 1. However, the second premise here is weaker - it only states that the sock might not be under the bed, allowing for the possibility that it could still be under the bed. This leaves open both possibilities from the first premise. We cannot eliminate the \"under the bed\" option conclusively. Therefore, we cannot validly infer that the sock must be in the laundry basket.\n\nQuestion 3: If the missing sock might not be under the bed, that means there's a possibility that it is not under the bed. This directly implies that it is not the case that the sock must be under the bed. If it must be under the bed, then the possibility of it not being under the bed would be excluded. Therefore, we can validly infer 'It's not the case that the missing sock must be under the bed' from 'The missing sock might not be under the bed'.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"The sunglasses might not be perched on her head\" suggests that there is a possibility that the sunglasses are not on her head. This implies uncertainty about the location of the sunglasses. The inference \"It's not the case that the sunglasses must be perched on her head\" means that it is not a certainty that the sunglasses are on her head. Since the original statement allows for the possibility that the sunglasses are not on her head, it supports the inference that it is not a certainty that they are. Therefore, the answer to the first question is 'yes'.\n\nQuestion 2: The statement \"Either the sunglasses are in her bag or they must be perched on her head\" presents two possibilities. If we know \"It's not the case that the sunglasses must be perched on her head,\" then we can eliminate the second option, leaving us with the only remaining possibility that \"The sunglasses are in her bag.\" Therefore, the answer to the second question is 'yes'.\n\nQuestion 3: The statement \"Either the sunglasses are in her bag or they must be perched on her head\" again presents two possibilities. However, the additional information \"The sunglasses might not be perched on her head\" does not eliminate the possibility that they could still be perched on her head; it only suggests that there is a possibility that they are not. Since this does not definitively rule out the option that the sunglasses are on her head, we cannot infer with certainty that \"The sunglasses are in her bag.\" Therefore, the answer to the third question is 'no'.\n\nAnswer: yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

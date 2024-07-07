@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Either the notebook is in the drawer or it is sitting on the nightstand. Also, the notebook isn't sitting on the nightstand. Can we infer that the notebook is in the drawer?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: Understand the given information\n\n* The notebook is either in the drawer or on the nightstand.\n* The notebook is not on the nightstand.\n\nStep 2: Consider the possible scenarios\n\n* Scenario 1: The notebook is in the drawer.\n* Scenario 2: The notebook is not in the drawer (since it's not on the nightstand).\n\nStep 3: Evaluate the possibilities\n\n* Scenario 1: If the notebook is in the drawer, then it's not on the nightstand, which matches the given information.\n* Scenario 2: If the notebook is not in the drawer, then it must be on the nightstand, which contradicts the given information that it's not on the nightstand.\n\nStep 4: Draw a conclusion\n\nBased on the evaluation, the only possible scenario that matches the given information is Scenario 1: The notebook is in the drawer. Therefore, we can infer that the notebook is indeed in the drawer.\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

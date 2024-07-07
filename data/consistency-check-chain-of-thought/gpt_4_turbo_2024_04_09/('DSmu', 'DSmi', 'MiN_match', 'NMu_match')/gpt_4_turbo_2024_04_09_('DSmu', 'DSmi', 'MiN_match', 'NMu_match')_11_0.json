@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 2: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'The jacket might not be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 3: From 'The jacket might not be hanging in the closet', can we infer 'It's not the case that the jacket must be hanging in the closet'?\nQuestion 4: From 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket might not be hanging in the closet'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have two statements: \"Either the jacket is draped over the chair or it must be hanging in the closet\" and \"It's not the case that the jacket must be hanging in the closet.\" The first statement presents a disjunction (either-or scenario). The second statement negates one of the disjuncts, specifically that the jacket must be hanging in the closet. According to the rules of disjunction elimination, if one disjunct is false, the other must be true. Therefore, we can infer that \"The jacket is draped over the chair.\"\n\nQuestion 2: The statements given are \"Either the jacket is draped over the chair or it must be hanging in the closet\" and \"The jacket might not be hanging in the closet.\" The second statement implies a possibility that the jacket is not hanging in the closet but does not definitively negate that the jacket must be hanging there. Since the necessity (must) of the jacket being in the closet isn't conclusively negated, we cannot definitively conclude that \"The jacket is draped over the chair\" based solely on these statements.\n\nQuestion 3: The statement \"The jacket might not be hanging in the closet\" suggests a possibility that the jacket is not in the closet, but it does not assert this as a certainty. The statement \"It's not the case that the jacket must be hanging in the closet\" means that it is not necessarily true that the jacket is in the closet. The possibility (might not) does not equate to a definitive negation of necessity (must not), so we cannot infer the latter from the former.\n\nQuestion 4: The statement \"It's not the case that the jacket must be hanging in the closet\" negates the necessity of the jacket being in the closet. This implies that there is at least a possibility that the jacket is not in the closet. Therefore, from this statement, we can infer that \"The jacket might not be hanging in the closet.\"\n\nAnswer: yes, no, no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

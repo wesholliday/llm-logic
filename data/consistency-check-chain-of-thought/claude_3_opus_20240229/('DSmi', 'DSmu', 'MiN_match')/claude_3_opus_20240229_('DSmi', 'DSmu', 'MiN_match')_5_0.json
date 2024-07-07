@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'The phone might not be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 2: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 3: From 'The phone might not be ringing in the kitchen', can we infer 'It's not the case that the phone must be ringing in the kitchen'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1: \n- We are told \"Either the phone is in the living room or it must be ringing in the kitchen\". This means if the phone is not in the living room, it has to be ringing in the kitchen.\n- We are also told \"The phone might not be ringing in the kitchen\". This leaves open the possibility that the phone is not ringing in the kitchen.\n- If the phone is not ringing in the kitchen, based on the first statement, it must be in the living room. \n- However, the second statement doesn't definitively say the phone is not ringing in the kitchen, only that it might not be. So we can't be certain the phone is in the living room.\n\nQuestion 2:\n- Again, we have \"Either the phone is in the living room or it must be ringing in the kitchen\". \n- Now we are told \"It's not the case that the phone must be ringing in the kitchen\". This means the phone is not definitely ringing in the kitchen.\n- If the phone is not ringing in the kitchen, based on the first statement, it must be in the living room.\n- Unlike question 1, here we can be certain the phone is not ringing in the kitchen. Therefore, we can infer the phone is in the living room.\n\nQuestion 3:\n- \"The phone might not be ringing in the kitchen\" means there's a possibility the phone is not ringing in the kitchen. \n- \"It's not the case that the phone must be ringing in the kitchen\" means the phone is not definitely ringing in the kitchen.\n- These are not the same thing. Just because something might not be the case doesn't mean it's definitely not the case.\n- So from \"The phone might not be ringing in the kitchen\", we cannot infer \"It's not the case that the phone must be ringing in the kitchen\".\n\nAnswer: no, yes, no"
+        }
+    ]
+}

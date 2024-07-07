@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "NMu_match",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'It's not the case that the book must be resting on the table', can we infer 'The book might not be resting on the table'?\nQuestion 3: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 4: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4o-2024-05-13",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step.\n\n**Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?**\n\n- The first statement is a disjunction: \"Either the book is on the shelf or it must be resting on the table.\"\n- The second statement says, \"The book might not be resting on the table,\" which means it is possible that the book is not on the table.\n- If it is possible that the book is not on the table, it does not necessarily mean it is on the shelf. The book could be somewhere else entirely.\n- Therefore, we cannot definitively infer that the book is on the shelf.\n\n**Question 2: From 'It's not the case that the book must be resting on the table', can we infer 'The book might not be resting on the table'?**\n\n- The statement \"It's not the case that the book must be resting on the table\" means that it is not necessary for the book to be on the table.\n- If it is not necessary for the book to be on the table, then it is possible that the book is not on the table.\n- Therefore, we can infer that the book might not be resting on the table.\n\n**Question 3: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?**\n\n- The statement \"The book might not be resting on the table\" means that it is possible for the book to be somewhere other than the table.\n- If it is possible for the book to be somewhere other than the table, then it is not necessary for the book to be on the table.\n- Therefore, we can infer that it is not the case that the book must be resting on the table.\n\n**Question 4: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?**\n\n- The first statement is a disjunction: \"Either the book is on the shelf or it must be resting on the table.\"\n- The second statement says, \"It's not the case that the book must be resting on the table,\" which means the second part of the disjunction is false.\n- If the second part of the disjunction is false, then the first part must be true.\n- Therefore, we can infer that the book is on the shelf.\n\nAnswer: no, yes, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

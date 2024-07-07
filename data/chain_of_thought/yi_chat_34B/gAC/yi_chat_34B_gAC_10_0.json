@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Given that 'If the dog was inside, then the cat was outside' is true and 'The cat was outside' is true, does it follow that 'The dog was inside' is true?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "yi chat 34B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep by Step Reasoning:\n\n1. We are given two pieces of information:\n   - \"If the dog was inside, then the cat was outside\" (conditional statement)\n   - \"The cat was outside\" (consequent of the conditional statement)\n\n2. The first piece of information is a conditional statement, which means that if the antecedent (the part before 'then') is true, the consequent (the part after 'then') must also be true.\n\n3. We are told that the cat was outside, which matches the consequent of the conditional statement.\n\n4. Since the consequent is true, we can conclude that the antecedent (the dog being inside) must also be true for the conditional statement to be true.\n\n5. Therefore, if \"The cat was outside\" is true, it follows that \"The dog was inside\" must also be true.\n\nAnswer: yes<|im_end|>\n\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

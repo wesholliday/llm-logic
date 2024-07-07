@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "NMu_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Fido might not be in the garden', can we infer 'It's not the case that Fido must be in the garden'?\nQuestion 2: From 'It's not the case that Fido must be in the garden', can we infer 'Fido might not be in the garden'?\nQuestion 3: From 'Either Fido is inside or Fido must be in the garden' together with 'It's not the case that Fido must be in the garden', can we infer 'Fido is inside'?\nQuestion 4: From 'Either Fido is inside or Fido must be in the garden' together with 'Fido might not be in the garden', can we infer 'Fido is inside'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: \"Fido might not be in the garden\" implies uncertainty about Fido's location. It suggests that there is a possibility that Fido is not in the garden. This statement contrasts with the certainty implied by \"Fido must be in the garden.\" Therefore, if Fido might not be in the garden, it is indeed not the case that Fido must be in the garden, because \"must\" implies necessity, which is contradicted by \"might not.\"\n\nQuestion 2: \"It's not the case that Fido must be in the garden\" indicates that there is no necessity for Fido to be in the garden. This does not necessarily mean that Fido is not in the garden, but it opens up the possibility that Fido might not be in the garden. Therefore, from this statement, we can infer that \"Fido might not be in the garden.\"\n\nQuestion 3: \"Either Fido is inside or Fido must be in the garden\" is a logical disjunction that presents two possibilities. If we know that \"It's not the case that Fido must be in the garden,\" then the necessity of Fido being in the garden is ruled out, leaving only the other part of the disjunction to be true. Hence, we can infer that \"Fido is inside.\"\n\nQuestion 4: \"Either Fido is inside or Fido must be in the garden\" again presents two possibilities. However, the statement \"Fido might not be in the garden\" does not eliminate the possibility that Fido is in the garden; it only suggests that there is a possibility that Fido is not there. Since the necessity of Fido being in the garden is not ruled out by \"might not,\" we cannot definitively infer that \"Fido is inside\" based solely on these premises.\n\nNow, I will provide the answers to all four questions:\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

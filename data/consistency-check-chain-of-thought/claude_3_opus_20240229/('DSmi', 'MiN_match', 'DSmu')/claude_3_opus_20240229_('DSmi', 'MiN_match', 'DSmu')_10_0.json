@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 2: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?\nQuestion 3: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nThe first premise states that the newspaper is either in the driveway or on the porch. The second premise says the newspaper might not be on the porch. This leaves open the possibility that the newspaper is not on the porch, but it doesn't definitively say it's not on the porch. So we can't be certain the newspaper is in the driveway, since there's still a chance it could be on the porch.\n\nQuestion 2:\nYes, if the newspaper might not be on the porch, then it logically follows that it's not the case that the newspaper must be on the porch. \"Might not be\" contradicts \"must be\".\n\nQuestion 3:\nNow we have the first premise stating the newspaper is either in the driveway or must be on the porch. The second premise here says it's not the case that the newspaper must be on the porch. Combining these, the only remaining possibility from the first premise is that the newspaper is in the driveway. So yes, in this case we can infer the newspaper is in the driveway.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

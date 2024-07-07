@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 2: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement \"Either the shoes are in the closet or they must be lined up by the door\" is a disjunction (OR statement). This means one of these two options must be true.\nThe second statement \"The shoes might not be lined up by the door\" doesn't definitively rule out the possibility that the shoes are lined up by the door. It only suggests uncertainty.\nBecause there's still a possibility that the shoes are lined up by the door, we can't conclusively say that the shoes are in the closet.\n\nQuestion 2:\n\"The shoes might not be lined up by the door\" implies uncertainty about the shoes' location.\n\"It's not the case that the shoes must be lined up by the door\" is a stronger statement, indicating that it's not necessary for the shoes to be by the door.\nThe first statement (might not) does indeed imply the second statement (not must), because if something might not be the case, then it's not a necessity.\n\nQuestion 3:\nWe have \"Either the shoes are in the closet or they must be lined up by the door\" as a disjunction.\nWe also have \"It's not the case that the shoes must be lined up by the door\", which eliminates the second part of the disjunction.\nIn a disjunction, if one option is false, the other must be true for the whole statement to be true.\nTherefore, we can conclude that the shoes are in the closet.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

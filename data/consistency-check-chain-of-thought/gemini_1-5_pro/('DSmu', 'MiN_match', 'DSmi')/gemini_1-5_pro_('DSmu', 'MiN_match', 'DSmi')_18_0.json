@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 2: From 'The watch might not be on his wrist', can we infer 'It's not the case that the watch must be on his wrist'?\nQuestion 3: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1:**\n\n* **Premise 1:** Either the watch is charging on the dresser or it must be on his wrist.\n* **Premise 2:** It's not the case that the watch must be on his wrist.\n\nSince the watch *must* be in one of the two locations, and we know it's not on his wrist, it must be on the dresser.\n\n**Question 2:**\n\n* **Premise:** The watch might not be on his wrist.\n\nThis statement leaves open the possibility that the watch IS on his wrist.  It doesn't definitively tell us it's NOT on his wrist.\n\n**Question 3:**\n\n* **Premise 1:** Either the watch is charging on the dresser or it must be on his wrist.\n* **Premise 2:** The watch might not be on his wrist.\n\nWhile the first premise gives us two options, the second premise doesn't eliminate the possibility of the watch being on his wrist.  Therefore, we can't definitively say it's charging on the dresser.\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 2: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\n",
+    "system_prompt": "You will see a series of 2 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 2 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, the first premise is a logical disjunction: the notebook is either in the drawer or on the nightstand. The second premise negates the second part of the disjunction, stating that it is not the case that the notebook must be sitting on the nightstand. If it is not the case that the notebook must be on the nightstand, then the only remaining possibility from the original disjunction is that the notebook is in the drawer. Therefore, we can infer that the notebook is in the drawer.\n\nFor Question 2, the first premise remains the same as in Question 1. However, the second premise states that the notebook might not be sitting on the nightstand, which implies uncertainty rather than a definitive negation. The use of \"might not\" indicates a possibility that the notebook is not on the nightstand, but it does not rule out the possibility that it could be there. Because there is no definitive negation of the notebook being on the nightstand, we cannot infer with certainty that the notebook is in the drawer based on the information given.\n\nAnswer: yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

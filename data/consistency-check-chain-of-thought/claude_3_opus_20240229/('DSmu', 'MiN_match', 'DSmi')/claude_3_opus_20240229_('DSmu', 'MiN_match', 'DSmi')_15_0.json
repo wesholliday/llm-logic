@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\nQuestion 2: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?\nQuestion 3: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are given \"Either the pen is in my bag or it must be on my desk\". This is a disjunction - at least one of the disjuncts must be true.\n- We are also given \"It's not the case that the pen must be on my desk\". This negates the second disjunct.\n- If the second disjunct is false, then for the overall disjunction to be true, the first disjunct must be true.\n- Therefore, we can infer \"The pen is in my bag\". The answer to Question 1 is yes.\n\nQuestion 2:\n- \"The pen might not be on my desk\" means it's possible the pen is not on the desk. \n- This is not the same as \"It's not the case that the pen must be on my desk\", which asserts the pen is definitely not required to be on the desk.\n- Just because something might not be the case doesn't mean it must not be the case. The pen could still be on the desk, even if it might not be.\n- Therefore, we cannot make the inference in Question 2. The answer is no.\n\nQuestion 3:\n- This combines the premises from Questions 1 and 2.\n- From Question 1, we know the disjunction \"Either the pen is in my bag or it must be on my desk\".\n- But in Question 2, we determined that \"The pen might not be on my desk\" is not strong enough to negate the second disjunct.\n- Without being able to negate the second disjunct, we cannot infer the first disjunct is true.\n- Therefore, the inference in Question 3 is not valid. The answer is no.\n\nAnswer: yes, no, no"
+        }
+    ]
+}

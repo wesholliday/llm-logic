@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\nQuestion 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 3: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \n'The milk might not be chilling in the fridge' means there is a possibility that the milk is not in the fridge. \n'It's not the case that the milk must be chilling in the fridge' means the milk is not necessarily in the fridge.\nThese two statements are equivalent, so yes, we can infer the second from the first.\n\nQuestion 2:\n'Either the milk is on the counter or it must be chilling in the fridge' sets up two possibilities for the milk's location.\n'The milk might not be chilling in the fridge' introduces uncertainty about whether the milk is in the fridge.\nHowever, this uncertainty alone is not enough to definitively conclude the milk must be on the counter. It could still be in the fridge, we just aren't certain. So no, we cannot infer 'The milk is on the counter'.\n\nQuestion 3:\nAs in Question 2, we have 'Either the milk is on the counter or it must be chilling in the fridge'.\nBut now we also have 'It's not the case that the milk must be chilling in the fridge', which rules out the fridge possibility.\nWith the fridge ruled out, the only remaining possibility from the initial either/or statement is that the milk is on the counter. \nSo yes, in this case we can infer that 'The milk is on the counter'.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

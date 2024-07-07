@@ -1,0 +1,11 @@
+{
+    "user_prompt": "Suppose that the Lakers, Warriors, and Celtics have the best odds to win the NBA championship. Based on expert projections, it is most likely the Lakers will win, followed closely by the Warriors, with the Celtics having much lower odds. These are the only top contenders, so if the Warriors don\u2019t win, then if the Lakers don\u2019t win, the Celtics will win. Moreover, it is most likely the Lakers will win and hence that the Warriors won\u2019t win. Does it follow that it is likely that, if the Lakers don\u2019t win, the Celtics will?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Okay, let's break this down:\n\n* **Premise 1:** Lakers are most likely to win.\n* **Premise 2:** Warriors are the second most likely.\n* **Premise 3:** Celtics have a much lower chance than either the Lakers or Warriors.\n* **Premise 4:** If neither the Lakers nor Warriors win, the Celtics will win.\n* **Premise 5:**  It's most likely the Lakers will win, and therefore the Warriors won't. \n\nWe're asked if it's likely the Celtics will win if the Lakers don't. \n\n**Reasoning:**\n\nWhile it's true the Celtics win if *both* the Lakers and Warriors lose (Premise 4), we know the Warriors are already unlikely to win *because* the Lakers are likely to win (Premise 5).  \n\nSo, the scenario where the Lakers *and* Warriors lose is even less likely than the Warriors winning alone. Since the Celtics' chances are already much lower than the Warriors', this makes their chances in this specific scenario very slim.\n\n**Answer: No** \n"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The watch might not be on his wrist', can we infer 'It's not the case that the watch must be on his wrist'?\nQuestion 2: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 3: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\n\"The watch might not be on his wrist\" implies that there's a possibility the watch is not on his wrist. If something might not be the case, then it's not necessarily true. Therefore, it's not the case that the watch must be on his wrist. The statement \"It's not the case that the watch must be on his wrist\" is a logical inference from the given statement.\n\nQuestion 2:\nWe're given two pieces of information:\n1. \"Either the watch is charging on the dresser or it must be on his wrist\"\n2. \"The watch might not be on his wrist\"\n\nThe first statement presents two options as mutually exclusive and exhaustive. The second statement suggests that one of these options (it must be on his wrist) is not necessarily true. However, this doesn't automatically prove that the watch is charging on the dresser. It only weakens one possibility without confirming the other.\n\nQuestion 3:\nAgain, we have two pieces of information:\n1. \"Either the watch is charging on the dresser or it must be on his wrist\"\n2. \"It's not the case that the watch must be on his wrist\"\n\nThis time, the second statement directly negates one of the options in the first statement. Since the first statement presents these as the only two possibilities, and we've ruled out one of them, we can logically conclude that the other must be true. Therefore, we can infer that the watch is charging on the dresser.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

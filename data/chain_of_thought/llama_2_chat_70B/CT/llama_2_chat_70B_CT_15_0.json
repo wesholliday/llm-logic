@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If Sam took a plane, then Erin took a train', can we infer 'If Erin did not take a train, then Sam did not take a plane'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nMy reasoning is as follows:\n\n1. If Sam took a plane, then Erin took a train (given statement)\n2. If Erin took a train, then Sam took a plane (reverse of step 1)\n3. If Erin did not take a train, then Sam did not take a plane (negation of step 2)\n\nTherefore, we can infer \"If Erin did not take a train, then Sam did not take a plane\" from the given statement.\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\nQuestion 2: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\n",
+    "system_prompt": "You will see a series of 2 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 2 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, the statement \"Either the pen is in my bag or it must be on my desk\" suggests a dichotomy where there are only two possibilities for the location of the pen. The additional statement \"The pen might not be on my desk\" introduces uncertainty about the pen being on the desk but does not eliminate the possibility that the pen could be on the desk. Since there is still a possibility that the pen is on the desk, we cannot definitively infer that the pen is in the bag.\n\nFor Question 2, the statement \"Either the pen is in my bag or it must be on my desk\" again presents two exclusive options. The additional statement \"It's not the case that the pen must be on my desk\" negates the necessity of the pen being on the desk, which means the pen cannot be on the desk. Since the two locations are presented as the only options and one is negated, we can infer that the pen must be in the other location, which is the bag.\n\nAnswer: no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

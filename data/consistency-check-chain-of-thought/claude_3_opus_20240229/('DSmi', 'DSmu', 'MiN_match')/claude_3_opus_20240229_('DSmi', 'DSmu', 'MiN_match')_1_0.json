@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 3: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \nThe first statement says the book is either on the shelf or on the table. The second statement says the book might not be on the table. From these, we cannot definitively conclude the book is on the shelf, because \"might not be on the table\" still allows the possibility that it is on the table. The book could be on the shelf or the table based on the given information.\n\nQuestion 2:\nThe first statement is the same as before. The second statement now says it's not the case that the book must be on the table. In other words, the book is not necessarily on the table. Combined with the first statement that it's either on the shelf or table, if it's not definitely on the table, then it must be on the shelf. So in this case we can infer the book is on the shelf.\n\nQuestion 3:\n\"The book might not be resting on the table\" means there's a possibility it's not on the table. \"It's not the case that the book must be resting on the table\" is a stronger statement, asserting that the book is not necessarily/definitely on the table. The second statement logically follows from the first, but the first does not necessarily imply the second. Saying something \"might not\" be the case leaves open the possibility that it \"must\" be the case, whereas stating it's not the case that something \"must\" be true rules out that possibility entirely.\n\nAnswer: no, yes, no"
+        }
+    ]
+}

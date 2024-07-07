@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 2: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?\nQuestion 3: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?**\n\n* **Reasoning:** This is an example of disjunctive syllogism. We have two options (cookies in the jar or hidden in the pantry) and we eliminate one (not hidden in the pantry). This leaves only one valid option.\n\n**Question 2: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?**\n\n* **Reasoning:**  \"Might not\" implies possibility, while \"must\" implies necessity.  Just because the cookies might not be in the pantry doesn't mean they couldn't be. \n\n**Question 3: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?**\n\n* **Reasoning:**  Similar to question 2, the statement \"the cookies might not be hidden in the pantry\" doesn't definitively eliminate the possibility that they are in the pantry.  Therefore, we can't definitively say the cookies are in the jar.\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

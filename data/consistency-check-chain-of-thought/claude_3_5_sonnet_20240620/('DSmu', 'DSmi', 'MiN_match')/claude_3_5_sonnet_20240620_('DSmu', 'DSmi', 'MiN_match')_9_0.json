@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 2: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 3: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nWe have two premises:\n1. Either the missing sock is in the laundry basket or it must be under the bed.\n2. It's not the case that the missing sock must be under the bed.\n\nThis is a classic case of disjunctive syllogism. We have an \"either-or\" statement, and we're negating one of the options. In this case, since we know it's not the case that the sock must be under the bed, the only remaining option is that it's in the laundry basket. Therefore, we can indeed infer that the missing sock is in the laundry basket.\n\nQuestion 2:\nWe have two premises:\n1. Either the missing sock is in the laundry basket or it must be under the bed.\n2. The missing sock might not be under the bed.\n\nThis case is different from the first. Saying that the sock \"might not\" be under the bed is not the same as saying it \"must not\" be under the bed. The sock might not be under the bed, but it also might be. This doesn't eliminate the possibility of it being under the bed, so we can't use disjunctive syllogism here. We cannot infer with certainty that the sock is in the laundry basket.\n\nQuestion 3:\nWe need to consider the relationship between \"might not\" and \"must\":\n- If something \"might not\" be the case, it means it's possible that it's not the case.\n- If something \"must\" be the case, it means it's not possible for it to not be the case.\n\nSo, if we say \"The missing sock might not be under the bed,\" we are indeed saying that it's not necessarily true that the sock must be under the bed. In other words, \"might not\" contradicts \"must\". Therefore, we can infer from \"The missing sock might not be under the bed\" that \"It's not the case that the missing sock must be under the bed.\"\n\nNow, let's provide the answers:\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

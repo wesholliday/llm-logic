@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 2: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \nFrom the statement \"Either the shoes are in the closet or they must be lined up by the door\", we know that one of those two options must be true. If the shoes are not lined up by the door, then they must be in the closet.\nThe second statement \"The shoes might not be lined up by the door\" introduces uncertainty about the shoes being by the door. However, this doesn't necessarily mean they aren't by the door, just that it's a possibility they aren't.\nSo while the statements suggest the shoes may be in the closet, we can't say that with certainty. The shoes could still be by the door even though they might not be.\n\nQuestion 2:\nThe statement \"The shoes might not be lined up by the door\" means there is a possibility the shoes are not by the door. \nThe statement \"It's not the case that the shoes must be lined up by the door\" is saying the shoes are not required to be by the door.\nThese two statements are logically equivalent. If it's possible the shoes are not by the door, then it's not required that they are by the door. And if it's not required the shoes are by the door, then it's possible they are not by the door.\n\nQuestion 3:\nFrom the first statement, we know the shoes are either in the closet or by the door. \nThe second statement tells us the shoes are not required to be by the door.\nPutting these together, if the shoes are not by the door, then the only other option based on the first statement is that they are in the closet.\nSo yes, from those two statements combined, we can logically conclude the shoes must be in the closet.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

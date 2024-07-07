@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?**\n\n* **Reasoning:** This is an application of disjunctive syllogism. We have two options presented, and one is ruled out. This leaves only one remaining possibility.\n\n**Question 2: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?**\n\n* **Reasoning:**  \"Might not\" implies possibility. If something \"might not\" be true, it means it's possible it's not true. This is the same as saying it's not necessarily true, or \"it's not the case that it must be true.\"\n\n**Question 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?**\n\n* **Reasoning:** While the second statement suggests the book might not be on the table, it doesn't definitively rule it out.  Therefore, we can't definitively conclude the book is on the shelf. \n\n**Answer: yes, yes, no** \n"
+        }
+    ]
+}

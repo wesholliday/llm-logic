@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 2: From 'The scarf might not be draped on the coat rack', can we infer 'It's not the case that the scarf must be draped on the coat rack'?\nQuestion 3: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\". The second statement negates B: \"Not B\". In logic, when we have \"A or B\" and \"Not B\", we can conclude A. This is a valid logical inference known as disjunctive syllogism. Therefore, we can indeed infer that \"The scarf is stuffed in my backpack\".\n\nQuestion 2:\n\"The scarf might not be draped on the coat rack\" means that it's possible that the scarf is not on the coat rack. This is different from saying \"It's not the case that the scarf must be draped on the coat rack\". The latter is a stronger statement, ruling out the necessity of the scarf being on the coat rack. While the former allows for the possibility, it doesn't rule out the necessity. Therefore, we cannot make this inference.\n\nQuestion 3:\nThis is trickier. We have \"Either A or B\" and \"B might not be true\". The statement \"B might not be true\" is weaker than \"Not B\". It allows for the possibility that B is false, but doesn't definitively state that B is false. Because of this, we can't use disjunctive syllogism as we did in Question 1. We don't have enough information to conclude A with certainty.\n\nAnswer: yes, no, no"
+        }
+    ]
+}

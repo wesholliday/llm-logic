@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "NMu_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses might not be perched on her head'?\nQuestion 4: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4o-2024-05-13",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step.\n\n**Question 1:**\n- Statement: \"The sunglasses might not be perched on her head.\"\n- Inference: \"It's not the case that the sunglasses must be perched on her head.\"\n- Reasoning: If something \"might not\" be true, it implies that it is not necessarily true. Therefore, if the sunglasses might not be perched on her head, it means that it is not a requirement for them to be perched on her head.\n- Conclusion: Yes, we can infer that.\n\n**Question 2:**\n- Statements: \"Either the sunglasses are in her bag or they must be perched on her head\" and \"It's not the case that the sunglasses must be perched on her head.\"\n- Inference: \"The sunglasses are in her bag.\"\n- Reasoning: The first statement is a disjunction (either A or B). The second statement negates B (the sunglasses must be perched on her head). If B is false, then A (the sunglasses are in her bag) must be true.\n- Conclusion: Yes, we can infer that.\n\n**Question 3:**\n- Statement: \"It's not the case that the sunglasses must be perched on her head.\"\n- Inference: \"The sunglasses might not be perched on her head.\"\n- Reasoning: If it is not necessary for the sunglasses to be perched on her head, then it is possible (they might) that they are not perched on her head.\n- Conclusion: Yes, we can infer that.\n\n**Question 4:**\n- Statements: \"Either the sunglasses are in her bag or they must be perched on her head\" and \"The sunglasses might not be perched on her head.\"\n- Inference: \"The sunglasses are in her bag.\"\n- Reasoning: The first statement is a disjunction (either A or B). The second statement indicates that it is possible that B is not true, but it does not definitively negate B. Therefore, we cannot conclusively determine that A is true based on the given information.\n- Conclusion: No, we cannot infer that.\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

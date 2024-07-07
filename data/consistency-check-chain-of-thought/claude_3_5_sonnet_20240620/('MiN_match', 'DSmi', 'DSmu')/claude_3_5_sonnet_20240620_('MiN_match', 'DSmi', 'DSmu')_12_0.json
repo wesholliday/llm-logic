@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\nQuestion 2: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 3: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\n\"The toy might not be sitting on the bookshelf\" implies that there's a possibility the toy is not on the bookshelf. If something might not be the case, then it's not necessarily true. Therefore, it's not the case that the toy must be sitting on the bookshelf. The statement \"It's not the case that the toy must be sitting on the bookshelf\" is a logical inference from the given statement.\n\nQuestion 2:\nWe have two pieces of information:\n1. \"Either the toy is in the toy box or it must be sitting on the bookshelf\"\n2. \"The toy might not be sitting on the bookshelf\"\n\nThe first statement gives us two options, and the second statement tells us that one of these options (the bookshelf) is not certain. However, just because the bookshelf option is uncertain doesn't necessarily mean the toy box option is true. The toy could be in neither place. We can't definitively conclude that the toy is in the toy box based on this information.\n\nQuestion 3:\nAgain, we have two pieces of information:\n1. \"Either the toy is in the toy box or it must be sitting on the bookshelf\"\n2. \"It's not the case that the toy must be sitting on the bookshelf\"\n\nThis time, the second statement directly negates one of the options in the first statement. If it's not the case that the toy must be on the bookshelf, and we know it must be either in the toy box or on the bookshelf, then logically, it must be in the toy box.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

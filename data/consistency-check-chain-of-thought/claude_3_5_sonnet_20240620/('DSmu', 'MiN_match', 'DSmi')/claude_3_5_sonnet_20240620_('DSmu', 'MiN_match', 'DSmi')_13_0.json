@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\nQuestion 3: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first premise states: \"Either the milk is on the counter or it must be chilling in the fridge.\"\nThe second premise states: \"It's not the case that the milk must be chilling in the fridge.\"\nThis is a classic example of disjunctive syllogism. We have two options, and we're told that one of them is false. Therefore, the other must be true. So yes, we can infer that the milk is on the counter.\n\nQuestion 2:\nThe statement \"The milk might not be chilling in the fridge\" implies that it's possible for the milk to not be in the fridge.\nIf something might not be the case, then it cannot be necessarily true.\nTherefore, from \"The milk might not be chilling in the fridge,\" we can indeed infer \"It's not the case that the milk must be chilling in the fridge.\"\n\nQuestion 3:\nThe first premise is the same as in Question 1: \"Either the milk is on the counter or it must be chilling in the fridge.\"\nThe second premise is: \"The milk might not be chilling in the fridge.\"\nThis second premise is weaker than the one in Question 1. It only says that the milk might not be in the fridge, not that it definitely isn't in the fridge.\nBecause of this, we can't definitively conclude that the milk is on the counter. It could still be in the fridge, even though it might not be.\nTherefore, we cannot infer with certainty that the milk is on the counter from these premises.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

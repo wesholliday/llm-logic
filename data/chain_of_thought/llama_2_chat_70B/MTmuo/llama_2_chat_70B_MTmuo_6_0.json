@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'It's not the case that Bob must have chosen pasta' together with 'If Sue chose pizza, then Bob must have chosen pasta', can we infer 'Sue did not choose pizza'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: Understand the given information\n\n* \"It's not the case that Bob must have chosen pasta\" means that Bob did not necessarily choose pasta.\n* \"If Sue chose pizza, then Bob must have chosen pasta\" means that if Sue chose pizza, then Bob was forced to choose pasta.\n\nStep 2: Analyze the situation\n\nIf Sue chose pizza, then according to the second statement, Bob must have chosen pasta. However, we know that Bob did not necessarily choose pasta (from the first statement). This means that there is a possibility that Sue did not choose pizza, since if she had, Bob would have been forced to choose pasta.\n\nStep 3: Draw a conclusion\n\nBased on the analysis, we can infer that Sue did not choose pizza. This is because if she had chosen pizza, Bob would have been forced to choose pasta, but we know that Bob did not necessarily choose pasta. Therefore, the only possibility is that Sue did not choose pizza.\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

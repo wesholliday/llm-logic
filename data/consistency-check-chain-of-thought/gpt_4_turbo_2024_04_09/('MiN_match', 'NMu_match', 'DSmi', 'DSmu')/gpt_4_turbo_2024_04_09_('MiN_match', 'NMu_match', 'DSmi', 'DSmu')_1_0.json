@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "NMu_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 2: From 'It's not the case that the book must be resting on the table', can we infer 'The book might not be resting on the table'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 4: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\n- \"The book might not be resting on the table\" implies that there is a possibility that the book is not on the table. \n- \"It's not the case that the book must be resting on the table\" means that it is not necessarily true that the book is on the table; there is a possibility that it might not be.\n- Therefore, if it might not be on the table, it follows that it is not necessarily on the table. Hence, the inference is valid.\n\nQuestion 2: From 'It's not the case that the book must be resting on the table', can we infer 'The book might not be resting on the table'?\n- \"It's not the case that the book must be resting on the table\" implies there is a possibility that the book is not on the table.\n- \"The book might not be resting on the table\" directly states that there is a possibility that the book is not on the table.\n- Thus, if it is not necessarily on the table, it is possible that it is not on the table. Hence, the inference is valid.\n\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\n- \"Either the book is on the shelf or it must be resting on the table\" sets up a condition where the book must be in one of two places.\n- \"The book might not be resting on the table\" implies there is a possibility that the book is not on the table, but it does not eliminate the possibility that the book could still be on the table.\n- Since there remains a possibility that the book could be on the table, we cannot definitively conclude that the book is on the shelf. Hence, the inference is not valid.\n\nQuestion 4: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\n- \"Either the book is on the shelf or it must be resting on the table\" again sets up a condition where the book must be in one of two places.\n- \"It's not the case that the book must be resting on the table\" implies that the book does not necessarily have to be on the table, opening up the possibility that it could be elsewhere.\n- Since it is not necessarily on the table, and those are the only two options provided, the book must be on the shelf. Hence, the inference is valid.\n\nAnswer: yes, yes, no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

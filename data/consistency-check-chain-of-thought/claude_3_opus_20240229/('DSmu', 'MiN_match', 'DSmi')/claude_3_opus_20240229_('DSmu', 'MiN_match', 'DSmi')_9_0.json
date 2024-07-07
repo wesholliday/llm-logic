@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 2: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\nQuestion 3: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nThe first premise states that the missing sock is either in the laundry basket or under the bed. The second premise negates the possibility that the sock must be under the bed. If we combine these two premises, we can conclude that the sock must be in the laundry basket, as it is the only remaining option.\n\nQuestion 2:\nIf the missing sock might not be under the bed, it means there is a possibility that it is not under the bed. This is equivalent to saying that it's not necessarily the case that the sock must be under the bed. So, we can infer 'It's not the case that the missing sock must be under the bed' from 'The missing sock might not be under the bed'.\n\nQuestion 3:\nThe first premise presents two possibilities: the sock is either in the laundry basket or under the bed. The second premise states that the sock might not be under the bed, which means there is a possibility that it is not under the bed. However, this does not completely rule out the possibility of the sock being under the bed. Therefore, we cannot definitively conclude that the sock is in the laundry basket, as there is still a chance it could be under the bed.\n\nAnswer: yes,yes,no"
+        }
+    ]
+}

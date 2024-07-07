@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 3: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Reasoning:**\n\n**Question 1:** The first statement says the keys are either in the drawer or dangling. The second statement introduces uncertainty about the keys dangling. This uncertainty doesn't rule out the keys being in the drawer. \n\n**Question 2:** The first statement is the same as before. The second statement now definitively says the keys are NOT dangling.  Since the first statement gives us only two options, and we've eliminated one, the other must be true.\n\n**Question 3:** \"Might not\" implies possibility, while \"it's not the case\" implies certainty.  We cannot infer a definite statement from one expressing possibility.\n\n**Answer: yes, yes, no** \n"
+        }
+    ]
+}

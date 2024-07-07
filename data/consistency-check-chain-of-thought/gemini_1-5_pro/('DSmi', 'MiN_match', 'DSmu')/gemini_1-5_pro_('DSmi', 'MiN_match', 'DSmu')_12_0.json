@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 2: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\nQuestion 3: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?**\n\n* **Reasoning:** The first statement gives us two possibilities. The second statement tells us the second possibility might not be true.  If one possibility might not be true, and it has to be one of the two, then the other possibility must be true.\n\n**Question 2: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?**\n\n* **Reasoning:**  \"Might not\" implies there's a possibility the toy isn't on the bookshelf. If there's even a chance it's not on the bookshelf, then it's not guaranteed (\"must\") to be on the bookshelf.\n\n**Question 3: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?**\n\n* **Reasoning:** This is very similar to question 1. We're told one of two things must be true. The second statement eliminates one of the possibilities. Therefore, the remaining possibility must be true. \n\n**Answer: yes, yes, yes** \n"
+        }
+    ]
+}

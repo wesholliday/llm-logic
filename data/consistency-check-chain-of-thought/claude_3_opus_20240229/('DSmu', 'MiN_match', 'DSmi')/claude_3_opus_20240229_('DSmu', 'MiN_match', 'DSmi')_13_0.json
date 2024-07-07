@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\nQuestion 3: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nThe first premise states that either the milk is on the counter or it must be in the fridge. The second premise negates the second part of the disjunction, stating that it's not the case that the milk must be in the fridge. Using the disjunctive syllogism rule, if we have a disjunction (P or Q) and the negation of one disjunct (not Q), we can infer the other disjunct (P). So in this case, we can indeed infer that the milk is on the counter.\n\nQuestion 2:\nThe statement \"The milk might not be chilling in the fridge\" is equivalent to saying \"It's possible that the milk is not chilling in the fridge\". This is not the same as \"It's not the case that the milk must be chilling in the fridge\". The latter means the milk is not necessarily in the fridge, while the former just states the possibility that it's not in the fridge. So we cannot infer the second statement from the first.\n\nQuestion 3:\nThis is similar to Question 1, but with a key difference. The second premise here is \"The milk might not be chilling in the fridge\", which as discussed in Question 2, is not the same as \"It's not the case that the milk must be chilling in the fridge\". We don't have the strict negation of the second part of the disjunction, so we cannot apply the disjunctive syllogism rule. Therefore, we cannot infer that the milk is on the counter in this case.\n\nAnswer: yes,no,no"
+        }
+    ]
+}

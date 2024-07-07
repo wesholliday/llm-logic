@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 2: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 3: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are given: \n  1) Either the cookies are in the jar or they must be hidden in the pantry.\n  2) It's not the case that the cookies must be hidden in the pantry.\n- From 2), we can conclude the cookies are not in the pantry.\n- Then, looking at 1), if the cookies are not in the pantry, they must be in the jar.\n- Therefore, yes, we can infer the cookies are in the jar.\n\nQuestion 2:\n- We are given:\n  1) Either the cookies are in the jar or they must be hidden in the pantry.\n  2) The cookies might not be hidden in the pantry.\n- From 2), we cannot conclude with certainty that the cookies are not in the pantry. They still could be.\n- Therefore, we cannot use the reasoning from Question 1 to definitively conclude the cookies are in the jar.\n- So no, we cannot infer the cookies are in the jar.\n\nQuestion 3:\n- We are given: The cookies might not be hidden in the pantry.\n- If something \"might not\" be the case, that means it's possible that it is not the case.\n- However, this is not the same as saying it is definitely not the case.\n- \"The cookies must be hidden in the pantry\" means the cookies are definitely, necessarily in the pantry.\n- \"The cookies might not be hidden in the pantry\" allows for the possibility they are not in the pantry, but doesn't rule out that they could still be there.\n- Therefore, no, we cannot infer 'It's not the case that the cookies must be hidden in the pantry'.\n\nAnswer: yes, no, no"
+        }
+    ]
+}

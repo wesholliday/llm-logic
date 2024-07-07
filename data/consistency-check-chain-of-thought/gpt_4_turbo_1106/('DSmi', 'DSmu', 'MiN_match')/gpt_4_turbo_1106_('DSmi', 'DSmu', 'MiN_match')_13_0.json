@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 3: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The first premise is \"Either the milk is on the counter or it must be chilling in the fridge.\" This is an inclusive or statement, meaning that one or both conditions could be true. The second premise is \"The milk might not be chilling in the fridge,\" which implies uncertainty about the milk being in the fridge but does not definitively exclude the possibility. Since the second statement does not confirm that the milk is definitely not in the fridge, we cannot infer with certainty that the milk is on the counter. Therefore, the answer is no.\n\nQuestion 2: Again, the first premise is \"Either the milk is on the counter or it must be chilling in the fridge.\" The second premise here is \"It's not the case that the milk must be chilling in the fridge,\" which means that the milk is definitely not in the fridge. Since the first premise presents an either/or scenario and the second premise rules out one of the options, we can infer that the milk must be on the counter. Therefore, the answer is yes.\n\nQuestion 3: The premise is \"The milk might not be chilling in the fridge,\" which suggests that there is a possibility that the milk is not in the fridge. However, this does not equate to \"It's not the case that the milk must be chilling in the fridge,\" which would imply that the milk definitely cannot be in the fridge. \"Might not be\" indicates uncertainty, while \"must not be\" indicates certainty. Therefore, from the given statement, we cannot infer that it's certain the milk isn't in the fridge. Thus, the answer is no.\n\nAnswer: no, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

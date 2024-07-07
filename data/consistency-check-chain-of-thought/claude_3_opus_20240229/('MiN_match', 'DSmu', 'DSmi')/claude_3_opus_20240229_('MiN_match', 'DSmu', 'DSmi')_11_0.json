@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The jacket might not be hanging in the closet', can we infer 'It's not the case that the jacket must be hanging in the closet'?\nQuestion 2: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 3: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'The jacket might not be hanging in the closet', can we infer 'The jacket is draped over the chair'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: 'The jacket might not be hanging in the closet' means there is a possibility that the jacket is not in the closet. 'It's not the case that the jacket must be hanging in the closet' means the jacket is not necessarily in the closet. These two statements are logically equivalent. So we can infer the second from the first.\n\nQuestion 2: We are given that either the jacket is over the chair or it must be in the closet. We are also given that it's not the case that the jacket must be in the closet. This eliminates the second possibility in the either/or statement. Therefore, the only remaining possibility is that the jacket is draped over the chair. So yes, we can make that inference.\n\nQuestion 3: In this case, we are given the same either/or statement as before. However, now we are told that the jacket might not be in the closet. This is not the same as saying it definitely is not in the closet. There is still a possibility it could be in the closet. Therefore, we cannot rule out that possibility, and so we cannot definitively conclude the jacket must be over the chair. The inference is not valid in this case.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

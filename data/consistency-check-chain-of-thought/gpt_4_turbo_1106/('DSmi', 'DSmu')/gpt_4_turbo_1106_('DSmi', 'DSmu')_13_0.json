@@ -1,0 +1,18 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\n",
+    "system_prompt": "You will see a series of 2 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 2 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step.\n\nQuestion 1: The first statement is a logical disjunction, which means that at least one of the conditions must be true. The conditions are that the milk is either on the counter or in the fridge. The second statement introduces a possibility that the milk might not be chilling in the fridge, but it does not confirm that the milk is definitely not in the fridge. Since the second statement does not definitively exclude the fridge as a location for the milk, we cannot infer with certainty that the milk is on the counter. It's still possible that the milk is in the fridge because \"might not be\" does not equate to \"is not.\"\n\nQuestion 2: Again, the first statement is a logical disjunction. The second statement this time is stronger; it negates the necessity of the milk chilling in the fridge. This means that it is not necessarily true that the milk is in the fridge. Since the disjunction must be true and the second part (the milk must be chilling in the fridge) is negated, the only remaining possibility that can make the first statement true is that the milk is on the counter. Therefore, we can infer that the milk is on the counter.\n\nAnswer: no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

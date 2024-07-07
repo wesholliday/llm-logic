@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nThe first premise states \"Either the book is on the shelf or it must be resting on the table\". This is a disjunction, meaning at least one of the two options must be true. The second premise \"It's not the case that the book must be resting on the table\" negates the second option in the disjunction. If the second option is false, then for the disjunction to be true, the first option \"The book is on the shelf\" must be true. Therefore, from these two premises, we can infer that \"The book is on the shelf\".\n\nQuestion 2:\n\"The book might not be resting on the table\" means there is a possibility that the book is not on the table. This is equivalent to saying \"It's not certain that the book is resting on the table\". However, this is not the same as \"It's not the case that the book must be resting on the table\". The latter is a stronger statement, asserting that it's definitely not the case that the book has to be on the table. So while the second statement implies the first, the first does not necessarily imply the second. Therefore, we cannot infer \"It's not the case that the book must be resting on the table\" from \"The book might not be resting on the table\".\n\nQuestion 3:\nThis is similar to Question 1, but with the second premise replaced by \"The book might not be resting on the table\". As discussed in Question 2, this premise is weaker than \"It's not the case that the book must be resting on the table\". It leaves open the possibility that the book is on the table, just not with certainty. Therefore, it's not strong enough to eliminate the second option in the disjunction from the first premise. Without being able to rule out that the book is on the table, we cannot infer with certainty that \"The book is on the shelf\". The book could still be on either the shelf or the table.\n\nAnswer: yes,no,no"
+        }
+    ]
+}

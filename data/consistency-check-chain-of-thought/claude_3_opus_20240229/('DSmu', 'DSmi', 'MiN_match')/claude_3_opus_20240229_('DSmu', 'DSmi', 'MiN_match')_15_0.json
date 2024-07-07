@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\nQuestion 2: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\nQuestion 3: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are given that either the pen is in the bag or it must be on the desk. This is a disjunction (an \"or\" statement).\n- We are also told that it's not the case that the pen must be on the desk. In other words, it's false that the pen must be on the desk.\n- If it's false that the pen must be on the desk, then the second part of the disjunction is false.\n- In a disjunction, if one part is false, the other part must be true for the whole disjunction to be true.\n- Therefore, we can infer that the pen is in the bag. The answer is yes.\n\nQuestion 2:\n- Again, we have the disjunction that either the pen is in the bag or it must be on the desk.\n- This time, we are told that the pen might not be on the desk. This is different from saying it's not the case that the pen must be on the desk.\n- \"Might not\" allows for the possibility that the pen is on the desk, but doesn't necessitate it.\n- So the second part of the disjunction could still be true, and thus we can't infer with certainty that the pen is in the bag.\n- The answer is no.\n\nQuestion 3:\n- We are told that the pen might not be on the desk.\n- \"Might not\" is the negation of \"must\". If something might not be the case, then it cannot be the case that it must be the case.\n- Therefore, we can infer that it's not the case that the pen must be on the desk.\n- The answer is yes.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

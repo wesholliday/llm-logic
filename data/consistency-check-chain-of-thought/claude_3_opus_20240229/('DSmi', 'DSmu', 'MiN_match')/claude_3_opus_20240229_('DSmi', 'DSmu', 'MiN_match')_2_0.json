@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 3: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are given \"Either the keys are in the drawer or they must be dangling in the cabinet\". This means at least one of those two statements must be true.\n- We are also given \"The keys might not be dangling in the cabinet\". This means it's possible the keys are not in the cabinet. \n- However, this doesn't necessarily mean the keys are not in the cabinet. They still could be.\n- Therefore, we can't definitively conclude the keys are in the drawer. The answer is no.\n\nQuestion 2:\n- Again, we have \"Either the keys are in the drawer or they must be dangling in the cabinet\", meaning at least one is true.\n- Now we are given \"It's not the case that the keys must be dangling in the cabinet\". This negates the second possibility.\n- If the second part is not true, and we know at least one part must be true, then the first part must be true.\n- Therefore, we can conclude the keys are in the drawer. The answer is yes.\n\nQuestion 3:\n- \"The keys might not be dangling in the cabinet\" means it's possible the keys are not in the cabinet.\n- \"It's not the case that the keys must be dangling in the cabinet\" means the keys are not definitely in the cabinet.\n- These are not the same thing. Just because something might not be true doesn't mean it must not be true.\n- Therefore, we cannot make the inference. The answer is no.\n\nAnswer: no, yes, no"
+        }
+    ]
+}

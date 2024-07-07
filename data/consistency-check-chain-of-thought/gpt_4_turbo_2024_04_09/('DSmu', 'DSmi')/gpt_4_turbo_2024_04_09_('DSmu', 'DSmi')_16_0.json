@@ -1,0 +1,18 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 2: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\n",
+    "system_prompt": "You will see a series of 2 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 2 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, the first statement is a logical disjunction: \"Either the scarf is stuffed in my backpack or it must be draped on the coat rack.\" This means that at least one of the conditions must be true. The second statement negates the second part of the disjunction: \"It's not the case that the scarf must be draped on the coat rack.\" This means that the condition that the scarf must be draped on the coat rack is false. Since in a disjunction if one part is false, the other must be true to satisfy the disjunction, we can infer that the scarf is indeed stuffed in my backpack.\n\nFor Question 2, the first statement remains the same as in Question 1. The second statement, however, is \"The scarf might not be draped on the coat rack.\" This statement implies a possibility that the scarf is not on the coat rack, but it does not definitively negate the presence of the scarf on the coat rack as a necessity. It leaves room for the possibility that the scarf could still be on the coat rack. Therefore, we cannot definitively conclude that the scarf must be stuffed in the backpack just based on this possibility.\n\nAnswer: yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

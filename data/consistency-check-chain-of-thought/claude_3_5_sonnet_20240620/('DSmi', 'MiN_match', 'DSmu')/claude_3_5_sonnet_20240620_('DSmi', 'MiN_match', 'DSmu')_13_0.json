@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\nQuestion 3: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\". The second statement says that B might not be true. However, this doesn't necessarily mean that A must be true. The milk might not be in the fridge, but it also might be. We don't have enough information to conclude definitively that the milk is on the counter.\n\nQuestion 2:\nThis question is about the relationship between \"might not\" and \"must\". If something \"might not\" be the case, then it logically follows that it's not a necessity or a \"must\". In other words, if there's a possibility that the milk is not in the fridge, then it can't be true that it must be in the fridge.\n\nQuestion 3:\nHere we have the same disjunction as in Question 1: \"Either A or B\". But now, instead of \"B might not be true\", we have \"It's not the case that B must be true\". This is a stronger statement than in Question 1. If B is not a must, and we know that either A or B must be true, then A must be true. In this case, if the milk is not necessarily in the fridge, and it must be either on the counter or in the fridge, then it must be on the counter.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

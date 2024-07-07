@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 3: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?**\n\n* **Reasoning:** \"Might not\" implies there's a possibility the keys are not dangling. This directly contradicts the idea that the keys \"must\" be dangling. \n\n**Question 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?**\n\n* **Reasoning:** We're given two possibilities, and the second statement weakens one possibility. Since \"might not\" means it's possible they aren't dangling, it strengthens the likelihood they are in the drawer. However, it doesn't definitively prove they are in the drawer.\n\n**Question 3: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?**\n\n* **Reasoning:** This time, the second statement eliminates the possibility of the keys \"must be dangling.\"  Since we're left with only one option from the first statement, we can definitively conclude the keys are in the drawer.\n\n**Answer: yes, no, yes** \n"
+        }
+    ]
+}

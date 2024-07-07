@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If the glip was slogged, then the glip was tragged' together with 'The glip was not tragged', can we infer 'The glip was not slogged'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 3 instruct 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break it down step by step:\n\n1. We are given: \"If the glip was slogged, then the glip was tragged\" (conditional statement)\n2. We can rewrite this as: \"If not tragged, then not slogged\" (contrapositive form)\n3. We are also given: \"The glip was not tragged\" (fact)\n4. Now, we can apply the rewritten conditional statement from step 2 to the fact from step 3:\n   If not tragged, then not slogged\n   The glip was not tragged\n   \u2234 The glip was not slogged\n\nAnswer: yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

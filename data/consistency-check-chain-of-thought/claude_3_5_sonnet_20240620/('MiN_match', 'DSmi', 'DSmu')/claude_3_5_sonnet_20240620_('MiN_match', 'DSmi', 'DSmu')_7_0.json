@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\nQuestion 2: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 3: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe statement \"The remote control might not be hiding under the couch\" implies that there's a possibility that the remote control is not under the couch. This is equivalent to saying that it's not certain or necessary that the remote control is under the couch. Therefore, we can indeed infer that \"It's not the case that the remote control must be hiding under the couch.\"\n\nQuestion 2:\nWe have two premises here:\n1. \"Either the remote control is on the coffee table or it must be hiding under the couch\"\n2. \"The remote control might not be hiding under the couch\"\n\nThe first premise gives us two options, and the second premise tells us that one of these options (hiding under the couch) is not certain. However, just because it's not certain doesn't mean it's impossible. The remote control could still be under the couch, even if it's not certain. Therefore, we cannot definitively conclude that the remote control is on the coffee table.\n\nQuestion 3:\nAgain, we have two premises:\n1. \"Either the remote control is on the coffee table or it must be hiding under the couch\"\n2. \"It's not the case that the remote control must be hiding under the couch\"\n\nThis time, the second premise directly negates one of the options in the first premise. If it's not the case that the remote control must be hiding under the couch, then according to the first premise, the only remaining option is that the remote control is on the coffee table. Therefore, we can infer that the remote control is on the coffee table.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

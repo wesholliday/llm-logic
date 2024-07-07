@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 2: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 3: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: We are given that either the toy is in the toy box or it must be on the bookshelf. We are also told the toy might not be on the bookshelf. This leaves open the possibility that the toy is on the bookshelf, just not with certainty. So we cannot definitively conclude the toy is in the toy box. The toy could still be on the bookshelf.\n\nQuestion 2: Here we are given the same initial either/or premise - the toy is either in the box or must be on the shelf. But now we are told it is not the case that the toy must be on the shelf. This rules out the shelf possibility from the either/or, leaving us to conclude that the toy is in fact in the toy box.\n\nQuestion 3: If the toy might not be on the bookshelf, that means there's a possibility it is not on the bookshelf. But saying it might not be on the bookshelf is not the same as saying it's not the case that it must be on the bookshelf. There's a subtle difference. \"Might not be\" allows for the possibility of \"is\", while \"not the case that must be\" rules out the \"must\". So we cannot infer the latter from the former.\n\nAnswer: no, yes, no"
+        }
+    ]
+}

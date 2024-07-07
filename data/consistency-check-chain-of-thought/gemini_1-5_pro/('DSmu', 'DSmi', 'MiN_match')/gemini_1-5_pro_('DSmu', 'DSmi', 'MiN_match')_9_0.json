@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 2: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 3: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1:**\n\n* **Premise 1:** Either the missing sock is in the laundry basket or it must be under the bed.\n* **Premise 2:** It's not the case that the missing sock must be under the bed.\n\nSince the sock must be in one of the two locations, and we know it's not under the bed, it must be in the laundry basket.\n\n**Question 2:**\n\n* **Premise 1:** Either the missing sock is in the laundry basket or it must be under the bed.\n* **Premise 2:** The missing sock might not be under the bed.\n\nWhile this premise tells us the sock *might* not be under the bed, it doesn't rule out the possibility that it is.  Therefore, we can't definitively say it's in the laundry basket.\n\n**Question 3:**\n\n* **Premise:** The missing sock might not be under the bed.\n\nThis statement leaves open the possibility that the sock IS under the bed.  It doesn't definitively tell us the sock is NOT under the bed.\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

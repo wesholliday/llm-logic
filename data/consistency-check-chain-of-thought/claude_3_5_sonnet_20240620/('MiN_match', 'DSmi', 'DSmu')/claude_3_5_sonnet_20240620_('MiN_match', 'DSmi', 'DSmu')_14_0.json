@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 2: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe statement \"The shoes might not be lined up by the door\" implies that there's a possibility the shoes are not lined up by the door. This is equivalent to saying that it's not necessary (or not a must) for the shoes to be lined up by the door. Therefore, we can indeed infer \"It's not the case that the shoes must be lined up by the door\" from the given statement.\n\nQuestion 2:\nWe have two premises here:\n1. \"Either the shoes are in the closet or they must be lined up by the door\"\n2. \"The shoes might not be lined up by the door\"\n\nThe first premise gives us two options. The second premise tells us that the second option (shoes must be lined up by the door) is not necessarily true. However, this doesn't automatically mean that the first option (shoes are in the closet) must be true. The shoes could be somewhere else entirely. We don't have enough information to conclude definitively that the shoes are in the closet.\n\nQuestion 3:\nAgain, we have two premises:\n1. \"Either the shoes are in the closet or they must be lined up by the door\"\n2. \"It's not the case that the shoes must be lined up by the door\"\n\nThis time, the second premise directly negates one of the options in the first premise. If it's not the case that the shoes must be lined up by the door, and we know from the first premise that they must be either in the closet or lined up by the door, then we can logically conclude that they must be in the closet.\n\nNow, let's answer all three questions:\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

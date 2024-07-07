@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'The umbrella might not be tucked away in the closet', can we infer 'The umbrella is in the car'?\nQuestion 2: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'It's not the case that the umbrella must be tucked away in the closet', can we infer 'The umbrella is in the car'?\nQuestion 3: From 'The umbrella might not be tucked away in the closet', can we infer 'It's not the case that the umbrella must be tucked away in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement gives us two possibilities: the umbrella is either in the car or in the closet.\nThe second statement says the umbrella might not be in the closet.\nHowever, \"might not be\" doesn't mean \"is definitely not\". It only introduces uncertainty.\nWe can't conclude for certain that the umbrella is in the car, because it could still be in the closet.\n\nQuestion 2:\nAgain, we start with two possibilities: the umbrella is either in the car or in the closet.\nThe second statement here is stronger: it's not the case that the umbrella must be in the closet.\nThis eliminates the second possibility from our original statement.\nIf it's not in the closet, and those were the only two options, then it must be in the car.\n\nQuestion 3:\n\"The umbrella might not be tucked away in the closet\" introduces uncertainty about the umbrella's location in the closet.\n\"It's not the case that the umbrella must be tucked away in the closet\" is a stronger statement that rules out the necessity of the umbrella being in the closet.\nIf something might not be true, then it's correct to say that it's not necessarily true.\nTherefore, we can infer the second statement from the first.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

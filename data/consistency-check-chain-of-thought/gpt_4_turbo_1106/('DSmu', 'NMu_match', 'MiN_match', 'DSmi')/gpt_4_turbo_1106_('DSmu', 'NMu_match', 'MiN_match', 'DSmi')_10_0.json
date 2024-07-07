@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "NMu_match",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 2: From 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper might not be sitting on the porch'?\nQuestion 3: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?\nQuestion 4: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have a disjunction that says the newspaper is either in the driveway or it must be on the porch. We also have a negation that says it's not the case that the newspaper must be on the porch. If it must not be on the porch, then the only remaining option from the disjunction is that the newspaper is in the driveway. Therefore, we can infer that the newspaper is in the driveway.\n\nQuestion 2: The statement 'It's not the case that the newspaper must be sitting on the porch' implies that there is no necessity for the newspaper to be on the porch. This does not necessarily mean that the newspaper is not on the porch, but it does mean that it might not be there. So, we can infer that the newspaper might not be sitting on the porch.\n\nQuestion 3: If the newspaper might not be sitting on the porch, this implies that there is a possibility that the newspaper is not on the porch. This is equivalent to saying that it is not necessarily the case that the newspaper is on the porch. Therefore, we can infer 'It's not the case that the newspaper must be sitting on the porch'.\n\nQuestion 4: The statement 'Either the newspaper is in the driveway or it must be sitting on the porch' presents two possibilities. The additional information 'The newspaper might not be sitting on the porch' introduces uncertainty about the porch but does not eliminate the possibility that the newspaper could still be there. Since the statement does not rule out the possibility of the newspaper being on the porch, we cannot definitively infer that the newspaper is in the driveway based solely on the possibility that it might not be on the porch.\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

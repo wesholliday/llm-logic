@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "NMu_match",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 2: From 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf might not be draped on the coat rack'?\nQuestion 3: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 4: From 'The scarf might not be draped on the coat rack', can we infer 'It's not the case that the scarf must be draped on the coat rack'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: We have a logical disjunction (an \"either/or\" statement) and a possibility that one of the conditions might not be true. The statement \"Either the scarf is stuffed in my backpack or it must be draped on the coat rack\" suggests that there are two possibilities. The additional information \"The scarf might not be draped on the coat rack\" introduces uncertainty about the second condition but does not confirm it as false. Since we do not have a definitive statement that the scarf is not on the coat rack, we cannot infer with certainty that it must be in the backpack. Therefore, the answer is no.\n\nQuestion 2: The statement \"It's not the case that the scarf must be draped on the coat rack\" is a negation of a necessity, which implies that the scarf is not necessarily on the coat rack. This allows for the possibility that the scarf might not be draped on the coat rack. Therefore, the answer is yes.\n\nQuestion 3: Here we have the same logical disjunction as in Question 1, but this time it is paired with a definitive negation: \"It's not the case that the scarf must be draped on the coat rack.\" This negation tells us that the scarf definitely is not on the coat rack, leaving only one possibility from the original \"either/or\" statement: the scarf must be stuffed in the backpack. Therefore, the answer is yes.\n\nQuestion 4: The statement \"The scarf might not be draped on the coat rack\" expresses a possibility that the scarf is not on the coat rack. However, this does not necessarily mean that it is definitively not on the coat rack. The phrase \"might not be\" indicates uncertainty, not certainty. Therefore, we cannot infer the stronger statement \"It's not the case that the scarf must be draped on the coat rack,\" which would imply that the scarf definitely cannot be on the coat rack. Therefore, the answer is no.\n\nAnswer: no, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

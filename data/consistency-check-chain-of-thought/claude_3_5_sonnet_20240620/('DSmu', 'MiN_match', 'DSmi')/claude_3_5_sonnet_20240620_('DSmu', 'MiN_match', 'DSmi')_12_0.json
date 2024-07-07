@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 2: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\nQuestion 3: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer that the toy is in the toy box.\n\nQuestion 2:\n\"The toy might not be sitting on the bookshelf\" implies that it's possible for the toy to not be on the bookshelf.\nIf something might not be the case, then it cannot be a must.\nTherefore, we can infer that \"It's not the case that the toy must be sitting on the bookshelf\".\n\nQuestion 3:\nThis is trickier. Let's break it down:\n- We have \"Either A or B\" (A: toy in box, B: toy must be on shelf)\n- We also have \"The toy might not be on the shelf\"\nHowever, \"might not be\" is not the same as \"is not\". It only suggests a possibility.\nWe can't definitively conclude that the toy is not on the shelf, only that it might not be.\nWithout certainty about the toy not being on the shelf, we can't infer that it must be in the box.\n\nTherefore, we cannot make the inference in this case.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

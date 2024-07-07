@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "NMu_match",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys might not be dangling in the cabinet'?\nQuestion 3: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\nQuestion 4: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: We have a logical disjunction (an \"either/or\" statement) and a negation of one of the disjuncts. The statement is \"Either the keys are in the drawer or they must be dangling in the cabinet,\" and we also know \"It's not the case that the keys must be dangling in the cabinet.\" Since the second statement negates the possibility of the keys being in the cabinet, and the first statement presents a dichotomy, we can infer that the keys must be in the drawer. So the answer is 'yes'.\n\nQuestion 2: The statement \"It's not the case that the keys must be dangling in the cabinet\" implies that there is no necessity for the keys to be in the cabinet. This does not necessarily mean they are not there, but it does mean that they might not be there. So the answer is 'yes', we can infer that the keys might not be dangling in the cabinet.\n\nQuestion 3: The statement \"The keys might not be dangling in the cabinet\" suggests that there is a possibility that the keys are not in the cabinet. This is different from saying \"It's not the case that the keys must be dangling in the cabinet,\" which denies the necessity rather than asserting the possibility. However, if the keys might not be dangling in the cabinet, it follows that it is not a necessity that they are there. So the answer is 'yes', we can infer \"It's not the case that the keys must be dangling in the cabinet.\"\n\nQuestion 4: The statement \"Either the keys are in the drawer or they must be dangling in the cabinet\" presents two possibilities. The additional information \"The keys might not be dangling in the cabinet\" does not eliminate the possibility that the keys could still be dangling in the cabinet; it only suggests that it's not a certainty. Without the certainty that the keys are not in the cabinet, we cannot definitively conclude that they are in the drawer based on this information alone. So the answer is 'no', we cannot infer that the keys are in the drawer solely based on the possibility that they might not be dangling in the cabinet.\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Either the pen is in my bag or it is on my desk. Also, the pen isn't on my desk. Can we infer that the pen is in my bag?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: Understand the given information\n\n* The pen is either in my bag or on my desk.\n* The pen is not on my desk.\n\nStep 2: Consider the possible scenarios\n\n* Scenario 1: The pen is in my bag.\n* Scenario 2: The pen is not in my bag.\n\nStep 3: Evaluate each scenario based on the given information\n\n* Scenario 1: The pen is in my bag. This scenario is consistent with the given information, as the pen could be in my bag and not on my desk.\n* Scenario 2: The pen is not in my bag. This scenario is inconsistent with the given information, as the pen cannot be on my desk if it's not in my bag.\n\nStep 4: Draw a conclusion based on the evaluation\n\nSince Scenario 1 is consistent with the given information and Scenario 2 is inconsistent, we can infer that the pen is in my bag.\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

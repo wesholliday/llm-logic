@@ -1,0 +1,11 @@
+{
+    "user_prompt": "If Lisa bought the red shirt, then Mark bought the blue shirt. Also, Mark bought the blue shirt. Can we infer that Lisa bought the red shirt?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break this down:\n\n* **Statement 1:** If Lisa bought the red shirt, then Mark bought the blue shirt.\n* **Statement 2:** Mark bought the blue shirt.\n\nWe're asked if we can be certain Lisa bought the red shirt.  Notice that Statement 1 only tells us what happens IF Lisa bought the red shirt. It doesn't guarantee she did. \n\nWhile Mark buying the blue shirt aligns with Statement 1, it could have happened even if Lisa didn't buy the red shirt. There might be other reasons Mark bought the blue shirt.\n\nAnswer: no \n"
+        }
+    ]
+}

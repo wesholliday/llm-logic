@@ -1,0 +1,18 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\n",
+    "system_prompt": "You will see a series of 2 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 2 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, the statement \"Either the keys are in the drawer or they must be dangling in the cabinet\" sets up a logical disjunction where the keys must be in one of two places: either in the drawer or definitely dangling in the cabinet. The second statement, \"The keys might not be dangling in the cabinet,\" introduces a possibility that the keys are not in the cabinet, but it does not definitively exclude the cabinet as a location for the keys. Since this statement only suggests a possibility and does not confirm the absence of the keys from the cabinet, we cannot conclusively infer that the keys must be in the drawer. There remains a possibility that the keys could still be in the cabinet.\n\nFor Question 2, the statement \"Either the keys are in the drawer or they must be dangling in the cabinet\" again sets up a logical disjunction. The second statement, \"It's not the case that the keys must be dangling in the cabinet,\" definitively states that the keys are not necessarily in the cabinet. This negation of the necessity that the keys are in the cabinet implies that the only remaining option within the disjunction is that the keys are in the drawer. Therefore, we can infer that the keys are indeed in the drawer.\n\nAnswer: no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

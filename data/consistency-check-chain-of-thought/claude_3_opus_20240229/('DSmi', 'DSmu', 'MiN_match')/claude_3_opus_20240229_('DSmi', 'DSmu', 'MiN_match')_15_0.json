@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\nQuestion 2: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\nQuestion 3: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step-by-step:\n\nQuestion 1: \n- We are told \"Either the pen is in my bag or it must be on my desk\". This means one of those two options must be true.\n- We are also told \"The pen might not be on my desk\". This leaves open the possibility that the pen is not on the desk.\n- However, just because the pen might not be on the desk doesn't necessarily mean it is in the bag. It could be somewhere else entirely.\n- Therefore, we cannot definitively infer that the pen is in the bag.\n\nQuestion 2:\n- Again, we have \"Either the pen is in my bag or it must be on my desk\", meaning one of those must be true.\n- This time, we are told \"It's not the case that the pen must be on my desk\". In other words, it is not necessarily on the desk.\n- If it's not necessarily on the desk, and we know it must be either in the bag or on the desk, then the only remaining option is that it is in the bag.\n- So in this case, yes, we can infer the pen is in the bag.\n\nQuestion 3:\n- \"The pen might not be on my desk\" suggests the pen is not necessarily on the desk, but it could still possibly be there.\n- \"It's not the case that the pen must be on my desk\" is a stronger statement. It means the pen is definitely not required to be on the desk.\n- Just because something might not be the case doesn't mean it must not be the case. There's a difference between possibility and certainty.\n- Therefore, we cannot infer the second statement from the first. The pen could still possibly be on the desk even if it might not be.\n\nAnswer: no, yes, no"
+        }
+    ]
+}

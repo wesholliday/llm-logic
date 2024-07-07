@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Suppose that pizza, burgers, and tacos are the most frequently ordered takeout foods. According to restaurant data, pizza likely will be the top takeout item ordered, followed by burgers, with tacos ordered much less frequently. These foods lead takeout orders, so if burgers aren\u2019t the top takeout item ordered, then if pizza isn\u2019t, tacos will be. Moreover, pizza likely will lead takeout orders and hence burgers likely won\u2019t. Does it follow that it\u2019s likely that, if pizza isn\u2019t the top takeout item ordered, tacos will be?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break down the information given:\n\n1. Pizza is likely to be the top takeout item ordered.\n2. Burgers are the second most likely to be the top takeout item ordered.\n3. Tacos are ordered much less frequently than pizza and burgers.\n4. If burgers aren\u2019t the top takeout item, then if pizza isn\u2019t, tacos will be.\n5. Since pizza likely will lead takeout orders, burgers likely won\u2019t be the top.\n\nFrom point 4, we have a conditional statement that if burgers aren\u2019t the top, then if pizza isn\u2019t the top, tacos will be. This means that tacos are the least likely to be the top unless both pizza and burgers are not the top.\n\nGiven that pizza is likely to be the top, the only scenario where tacos could be the top is if pizza is not the top. Since burgers are also less likely to be the top if pizza is likely to lead, then it follows that if pizza isn't the top (which is an unlikely scenario), the next likely candidate according to the information provided would be tacos, because burgers are also unlikely to lead if pizza is likely to lead.\n\nTherefore, based on the information given, it does follow that it\u2019s likely that, if pizza isn\u2019t the top takeout item ordered, tacos will be.\n\nAnswer: yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

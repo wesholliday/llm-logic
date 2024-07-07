@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe statement \"The sunglasses might not be perched on her head\" implies uncertainty. It suggests that there's a possibility that the sunglasses are not on her head. If something might not be the case, then it cannot be a must. Therefore, we can indeed infer that \"It's not the case that the sunglasses must be perched on her head.\"\n\nQuestion 2:\nWe have two premises here:\n1. \"Either the sunglasses are in her bag or they must be perched on her head\"\n2. \"It's not the case that the sunglasses must be perched on her head\"\n\nThe first premise gives us two options, and the second premise eliminates one of those options. Since it's not the case that the sunglasses must be on her head, the only remaining option is that they are in her bag. This is a valid logical inference.\n\nQuestion 3:\nHere, we have:\n1. \"Either the sunglasses are in her bag or they must be perched on her head\"\n2. \"The sunglasses might not be perched on her head\"\n\nWhile the second statement suggests uncertainty about the sunglasses being on her head, it doesn't completely rule out that possibility. The sunglasses might not be on her head, but they also might be. This uncertainty doesn't allow us to definitively conclude that the sunglasses are in her bag. The \"must\" in the first statement is not negated by the \"might not\" in the second statement.\n\nNow, I'm ready to answer all the questions:\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

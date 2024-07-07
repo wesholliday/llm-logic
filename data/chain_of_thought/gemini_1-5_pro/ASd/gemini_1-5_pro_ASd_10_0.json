@@ -1,0 +1,11 @@
+{
+    "user_prompt": "From 'If the order is placed, then the item will ship', can we infer 'If the order is placed and the item is out of stock, then it will ship'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break this down:\n\n* **Original statement:** If the order is placed, then the item will ship. This implies that placing an order is enough to guarantee shipping.\n* **Statement to infer:** If the order is placed AND the item is out of stock, then it will ship. This adds an extra condition (out of stock) to the original statement.\n\nThe original statement doesn't tell us anything about what happens if an item is out of stock. It's possible the item won't ship if it's out of stock. \n\nTherefore, we cannot logically infer the second statement from the first.\n\n**Answer: no** \n"
+        }
+    ]
+}

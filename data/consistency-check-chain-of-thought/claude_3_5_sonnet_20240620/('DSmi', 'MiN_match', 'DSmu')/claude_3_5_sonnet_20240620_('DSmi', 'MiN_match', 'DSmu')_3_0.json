@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'The cat might not be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 2: From 'The cat might not be playing in the bedroom', can we infer 'It's not the case that the cat must be playing in the bedroom'?\nQuestion 3: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat is napping on the couch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement gives us two possibilities: either the cat is napping on the couch OR it must be playing in the bedroom.\nThe second statement says the cat might not be playing in the bedroom.\nThis doesn't definitively rule out the possibility of the cat playing in the bedroom, it just says it might not be.\nSince we don't have definitive information ruling out either possibility, we can't conclude for certain that the cat is napping on the couch.\n\nQuestion 2:\nThe statement \"The cat might not be playing in the bedroom\" implies uncertainty.\nIf something might not be the case, then it cannot be said that it must be the case.\nTherefore, we can infer that it's not the case that the cat must be playing in the bedroom.\n\nQuestion 3:\nThe first statement again gives us two possibilities: either the cat is napping on the couch OR it must be playing in the bedroom.\nThe second statement now definitively says it's not the case that the cat must be playing in the bedroom.\nThis rules out the second possibility from the first statement.\nSince one of the two possibilities must be true (due to the \"either...or\" structure), and we've ruled out one possibility, we can conclude that the remaining possibility must be true.\nTherefore, we can infer that the cat is napping on the couch.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

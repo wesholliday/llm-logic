@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 2: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?\nQuestion 3: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\". The second statement says that B might not be true. However, this doesn't necessarily mean that B is false, only that it's possible that B is false. Since we're not certain that B is false, we can't definitively conclude that A must be true. Therefore, we cannot infer with certainty that \"The cookies are in the jar\".\n\nQuestion 2:\nThe statement \"The cookies might not be hidden in the pantry\" implies that it's possible for the cookies to not be in the pantry. If something might not be the case, then it cannot be a necessity. Therefore, we can indeed infer that \"It's not the case that the cookies must be hidden in the pantry\". The word \"must\" implies necessity, which is contradicted by \"might not\".\n\nQuestion 3:\nHere we have the same disjunction as in Question 1: \"Either A or B\". But now, instead of \"B might not be true\", we have \"It's not the case that B must be true\". This is a stronger statement than in Question 1. If B is not necessary, and we know that either A or B must be true, then A must be true. Therefore, in this case, we can infer that \"The cookies are in the jar\".\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

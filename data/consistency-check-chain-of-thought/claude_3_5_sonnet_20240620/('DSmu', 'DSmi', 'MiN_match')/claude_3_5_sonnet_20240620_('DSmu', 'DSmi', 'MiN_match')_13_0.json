@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 3: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nWe have two premises:\n1. Either the milk is on the counter or it must be chilling in the fridge.\n2. It's not the case that the milk must be chilling in the fridge.\n\nThis is a classic example of disjunctive syllogism. We have an \"either-or\" statement, and we're negating one of the options. In this case, since it's not true that the milk must be chilling in the fridge, the only remaining option is that the milk is on the counter. Therefore, we can indeed infer that the milk is on the counter.\n\nQuestion 2:\nWe have two premises:\n1. Either the milk is on the counter or it must be chilling in the fridge.\n2. The milk might not be chilling in the fridge.\n\nThis case is different from the first. Saying that the milk \"might not\" be chilling in the fridge is not the same as saying it \"must not\" be in the fridge. The milk could still be in the fridge, even if it might not be. This doesn't definitively rule out one of our options, so we can't make a definitive inference about the milk being on the counter.\n\nQuestion 3:\nWe need to consider the relationship between \"might not\" and \"must\":\n- If something \"might not\" be the case, it means there's a possibility it isn't true.\n- If something \"must\" be the case, it means there's no possibility it isn't true.\n\nTherefore, if the milk \"might not\" be chilling in the fridge, it logically follows that it's not the case that it \"must\" be chilling in the fridge. The existence of a possibility that it's not in the fridge contradicts any claim that it must be in the fridge.\n\nNow, let's answer all three questions:\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

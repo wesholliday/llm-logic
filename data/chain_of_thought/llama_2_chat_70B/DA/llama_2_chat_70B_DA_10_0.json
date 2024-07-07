@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If the dog was inside, then the cat was outside' together with 'The dog was not inside', can we infer 'The cat was not outside'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: Write down the given information in a logical format:\n\n* If the dog was inside, then the cat was outside. (I)\n* The dog was not inside. (II)\n\nStep 2: Use modus tollens on premise (I) to deduce the conclusion:\n\n* If the dog was inside, then the cat was outside. (I)\n* The dog was not inside. (II)\n* Therefore, the cat was not outside. (III)\n\nStep 3: Check if the conclusion (III) matches the question stem. Since it does, we can infer \"The cat was not outside.\"\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

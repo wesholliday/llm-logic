@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Either Fido is inside or Fido must be in the garden. Also, Fido might not be in the garden. Can we infer that Fido is inside?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "llama 3 instruct 8B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break it down step by step:\n\n1. The statement \"Either Fido is inside or Fido must be in the garden\" implies that there are only two possibilities for Fido's location: either he is inside or he is in the garden.\n2. The additional information \"Fido might not be in the garden\" suggests that it's possible that Fido is not in the garden, but we don't know for sure.\n\nFrom these statements, we can conclude that if Fido is not in the garden (which is a possibility), then he must be inside. This is because there are only two possibilities: either Fido is inside or he is in the garden, and since he might not be in the garden, it follows that he must be inside.\n\nAnswer: yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

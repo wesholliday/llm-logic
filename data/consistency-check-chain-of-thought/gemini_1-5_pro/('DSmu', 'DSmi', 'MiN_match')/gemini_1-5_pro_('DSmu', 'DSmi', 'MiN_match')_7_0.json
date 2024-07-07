@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 2: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 3: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1:**\n\n* **Premise 1:** Either the remote control is on the coffee table or it must be hiding under the couch.\n* **Premise 2:** It's not the case that the remote control must be hiding under the couch.\n\nSince the remote must be in one of the two locations, and Premise 2 eliminates the couch, the remote must be on the coffee table.\n\n**Question 2:**\n\n* **Premise 1:** Either the remote control is on the coffee table or it must be hiding under the couch.\n* **Premise 2:** The remote control might not be hiding under the couch.\n\nPremise 2 introduces uncertainty. While the remote might not be under the couch, it doesn't definitively rule it out. Therefore, we can't definitively say it's on the coffee table.\n\n**Question 3:**\n\n* **Premise:** The remote control might not be hiding under the couch.\n\nThis premise implies the remote could be somewhere else. It doesn't definitively rule out the possibility of it being under the couch. \n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

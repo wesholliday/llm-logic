@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 2: From 'The cat might not be playing in the bedroom', can we infer 'It's not the case that the cat must be playing in the bedroom'?\nQuestion 3: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'The cat might not be playing in the bedroom', can we infer 'The cat is napping on the couch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first premise states: \"Either the cat is napping on the couch or it must be playing in the bedroom.\"\nThe second premise states: \"It's not the case that the cat must be playing in the bedroom.\"\nThis is a classic example of disjunctive syllogism. If we have two options, and we know one is false, then the other must be true. Therefore, we can indeed infer that \"The cat is napping on the couch.\"\n\nQuestion 2:\nThe statement \"The cat might not be playing in the bedroom\" implies that there's a possibility the cat is not in the bedroom. This is different from saying \"It's not the case that the cat must be playing in the bedroom.\" The latter is a stronger statement, ruling out the necessity of the cat being in the bedroom. While the first statement suggests a possibility, it doesn't completely rule out the necessity. Therefore, we cannot make this inference with certainty.\n\nQuestion 3:\nThis question combines elements from the previous two. We have:\n\"Either the cat is napping on the couch or it must be playing in the bedroom\"\n\"The cat might not be playing in the bedroom\"\nUnlike in Question 1, the second premise here is weaker. It only states a possibility that the cat is not in the bedroom, not a certainty. This isn't strong enough to rule out one of the options in the first premise. Therefore, we cannot conclusively infer that the cat is napping on the couch.\n\nAnswer: yes, no, no"
+        }
+    ]
+}

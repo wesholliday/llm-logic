@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'The cat might not be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 2: From 'The cat might not be playing in the bedroom', can we infer 'It's not the case that the cat must be playing in the bedroom'?\nQuestion 3: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat is napping on the couch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: We are given \"Either the cat is napping on the couch or it must be playing in the bedroom\" and \"The cat might not be playing in the bedroom\". From the second statement, we know it's possible the cat is not playing in the bedroom. However, this doesn't necessarily mean the cat is napping on the couch. The first statement says the cat is either napping or must be playing, but since we only know the cat might not be playing, we can't definitively conclude it is napping. It could be doing something else. So we cannot infer \"The cat is napping on the couch\".\n\nQuestion 2: Yes, from \"The cat might not be playing in the bedroom\", we can infer \"It's not the case that the cat must be playing in the bedroom\". If there's a possibility the cat is not playing in the bedroom, then it cannot be the case that it must be playing there. \"Might not be\" contradicts \"must be\".\n\nQuestion 3: Here we have the additional information \"It's not the case that the cat must be playing in the bedroom\". Combined with the first statement \"Either the cat is napping on the couch or it must be playing in the bedroom\", we can now infer the cat is napping on the couch. Since it's not the case that the cat must be playing in the bedroom, the only remaining possibility from the first statement is that it is napping on the couch.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

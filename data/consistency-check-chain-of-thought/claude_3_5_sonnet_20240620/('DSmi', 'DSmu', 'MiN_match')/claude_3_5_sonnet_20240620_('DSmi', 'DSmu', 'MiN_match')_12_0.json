@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 2: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 3: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement gives us two possibilities: the toy is either in the toy box OR on the bookshelf.\nThe second statement says the toy might not be on the bookshelf. This doesn't eliminate the possibility that it is on the bookshelf; it just says it's not certain.\nSince we don't know for sure that the toy isn't on the bookshelf, we can't conclude with certainty that it must be in the toy box.\n\nQuestion 2:\nAgain, we start with two possibilities: the toy box or the bookshelf.\nThe second statement here is stronger than in Question 1. It says it's not the case that the toy must be on the bookshelf. This eliminates the second option from our original statement.\nIf it's not on the bookshelf, and those were our only two options, then it must be in the toy box.\n\nQuestion 3:\n\"The toy might not be sitting on the bookshelf\" means there's a possibility it's not on the bookshelf.\n\"It's not the case that the toy must be sitting on the bookshelf\" means it's not necessary for the toy to be on the bookshelf.\nIf something might not be true, then it's certainly not necessarily true.\nTherefore, the first statement does indeed imply the second.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

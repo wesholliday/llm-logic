@@ -1,0 +1,11 @@
+{
+    "user_prompt": "From 'Tom did not watch football' together with 'If Tom watched football, then Jen watched basketball', can we infer 'Jen did not watch basketball'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break this down:\n\n* **Premise 1:** Tom did not watch football.\n* **Premise 2:** If Tom watched football, then Jen watched basketball. \n* **Conclusion:** Jen did not watch basketball.\n\n**Reasoning:**\n\nPremise 2 only tells us what happens if Tom *did* watch football.  It doesn't tell us anything about what happens if Tom *didn't* watch football.  It's possible Jen still watched basketball even if Tom didn't watch football.\n\n**Answer: no** \n"
+        }
+    ]
+}

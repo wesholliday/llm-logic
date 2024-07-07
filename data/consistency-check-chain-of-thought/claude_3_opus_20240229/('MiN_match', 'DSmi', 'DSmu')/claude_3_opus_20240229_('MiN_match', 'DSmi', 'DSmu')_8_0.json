@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The missing puzzle piece might not be blending in on the floor', can we infer 'It's not the case that the missing puzzle piece must be blending in on the floor'?\nQuestion 2: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 3: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1: \n- The original statement says the puzzle piece might not be blending in on the floor. \n- This means it's possible that it's not blending in, but doesn't rule out that it could be blending in.\n- The inference says it's not the case that the piece must be blending in. \n- This is correct, because \"might not be blending in\" implies it's not certain (i.e. not a \"must\").\nSo for question 1, yes we can make that inference.\n\nQuestion 2:\n- We are told the piece is either in the box or must be blending in on the floor. \n- We are also told it might not be blending in on the floor.\n- \"Might not be blending in\" still allows the possibility that it is blending in.\n- So we can't rule out that it's blending in on the floor, and therefore can't infer for certain it's in the box.\nSo for question 2, no we cannot make that inference.\n\nQuestion 3:\n- Again we are told the piece is either in the box or must be blending in on the floor.\n- But now we are told it's not the case that it must be blending in.\n- If it's not the case that it must be blending in, and those are the only two possibilities, then it has to be in the box.\nSo for question 3, yes we can make that inference.\n\nAnswer: yes,no,yes"
+        }
+    ]
+}

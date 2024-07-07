@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\nQuestion 2: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 3: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?**\n\n* **Reasoning:** \"The toy might not be sitting on the bookshelf\" implies there's a possibility it's not on the bookshelf. This directly means it's not guaranteed or necessary for the toy to be on the bookshelf.\n\n**Question 2: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?**\n\n* **Reasoning:** We're given two pieces of information:\n    * The toy is either in the toy box or definitely on the bookshelf.\n    * We know the toy isn't definitely on the bookshelf. \n    * This eliminates the second option, leaving only the possibility that the toy is in the toy box.\n\n**Question 3: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?**\n\n* **Reasoning:** \n    * We're told the toy is either in the toy box or definitely on the bookshelf.\n    * The second statement says the toy might not be on the bookshelf, meaning it's possible but not certain. \n    * This doesn't eliminate the possibility of the toy being on the bookshelf. We don't have enough information to conclude it's in the toy box.\n\n**Answer: yes,yes,no** \n"
+        }
+    ]
+}

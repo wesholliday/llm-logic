@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\nQuestion 3: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Reasoning:**\n\n**Question 1:**\n\n* The first statement presents two possibilities: keys in the drawer or keys dangling in the cabinet.\n* The second statement eliminates the possibility of the keys dangling in the cabinet. \n* Therefore, the only remaining possibility is that the keys are in the drawer.\n\n**Question 2:**\n\n* \"The keys might not be dangling in the cabinet\" means it's possible they aren't there. \n* However, \"It's not the case that the keys must be dangling in the cabinet\" means it's definitively NOT the case they are there.\n* The first statement allows for the possibility, while the second statement eliminates it. They are not equivalent.\n\n**Question 3:**\n\n* We're given the same starting point as Question 1 (two possibilities).\n* This time, the second statement says the keys *might not* be dangling in the cabinet. This doesn't definitively rule out that possibility.\n* Therefore, we can't definitively conclude the keys are in the drawer. \n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

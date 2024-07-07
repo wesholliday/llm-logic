@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\nQuestion 2: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 3: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \"The missing sock might not be under the bed\" means there's a possibility it's not under the bed. This is equivalent to saying \"It's not the case that the missing sock must be under the bed\", because \"must\" implies certainty, while \"might not\" allows for the possibility of it not being there.\n\nQuestion 2: We are told \"Either the missing sock is in the laundry basket or it must be under the bed\". We are also told \"The missing sock might not be under the bed\". This second statement introduces the possibility of the sock not being under the bed. However, this doesn't necessarily mean it IS in the laundry basket. It could still be in a third, unmentioned location. So we cannot infer with certainty that it is in the laundry basket.\n\nQuestion 3: Similar to Question 2, we have \"Either the missing sock is in the laundry basket or it must be under the bed\". But now we are told \"It's not the case that the missing sock must be under the bed\". This rules out the bed location with certainty. Since we started with only two possible locations, and one has been eliminated, we can now infer that the sock must be in the remaining mentioned location - the laundry basket.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

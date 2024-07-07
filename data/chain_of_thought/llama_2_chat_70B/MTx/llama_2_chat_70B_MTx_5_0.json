@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If the zinger was fraggled, then the zinger was smoogled' together with 'The zinger was not smoogled', can we infer 'The zinger was not fraggled'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: Write down the given information in a logical format:\n\n* If the zinger was fraggled, then the zinger was smoogled (F \u2192 S)\n* The zinger was not smoogled (\u00acS)\n\nStep 2: Negate the conclusion of the first premise to get the contrapositive:\n\n* If the zinger was not fraggled, then the zinger was not smoogled (\u00acF \u2192 \u00acS)\n\nStep 3: Use modus tollens on the contrapositive and the second premise to derive a conclusion:\n\n* \u00acF \u2192 \u00acS\n* \u00acS\n* Therefore, \u00acF (The zinger was not fraggled)\n\nStep 4: Check if the conclusion is the same as the one we want to infer. In this case, we want to infer \"The zinger was not fraggled.\"\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

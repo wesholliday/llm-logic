@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 2: From 'The phone might not be ringing in the kitchen', can we infer 'It's not the case that the phone must be ringing in the kitchen'?\nQuestion 3: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'The phone might not be ringing in the kitchen', can we infer 'The phone is in the living room'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are given \"Either the phone is in the living room or it must be ringing in the kitchen\". This is a disjunction - at least one of the disjuncts must be true.\n- We are also given \"It's not the case that the phone must be ringing in the kitchen\". This negates the second disjunct.\n- If the second disjunct is false, then for the overall disjunction to be true, the first disjunct must be true.\n- Therefore, we can infer \"The phone is in the living room\".\n\nQuestion 2: \n- \"The phone might not be ringing in the kitchen\" means there is a possibility that the phone is not ringing in the kitchen.\n- \"It's not the case that the phone must be ringing in the kitchen\" means the phone is not necessarily ringing in the kitchen.\n- If something might not be the case, then it's also true that it's not the case that it must be so.\n- Therefore, from \"The phone might not be ringing in the kitchen\", we can infer \"It's not the case that the phone must be ringing in the kitchen\".\n\nQuestion 3:\n- This combines the premises from Question 1 and Question 2.\n- From Question 2, \"The phone might not be ringing in the kitchen\" allows us to infer \"It's not the case that the phone must be ringing in the kitchen\".\n- Then, as in Question 1, this together with \"Either the phone is in the living room or it must be ringing in the kitchen\" allows us to infer \"The phone is in the living room\".\n\nAnswer: yes, yes, yes"
+        }
+    ]
+}

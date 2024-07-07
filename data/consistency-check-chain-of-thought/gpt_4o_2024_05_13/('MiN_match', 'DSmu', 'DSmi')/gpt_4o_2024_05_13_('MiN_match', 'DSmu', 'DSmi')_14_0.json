@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 2: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4o-2024-05-13",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step.\n\n### Question 1:\nStatement: \"The shoes might not be lined up by the door.\"\nInference: \"It's not the case that the shoes must be lined up by the door.\"\n\n- \"The shoes might not be lined up by the door\" means that it is possible that the shoes are not lined up by the door.\n- \"It's not the case that the shoes must be lined up by the door\" means that it is not a requirement for the shoes to be lined up by the door.\n\nSince \"might not\" implies that it is not a necessity, we can infer that it is not required for the shoes to be lined up by the door.\n\n### Question 2:\nStatements: \n1. \"Either the shoes are in the closet or they must be lined up by the door.\"\n2. \"It's not the case that the shoes must be lined up by the door.\"\n\nInference: \"The shoes are in the closet.\"\n\n- The first statement is a disjunction: either A (shoes are in the closet) or B (shoes must be lined up by the door).\n- The second statement negates B: it is not the case that the shoes must be lined up by the door.\n\nIf B is false, then A must be true in a disjunction. Therefore, we can infer that the shoes are in the closet.\n\n### Question 3:\nStatements:\n1. \"Either the shoes are in the closet or they must be lined up by the door.\"\n2. \"The shoes might not be lined up by the door.\"\n\nInference: \"The shoes are in the closet.\"\n\n- The first statement is a disjunction: either A (shoes are in the closet) or B (shoes must be lined up by the door).\n- The second statement, \"The shoes might not be lined up by the door,\" suggests that it is possible that the shoes are not lined up by the door, but it does not definitively negate B.\n\nSince \"might not\" does not definitively negate B, we cannot conclusively infer that A (the shoes are in the closet) must be true.\n\n### Final Answers:\nAnswer: yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

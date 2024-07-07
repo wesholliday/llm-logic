@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\nQuestion 2: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?\nQuestion 3: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer \"The pen is in my bag\".\n\nQuestion 2:\n\"The pen might not be on my desk\" implies uncertainty.\nIf something might not be the case, then it cannot be a must.\n\"It must be on my desk\" and \"It might not be on my desk\" are contradictory.\nTherefore, yes, we can infer \"It's not the case that the pen must be on my desk\".\n\nQuestion 3:\nWe have \"Either A or B\" (A: pen in bag, B: pen must be on desk)\nAnd we have \"The pen might not be on my desk\"\nThis second statement implies that B is not necessarily true, but it doesn't completely rule it out.\nWe can't be certain that B is false, so we can't definitively conclude A.\nTherefore, no, we cannot infer \"The pen is in my bag\" with certainty.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

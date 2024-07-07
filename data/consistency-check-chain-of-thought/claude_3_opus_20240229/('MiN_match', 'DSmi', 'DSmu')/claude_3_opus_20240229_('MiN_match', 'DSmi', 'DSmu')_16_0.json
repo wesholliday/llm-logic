@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The scarf might not be draped on the coat rack', can we infer 'It's not the case that the scarf must be draped on the coat rack'?\nQuestion 2: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 3: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \nIf the scarf might not be draped on the coat rack, that means there's a possibility it is not on the coat rack. This is equivalent to saying it's not the case that the scarf must be on the coat rack. \"Must\" implies certainty, while \"might not\" allows for the possibility of it not being there. So the inference holds.\n\nQuestion 2:\nWe are told the scarf is either in the backpack or must be on the coat rack. We are also told it might not be on the coat rack. This leaves open the possibility that it's not on the coat rack but is also not in the backpack. Perhaps it's in a drawer or on a shelf. We can't rule out those other possibilities. So we cannot infer for certain that the scarf is in the backpack.\n\nQuestion 3:\nHere we have the same setup as Question 2, except instead of \"the scarf might not be on the coat rack\", we have the stronger statement \"it's not the case that the scarf must be on the coat rack.\" This rules out the coat rack possibility more definitively. Since we're told it's either in the backpack or on the coat rack, and we've now ruled out the coat rack, the only remaining possibility is that it's in the backpack. So in this case, the inference does follow.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

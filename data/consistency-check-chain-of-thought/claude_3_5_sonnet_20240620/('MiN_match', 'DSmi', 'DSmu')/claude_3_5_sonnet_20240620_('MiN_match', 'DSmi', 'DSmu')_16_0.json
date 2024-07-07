@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The scarf might not be draped on the coat rack', can we infer 'It's not the case that the scarf must be draped on the coat rack'?\nQuestion 2: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'The scarf might not be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\nQuestion 3: From 'Either the scarf is stuffed in my backpack or it must be draped on the coat rack' together with 'It's not the case that the scarf must be draped on the coat rack', can we infer 'The scarf is stuffed in my backpack'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\n\"The scarf might not be draped on the coat rack\" implies that there's a possibility the scarf is not on the coat rack. If something might not be the case, then it's not necessarily true. Therefore, it's correct to say \"It's not the case that the scarf must be draped on the coat rack.\" The statement \"might not\" directly contradicts \"must be.\"\n\nQuestion 2:\nWe have two pieces of information:\n1. \"Either the scarf is stuffed in my backpack or it must be draped on the coat rack\"\n2. \"The scarf might not be draped on the coat rack\"\n\nThe first statement gives us two options, and the second statement tells us that one of these options (being draped on the coat rack) is not certain. However, \"might not be\" doesn't completely rule out the possibility of the scarf being on the coat rack. Therefore, we can't conclusively say that the scarf must be in the backpack.\n\nQuestion 3:\nAgain, we have two pieces of information:\n1. \"Either the scarf is stuffed in my backpack or it must be draped on the coat rack\"\n2. \"It's not the case that the scarf must be draped on the coat rack\"\n\nThis time, the second statement completely rules out one of the options from the first statement. If it's not the case that the scarf must be on the coat rack, and we know it must be either in the backpack or on the coat rack, then we can conclude that it must be in the backpack.\n\nNow, I'm ready to answer all the questions:\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

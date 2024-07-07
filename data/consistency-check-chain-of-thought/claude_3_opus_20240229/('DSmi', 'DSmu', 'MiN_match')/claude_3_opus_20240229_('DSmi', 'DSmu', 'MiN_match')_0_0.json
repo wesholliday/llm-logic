@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either Fido is inside or Fido must be in the garden' together with 'Fido might not be in the garden', can we infer 'Fido is inside'?\nQuestion 2: From 'Either Fido is inside or Fido must be in the garden' together with 'It's not the case that Fido must be in the garden', can we infer 'Fido is inside'?\nQuestion 3: From 'Fido might not be in the garden', can we infer 'It's not the case that Fido must be in the garden'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1: \n- We are told \"Either Fido is inside or Fido must be in the garden\". This means Fido is either inside or in the garden, but not both.\n- We are also told \"Fido might not be in the garden\". This means there's a possibility Fido is not in the garden.\n- However, just because there's a possibility Fido is not in the garden, that doesn't necessarily mean he is inside. He could be somewhere else entirely.\n- Therefore, we cannot definitively infer that Fido is inside.\n\nQuestion 2:\n- Again, we have \"Either Fido is inside or Fido must be in the garden\". \n- This time, we are told \"It's not the case that Fido must be in the garden\". This means Fido is not required to be in the garden.\n- If Fido is not required to be in the garden, and we know he is either inside or in the garden, then he must be inside.\n- Therefore, we can infer that Fido is inside.\n\nQuestion 3:\n- We are told \"Fido might not be in the garden\", meaning there's a possibility he's not in the garden.\n- However, this is not the same as saying \"It's not the case that Fido must be in the garden\". \n- Just because there's a possibility Fido is not in the garden, that doesn't mean he's not required to be there. He could still be required to be in the garden, even if there's a chance he's not.\n- Therefore, we cannot infer \"It's not the case that Fido must be in the garden\" from \"Fido might not be in the garden\".\n\nAnswer: no, yes, no"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 2: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 3: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nThe statement \"Either the sunglasses are in her bag or they must be perched on her head\" is a disjunction, meaning at least one of the two options must be true. If we also know that \"It's not the case that the sunglasses must be perched on her head\", then the second option in the disjunction is false. Therefore, the first option, \"The sunglasses are in her bag\", must be true for the disjunction to hold. So yes, we can infer that the sunglasses are in her bag.\n\nQuestion 2:\n\"The sunglasses might not be perched on her head\" suggests that it's possible the sunglasses are not on her head, but it doesn't rule out the possibility that they are on her head. On the other hand, \"It's not the case that the sunglasses must be perched on her head\" is a stronger statement that definitively says the sunglasses are not required to be on her head. While the two statements are related, the first one does not necessarily imply the second. So no, we cannot infer the second statement from the first.\n\nQuestion 3:\nAs in Question 1, we have the disjunction \"Either the sunglasses are in her bag or they must be perched on her head\". However, this time we are given \"The sunglasses might not be perched on her head\" instead of \"It's not the case that the sunglasses must be perched on her head\". As discussed in Question 2, \"might not\" does not rule out the possibility that the sunglasses are on her head. Therefore, we cannot definitively say the second option in the disjunction is false, so we cannot infer that the first option must be true. The answer is no, we cannot infer that the sunglasses are in her bag.\n\nAnswer: yes,no,no"
+        }
+    ]
+}

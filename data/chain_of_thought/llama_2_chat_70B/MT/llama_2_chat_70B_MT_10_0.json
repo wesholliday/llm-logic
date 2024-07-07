@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If the dog was inside, then the cat was outside' together with 'The cat was not outside', can we infer 'The dog was inside'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nYes, we can infer 'The dog was inside' based on the given information.\n\nHere's my reasoning:\n\n1. If the dog was inside, then the cat was outside (premise 1)\n2. The cat was not outside (premise 2)\n3. Therefore, the dog was inside (conclusion)\n\nBy modus tollens, we can infer the negation of the conclusion of premise 1, which is \"the dog was inside,\" given the negation of premise 2, \"the cat was not outside.\" So, the conclusion follows logically from the premises.\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

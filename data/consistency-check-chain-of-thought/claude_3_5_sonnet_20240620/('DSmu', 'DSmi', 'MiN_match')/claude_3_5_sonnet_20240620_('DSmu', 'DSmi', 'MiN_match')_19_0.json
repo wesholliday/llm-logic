@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer that the sunglasses are in her bag.\n\nQuestion 2:\nThe first statement is the same disjunction: \"Either A or B\"\nThe second statement says B might not be true, but it doesn't completely rule out B.\nThis is not enough information to definitively conclude A.\nWe can't infer that the sunglasses are in her bag based on this information.\n\nQuestion 3:\n\"The sunglasses might not be perched on her head\" means there's a possibility they are not on her head.\nIf something might not be true, then it cannot be the case that it must be true.\nTherefore, we can infer that it's not the case that the sunglasses must be perched on her head.\n\nNow, I'm ready to answer all the questions:\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

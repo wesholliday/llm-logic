@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "NMu_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The watch might not be on his wrist', can we infer 'It's not the case that the watch must be on his wrist'?\nQuestion 2: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 3: From 'It's not the case that the watch must be on his wrist', can we infer 'The watch might not be on his wrist'?\nQuestion 4: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"The watch might not be on his wrist\" implies that there is a possibility that the watch is not on his wrist. The phrase \"It's not the case that the watch must be on his wrist\" means that it is not a certainty or requirement that the watch is on his wrist. Since the first statement allows for the possibility that the watch is not on his wrist, it aligns with the second statement that it is not a certainty. Therefore, we can infer the second statement from the first.\n\nQuestion 2: The statement \"Either the watch is charging on the dresser or it must be on his wrist\" presents two possibilities. If we know that \"It's not the case that the watch must be on his wrist,\" then the only remaining possibility from the original statement is that \"The watch is charging on the dresser.\" Therefore, we can infer that the watch is charging on the dresser.\n\nQuestion 3: The statement \"It's not the case that the watch must be on his wrist\" suggests that there is no necessity for the watch to be on his wrist, which means that there is a possibility that the watch is not on his wrist. This aligns with the statement \"The watch might not be on his wrist,\" which also acknowledges the possibility of the watch not being on his wrist. Therefore, we can infer the latter from the former.\n\nQuestion 4: The statement \"Either the watch is charging on the dresser or it must be on his wrist\" again presents two possibilities. The additional information \"The watch might not be on his wrist\" does not eliminate the possibility that the watch is on his wrist; it only suggests that it is not certain. Since the second statement does not rule out the possibility that the watch is on his wrist, we cannot definitively infer that \"The watch is charging on the dresser\" based solely on the possibility that it might not be on his wrist.\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

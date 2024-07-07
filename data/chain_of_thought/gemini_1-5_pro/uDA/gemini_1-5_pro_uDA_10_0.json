@@ -1,0 +1,11 @@
+{
+    "user_prompt": "If the dog was inside, then the cat was outside. Also, the dog was not inside. Can we infer that the cat was not outside?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's break down the statements:\n\n* **Statement 1:** If the dog was inside, then the cat was outside.\n* **Statement 2:** The dog was not inside.\n\nWe need to determine if we can logically conclude that the cat was not outside.\n\n* **Consider Statement 1:** This statement only tells us what happens if the dog IS inside. It doesn't tell us anything about what happens if the dog is NOT inside. \n* **Consider Statement 2:** This tells us the dog is NOT inside.\n\nSince Statement 1 doesn't apply when the dog is outside, we have no information about the cat's location. \n\nAnswer: no \n"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 2: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 3: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \nLet's break this down:\n- We are given \"Either the newspaper is in the driveway or it must be sitting on the porch\". This is an either/or statement - one of these two things must be true.\n- We are also given \"It's not the case that the newspaper must be sitting on the porch\". This negates the second part of the either/or statement.\n- If the second part is not true, then the first part must be true for the either/or statement to hold.\nTherefore, yes, we can infer that the newspaper is in the driveway.\n\nQuestion 2:\n- Again, we have the either/or statement: \"Either the newspaper is in the driveway or it must be sitting on the porch\".\n- This time, we are given \"The newspaper might not be sitting on the porch\". This is different from the previous question. \"Might not\" does not negate the possibility that the newspaper is on the porch, it just says it's not certain.\n- So the second part of the either/or statement could still be true. \n- Therefore, we cannot definitively infer that the newspaper is in the driveway. It could be, but it's not certain.\n\nQuestion 3:\n- We are given \"The newspaper might not be sitting on the porch\". \n- \"Might not\" suggests uncertainty or possibility. It does not definitively state that the newspaper is not on the porch.\n- On the other hand, \"It's not the case that the newspaper must be sitting on the porch\" is a stronger statement. It definitively states that it's not necessary or certain for the newspaper to be on the porch.\n- \"Might not\" does not imply \"must not\". Something that might not happen could still end up happening.\nTherefore, no, we cannot infer \"It's not the case that the newspaper must be sitting on the porch\" from \"The newspaper might not be sitting on the porch\".\n\nAnswer: yes, no, no"
+        }
+    ]
+}

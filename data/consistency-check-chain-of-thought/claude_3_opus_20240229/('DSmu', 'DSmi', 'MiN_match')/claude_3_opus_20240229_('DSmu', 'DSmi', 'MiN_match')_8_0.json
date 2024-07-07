@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 2: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 3: From 'The missing puzzle piece might not be blending in on the floor', can we infer 'It's not the case that the missing puzzle piece must be blending in on the floor'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are given \"Either the missing puzzle piece is in the box or it must be blending in on the floor\". Let's call this statement P.\n- We are also given \"It's not the case that the missing puzzle piece must be blending in on the floor\". Let's call this statement Q.\n- P is a disjunction (an \"or\" statement), and Q negates the second disjunct of P.\n- If the second disjunct is false, then for the disjunction to be true, the first disjunct must be true.\n- Therefore, yes, from P and Q we can infer \"The missing puzzle piece is in the box\".\n\nQuestion 2:\n- We are given the same statement P as before.\n- We are also given \"The missing puzzle piece might not be blending in on the floor\". Let's call this statement R.\n- R is weaker than Q. It allows for the possibility that the missing piece is not on the floor, but doesn't rule out that it could be.\n- With P and R, it's possible that the missing piece is in the box, but it's not certain. The piece could still be on the floor.\n- Therefore, no, from P and R we cannot infer with certainty that \"The missing puzzle piece is in the box\".\n\nQuestion 3:\n- We are given only statement R: \"The missing puzzle piece might not be blending in on the floor\".\n- R states that it's possible the piece is not on the floor. But \"might not\" is not the same as \"must not\".\n- Just because something might not be the case doesn't mean it definitely isn't the case.\n- Therefore, no, from R alone we cannot infer Q, \"It's not the case that the missing puzzle piece must be blending in on the floor\".\n\nAnswer: yes, no, no"
+        }
+    ]
+}

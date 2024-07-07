@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 2: From 'The notebook might not be sitting on the nightstand', can we infer 'It's not the case that the notebook must be sitting on the nightstand'?\nQuestion 3: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nThe first premise states that the notebook is either in the drawer or on the nightstand. The second premise says it might not be on the nightstand. From these, we cannot definitively conclude the notebook is in the drawer, because \"might not be on the nightstand\" leaves open the possibility that it still could be there. We don't have enough information to rule out the nightstand location. So no, we cannot infer with certainty that the notebook is in the drawer.\n\nQuestion 2: \nYes, from \"The notebook might not be sitting on the nightstand\", we can infer \"It's not the case that the notebook must be sitting on the nightstand\". If it might not be there, then it cannot be the case that it must be there. The \"might not\" negates the \"must\".\n\nQuestion 3:\nNow we have the first premise from Question 1 (it's either in the drawer or must be on the nightstand), combined with the inference from Question 2 (it's not the case that it must be on the nightstand). If those are the only two possible locations, and we've ruled out that it must be on the nightstand, then yes, we can now infer that it is in the drawer.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

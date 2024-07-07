@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 2: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 3: From 'The watch might not be on his wrist', can we infer 'It's not the case that the watch must be on his wrist'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\". The second statement, \"The watch might not be on his wrist,\" doesn't definitively rule out the possibility that the watch is on his wrist. It only suggests that there's a possibility it's not on his wrist. This isn't enough information to conclude with certainty that the watch is charging on the dresser. We can't make a definitive inference here.\n\nQuestion 2:\nAgain, we have the disjunction \"Either A or B\". The second statement, \"It's not the case that the watch must be on his wrist,\" effectively eliminates the second part of the disjunction. If B is not true, and we know that either A or B must be true, then A must be true. This is a valid logical inference.\n\nQuestion 3:\n\"The watch might not be on his wrist\" implies that there's a possibility the watch is not on his wrist. If there's a possibility it's not on his wrist, then it can't be the case that it must be on his wrist. The statement \"It's not the case that the watch must be on his wrist\" is logically equivalent to \"The watch might not be on his wrist.\" So we can indeed infer one from the other.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

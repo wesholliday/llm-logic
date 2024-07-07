@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "NMu_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 2: From 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses might not be perched on her head'?\nQuestion 3: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 4: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4o-2024-05-13",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\n**Question 1: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?**\n\n- \"The sunglasses might not be perched on her head\" means that it is possible that the sunglasses are not on her head.\n- \"It's not the case that the sunglasses must be perched on her head\" means that it is not necessary for the sunglasses to be on her head.\n- If it is possible that the sunglasses are not on her head, then it is not necessary for them to be on her head. Therefore, we can infer this.\n\n**Question 2: From 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses might not be perched on her head'?**\n\n- \"It's not the case that the sunglasses must be perched on her head\" means that it is not necessary for the sunglasses to be on her head.\n- \"The sunglasses might not be perched on her head\" means that it is possible that the sunglasses are not on her head.\n- If it is not necessary for the sunglasses to be on her head, then it is possible that they are not on her head. Therefore, we can infer this.\n\n**Question 3: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?**\n\n- \"Either the sunglasses are in her bag or they must be perched on her head\" means that one of these two conditions must be true.\n- \"The sunglasses might not be perched on her head\" means that it is possible that the sunglasses are not on her head.\n- If it is possible that the sunglasses are not on her head, then it is not necessarily true that they must be on her head. However, this does not guarantee that they are in her bag. Therefore, we cannot infer this.\n\n**Question 4: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?**\n\n- \"Either the sunglasses are in her bag or they must be perched on her head\" means that one of these two conditions must be true.\n- \"It's not the case that the sunglasses must be perched on her head\" means that it is not necessary for the sunglasses to be on her head.\n- If it is not necessary for the sunglasses to be on her head, then the only remaining option is that they are in her bag. Therefore, we can infer this.\n\nAnswer: yes, yes, no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

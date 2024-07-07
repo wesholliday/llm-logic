@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer that the book is on the shelf.\n\nQuestion 2:\n\"The book might not be resting on the table\" means it's possible that the book is not on the table.\nIf something might not be the case, then it cannot be necessarily true.\n\"It's not the case that the book must be resting on the table\" is equivalent to saying it's not necessarily true that the book is on the table.\nSo yes, we can infer the second statement from the first.\n\nQuestion 3:\nWe have \"Either A or B\" again.\n\"The book might not be resting on the table\" is equivalent to \"It's not the case that the book must be resting on the table\" (from Question 2).\nThis situation is the same as in Question 1.\nSo yes, we can infer that the book is on the shelf.\n\nAnswer: yes, yes, yes"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 2: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 3: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first premise states: \"Either the shoes are in the closet or they must be lined up by the door.\"\nThe second premise states: \"It's not the case that the shoes must be lined up by the door.\"\nThis is a classic example of disjunctive syllogism. We have two options, and we're told that one of them is false. Therefore, the other must be true. Since it's not the case that the shoes must be lined up by the door, they must be in the closet.\n\nQuestion 2:\nThe first premise is the same as in Question 1.\nThe second premise states: \"The shoes might not be lined up by the door.\"\nThis is different from Question 1. Saying that something \"might not\" be the case is not the same as saying it \"must not\" be the case. The shoes might not be lined up by the door, but they also might be. This doesn't eliminate the second option in our original premise, so we can't conclude with certainty that the shoes are in the closet.\n\nQuestion 3:\nThe premise states: \"The shoes might not be lined up by the door.\"\nWe need to consider the relationship between \"might not\" and \"must.\"\nIf something \"must\" be the case, then it can't be the case that it \"might not\" be. \nTherefore, if the shoes might not be lined up by the door, it logically follows that it's not the case that they must be lined up by the door.\n\nNow, I'm ready to answer all the questions:\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

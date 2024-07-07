@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'Either the notebook must be sitting on the nightstand or it is in the drawer' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "code llama instruct 34B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nAnswer: Yes.\n\nExplanation:\n\n1. We know that either the notebook must be sitting on the nightstand or it is in the drawer (given statement).\n2. We also know that the notebook might not be sitting on the nightstand (given statement).\n3. Therefore, we can infer that the notebook is in the drawer.\n4. If the notebook were sitting on the nightstand, then it would not be in the drawer, which contradicts our given statements.\n5. Therefore, the only possible conclusion is that the notebook is in the drawer.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

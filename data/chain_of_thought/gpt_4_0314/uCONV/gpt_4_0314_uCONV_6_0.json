@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Sue chose pizza, then Bob chose pasta. Can we infer that if Bob chose pasta, then Sue chose pizza?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "gpt-4-0314",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze the statement and its contrapositive:\n\nStatement: If Sue chose pizza, then Bob chose pasta.\nSymbolically: If S, then B.\n\nContrapositive: If not B, then not S.\nIn words: If Bob did not choose pasta, then Sue did not choose pizza.\n\nNow let's look at the statement we want to infer:\n\nInferred statement: If Bob chose pasta, then Sue chose pizza.\nSymbolically: If B, then S.\n\nThe original statement and its contrapositive do not provide enough information to guarantee the inferred statement. It is possible that Bob chose pasta, but Sue chose something other than pizza. The original statement only tells us what happens when Sue chooses pizza, not what happens when Bob chooses pasta.\n\nAnswer: no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

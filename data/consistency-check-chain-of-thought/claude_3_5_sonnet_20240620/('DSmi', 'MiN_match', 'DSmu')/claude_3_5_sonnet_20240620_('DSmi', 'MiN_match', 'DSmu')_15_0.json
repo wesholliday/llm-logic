@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\nQuestion 2: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?\nQuestion 3: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement \"Either the pen is in my bag or it must be on my desk\" is a disjunction (OR statement). This means one of these two options must be true.\nThe second statement \"The pen might not be on my desk\" doesn't eliminate the possibility of the pen being on the desk. It just says it's not certain.\nTherefore, we can't definitively conclude that the pen is in the bag. The pen could still be on the desk, even if it's not certain.\n\nQuestion 2:\n\"The pen might not be on my desk\" implies uncertainty about the pen's location on the desk.\nIf something \"must\" be true, there's no uncertainty about it.\nSo, if there's a possibility that the pen is not on the desk, it can't be true that it \"must\" be on the desk.\nThis question is asking us to infer the negation of \"must\", which is correct given the uncertainty expressed.\n\nQuestion 3:\nThe first statement is the same disjunction as in Question 1: \"Either the pen is in my bag or it must be on my desk\".\nThe second statement \"It's not the case that the pen must be on my desk\" eliminates the second part of the disjunction.\nIf one part of an \"either-or\" statement is false, and the statement as a whole is true, then the other part must be true.\nTherefore, we can conclude that the pen is in the bag.\n\nNow, I'm ready to provide the answers:\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

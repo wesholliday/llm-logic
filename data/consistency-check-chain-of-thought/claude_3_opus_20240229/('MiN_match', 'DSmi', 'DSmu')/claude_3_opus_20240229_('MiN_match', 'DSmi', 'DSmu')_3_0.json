@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The cat might not be playing in the bedroom', can we infer 'It's not the case that the cat must be playing in the bedroom'?\nQuestion 2: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'The cat might not be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 3: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat is napping on the couch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1: \n\"The cat might not be playing in the bedroom\" means there's a possibility the cat is not playing in the bedroom.\n\"It's not the case that the cat must be playing in the bedroom\" means the cat is not necessarily playing in the bedroom.\nThese two statements are logically equivalent. If there's a possibility the cat is not playing in the bedroom, then it's not necessarily playing in the bedroom. So yes, we can make that inference.\n\nQuestion 2:\n\"Either the cat is napping on the couch or it must be playing in the bedroom\" sets up two possibilities.\n\"The cat might not be playing in the bedroom\" introduces uncertainty about the second possibility.\nHowever, this uncertainty alone is not enough to conclude with certainty that the cat is napping on the couch. The cat could be doing something else entirely. So no, we cannot make that inference.\n\nQuestion 3:\nAgain, \"Either the cat is napping on the couch or it must be playing in the bedroom\" sets up two possibilities.\n\"It's not the case that the cat must be playing in the bedroom\" eliminates the second possibility.\nWith the bedroom possibility eliminated, the only remaining option from the two possibilities is that the cat is napping on the couch. So yes, in this case we can infer that the cat is napping on the couch.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

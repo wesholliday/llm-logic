@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 4: From 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses might not be perched on her head'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have two premises: \"Either the sunglasses are in her bag or they must be perched on her head\" and \"The sunglasses might not be perched on her head.\" The first premise presents a disjunction (an \"either/or\" scenario), and the second suggests uncertainty about the second part of the disjunction. However, \"might not be\" does not definitively exclude the possibility that the sunglasses are on her head. Therefore, we cannot infer with certainty that the sunglasses are in her bag.\n\nQuestion 2: Again, we have the same disjunction as in the first question, but the second premise is stronger: \"It's not the case that the sunglasses must be perched on her head.\" This statement rules out the second part of the disjunction, leaving us with the only remaining possibility that the sunglasses are in her bag. Therefore, we can infer that the sunglasses are in her bag.\n\nQuestion 3: \"The sunglasses might not be perched on her head\" implies that there is a possibility that the sunglasses are not on her head. This is consistent with the statement \"It's not the case that the sunglasses must be perched on her head,\" which denies the necessity of the sunglasses being on her head. So, from the first statement, we can infer the second.\n\nQuestion 4: \"It's not the case that the sunglasses must be perched on her head\" means that there is no necessity for the sunglasses to be on her head. This allows for the possibility that the sunglasses might not be perched on her head. Therefore, we can infer the second statement from the first.\n\nAnswer: no, yes, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

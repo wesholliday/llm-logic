@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "NMu_match",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'It's not the case that the book must be resting on the table', can we infer 'The book might not be resting on the table'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 4: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have two premises: \"Either the book is on the shelf or it must be resting on the table\" and \"It's not the case that the book must be resting on the table.\" The first premise is a disjunction (either/or scenario). The second premise negates one of the disjuncts, specifically that the book must be resting on the table. According to the rules of disjunction elimination, if one disjunct is false, the other must be true. Therefore, since it is not the case that the book must be resting on the table, the book must be on the shelf.\n\nQuestion 2: The premise is \"It's not the case that the book must be resting on the table.\" This statement negates the necessity of the book resting on the table but does not negate the possibility of the book resting on the table. Therefore, it implies that the book might not be resting on the table, as it is not necessarily there.\n\nQuestion 3: The premises are \"Either the book is on the shelf or it must be resting on the table\" and \"The book might not be resting on the table.\" The second premise suggests that there is a possibility that the book is not resting on the table, but it does not confirm it as a fact. Since the first premise includes a necessity (\"must be\") for the second option, and the second premise only suggests a possibility against this necessity, we cannot definitively conclude from these premises alone that the book is on the shelf. The possibility does not eliminate the necessity.\n\nQuestion 4: The premise is \"The book might not be resting on the table.\" This statement indicates a possibility that the book is not on the table, but it does not confirm that the book must not be on the table. Therefore, it does not necessarily imply that \"It's not the case that the book must be resting on the table,\" as the latter would require a definitive negation of any necessity of the book being on the table.\n\nAnswer: yes, yes, no, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

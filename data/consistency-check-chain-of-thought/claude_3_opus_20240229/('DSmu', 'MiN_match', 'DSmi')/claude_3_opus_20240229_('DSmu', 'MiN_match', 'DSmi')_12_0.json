@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 2: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\nQuestion 3: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: The first statement says the toy is either in the box or on the bookshelf. The second statement says it's not the case that the toy must be on the bookshelf. This means the toy could be in the box or somewhere else, but it's not necessarily on the bookshelf. From these two statements, we can logically conclude the toy must be in the box. If it's not on the bookshelf, and the only other option given is the box, then it has to be in the box.\n\nQuestion 2: If the toy might not be on the bookshelf, that means there's a possibility it's not on the bookshelf. This directly implies that it's not the case that the toy must be on the bookshelf. If there's any chance it's not on the bookshelf, then we can't say it must be there.\n\nQuestion 3: The first statement again says the toy is either in the box or on the bookshelf. The second statement says the toy might not be on the bookshelf. There's a chance it's not on the bookshelf, but we don't know for certain. It could still be in the box or on the bookshelf. We don't have enough information to definitively say it must be in the box. It might be, but we can't logically infer that for sure.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

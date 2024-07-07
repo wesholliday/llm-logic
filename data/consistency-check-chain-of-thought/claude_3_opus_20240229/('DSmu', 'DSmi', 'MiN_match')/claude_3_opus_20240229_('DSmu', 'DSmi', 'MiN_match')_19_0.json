@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nWe are given:\n- Either the sunglasses are in her bag or they must be perched on her head.\n- It's not the case that the sunglasses must be perched on her head.\nUsing the disjunctive syllogism rule, if we have \"A or B\" and \"not B\", we can infer \"A\". Here, A is \"the sunglasses are in her bag\" and B is \"the sunglasses must be perched on her head\". Since we are given \"not B\", we can infer \"A\". So yes, we can infer that the sunglasses are in her bag.\n\nQuestion 2:\nWe are given:\n- Either the sunglasses are in her bag or they must be perched on her head.\n- The sunglasses might not be perched on her head.\nThe second statement is not the same as \"It's not the case that the sunglasses must be perched on her head\". \"Might not\" does not negate \"must\". So we cannot use the disjunctive syllogism rule here. The sunglasses could still be either in her bag or on her head. Therefore, no, we cannot infer that the sunglasses are definitely in her bag.\n\nQuestion 3:\nWe are given:\n- The sunglasses might not be perched on her head.\n\"Might not\" means there is a possibility that the sunglasses are not on her head, but it doesn't rule out the possibility that they are on her head. On the other hand, \"must\" means there is no other possibility. So \"might not\" does not imply \"not must\". Therefore, no, we cannot infer \"It's not the case that the sunglasses must be perched on her head\" from the given statement.\n\nAnswer: yes,no,no"
+        }
+    ]
+}

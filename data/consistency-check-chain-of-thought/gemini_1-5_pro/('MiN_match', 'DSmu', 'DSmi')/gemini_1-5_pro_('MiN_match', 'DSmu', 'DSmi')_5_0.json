@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The phone might not be ringing in the kitchen', can we infer 'It's not the case that the phone must be ringing in the kitchen'?\nQuestion 2: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 3: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'The phone might not be ringing in the kitchen', can we infer 'The phone is in the living room'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Reasoning:**\n\n**Question 1:** \"The phone might not be ringing in the kitchen\" implies that it's possible the phone isn't ringing there. This means it's not definitely or necessarily ringing in the kitchen. So yes, we can infer \"It's not the case that the phone must be ringing in the kitchen.\"\n\n**Question 2:** We're given that the phone is either in the living room or ringing in the kitchen. We're also told it's not definitely ringing in the kitchen. This eliminates the second option, leaving only one possibility: the phone is in the living room. So the answer is yes.\n\n**Question 3:**  While we know the phone might not be ringing in the kitchen, it doesn't definitively rule out that possibility. The phone could still be in the kitchen, just not ringing.  Therefore, we can't definitively say the phone is in the living room. \n\n**Answer: yes, yes, no** \n"
+        }
+    ]
+}

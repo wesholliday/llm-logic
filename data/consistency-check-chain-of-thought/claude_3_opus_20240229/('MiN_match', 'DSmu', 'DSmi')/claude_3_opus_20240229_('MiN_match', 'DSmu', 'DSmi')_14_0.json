@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 2: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: \n\"The shoes might not be lined up by the door\" means it's possible the shoes are not lined up by the door. This is equivalent to saying \"It's not the case that the shoes must be lined up by the door\", because if they might not be, then they are not necessarily (must be) lined up by the door.\n\nQuestion 2:\nWe are told \"Either the shoes are in the closet or they must be lined up by the door\". We are also told \"It's not the case that the shoes must be lined up by the door\". If the shoes are not necessarily by the door, then based on the either/or statement, they must be in the closet. So yes, we can infer the shoes are in the closet.\n\nQuestion 3:\n\"The shoes might not be lined up by the door\" leaves open the possibility that the shoes are lined up by the door. It doesn't rule that option out completely like question 2 did. So even with the either/or statement, we cannot infer for certain that the shoes must be in the closet, because they still might be by the door.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

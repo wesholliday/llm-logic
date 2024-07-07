@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If the bill is paid, then the services will continue. Can we infer that if the bill is paid and the check bounces, then the services will continue?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: Understand the given information\n\n* The bill is paid.\n* The check bounces.\n\nStep 2: Analyze the relationship between the bill being paid and the services continuing\n\n* If the bill is paid, then the services will continue. (This is a direct implication of the given information.)\n\nStep 3: Consider the possibility of the check bouncing\n\n* If the check bounces, it means that the payment for the bill did not go through.\n\nStep 4: Evaluate the impact of the check bouncing on the services continuing\n\n* If the payment for the bill did not go through, then the services will not continue. (This is a logical conclusion based on the given information.)\n\nStep 5: Draw a conclusion\n\n* We cannot infer that if the bill is paid and the check bounces, then the services will continue. The check bouncing negates the assumption that the bill has been paid, and therefore, the services will not continue.\n\nAnswer: No",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

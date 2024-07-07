@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 3: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe statement \"The keys might not be dangling in the cabinet\" implies uncertainty. It suggests that there's a possibility that the keys are not in the cabinet. If we negate the phrase \"must be dangling,\" we get \"It's not the case that the keys must be dangling in the cabinet,\" which aligns with the original statement's implication of uncertainty. Therefore, we can infer this statement from the original one.\n\nQuestion 2:\nWe have two premises here:\n1. \"Either the keys are in the drawer or they must be dangling in the cabinet\"\n2. \"The keys might not be dangling in the cabinet\"\n\nThe first premise presents two options, while the second introduces uncertainty about one of those options. However, the uncertainty doesn't completely eliminate the possibility of the keys being in the cabinet. Therefore, we cannot conclusively infer that the keys are in the drawer based on these premises alone.\n\nQuestion 3:\nAgain, we have two premises:\n1. \"Either the keys are in the drawer or they must be dangling in the cabinet\"\n2. \"It's not the case that the keys must be dangling in the cabinet\"\n\nIn this case, the second premise directly contradicts one part of the first premise. If it's not the case that the keys must be dangling in the cabinet, then according to the first premise, the only remaining option is that the keys are in the drawer. Therefore, we can infer that the keys are in the drawer.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

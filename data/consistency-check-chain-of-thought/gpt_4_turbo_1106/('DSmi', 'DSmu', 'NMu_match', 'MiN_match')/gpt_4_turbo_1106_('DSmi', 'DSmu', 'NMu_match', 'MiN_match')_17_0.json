@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "NMu_match",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 2: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 3: From 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook might not be sitting on the nightstand'?\nQuestion 4: From 'The notebook might not be sitting on the nightstand', can we infer 'It's not the case that the notebook must be sitting on the nightstand'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: The first statement is a logical disjunction that says the notebook is either in the drawer or on the nightstand. The second statement introduces a possibility that the notebook might not be on the nightstand. However, this does not eliminate the possibility that the notebook could still be on the nightstand. Therefore, we cannot definitively infer that the notebook is in the drawer just because it might not be on the nightstand.\n\nQuestion 2: The first statement is the same as in Question 1. The second statement now says that it is not the case that the notebook must be sitting on the nightstand, which negates the necessity of the notebook being on the nightstand. This means the notebook cannot be on the nightstand, and since the first statement presented an either/or scenario, we can infer that the notebook must be in the drawer.\n\nQuestion 3: The statement 'It's not the case that the notebook must be sitting on the nightstand' suggests that there is no necessity for the notebook to be on the nightstand. This implies that there is a possibility that the notebook is not on the nightstand. Therefore, we can infer that 'The notebook might not be sitting on the nightstand'.\n\nQuestion 4: The statement 'The notebook might not be sitting on the nightstand' introduces uncertainty about the location of the notebook, but it does not negate the possibility that the notebook could be on the nightstand. It does not assert that the notebook must not be on the nightstand, only that it might not be. Therefore, we cannot infer that 'It's not the case that the notebook must be sitting on the nightstand' because the original statement allows for the possibility that the notebook could still be there.\n\nAnswer: no, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Suppose 'If Mary was at the wedding, then Sue was at the wedding' is true and 'Sue was at the wedding' is true. Does it follow that 'Mary was at the wedding' is true?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "phi 2 3B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": " Explanation: If Mary was at the wedding, then Sue was at the wedding. This means that if we know Sue was at the wedding, we can conclude that Mary must have been there as well. However, just because Sue was at the wedding does not necessarily mean that Mary was also present. It is possible that Sue went to the wedding alone or with someone else who was not Mary. Therefore, it cannot be concluded that Mary was at the wedding based solely on the fact that Sue was there.\nAnswer: No\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

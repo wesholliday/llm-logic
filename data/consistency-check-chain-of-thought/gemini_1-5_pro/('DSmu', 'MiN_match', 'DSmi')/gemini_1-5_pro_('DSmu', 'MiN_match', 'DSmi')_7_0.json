@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 2: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\nQuestion 3: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1:**\n\n* **Premise 1:** Either the remote control is on the coffee table or it must be hiding under the couch.\n* **Premise 2:** It's not the case that the remote control must be hiding under the couch.\n\n**Reasoning:** This is a classic application of disjunctive syllogism. If one option in an \"either/or\" statement is false, the other option must be true.\n\n**Question 2:**\n\n* **Premise:** The remote control might not be hiding under the couch.\n\n**Reasoning:**  \"Might not\" implies possibility, not certainty. Just because the remote might not be under the couch doesn't mean it's definitely not there. \n\n**Question 3:**\n\n* **Premise 1:** Either the remote control is on the coffee table or it must be hiding under the couch.\n* **Premise 2:** The remote control might not be hiding under the couch.\n\n**Reasoning:**  Similar to question 2, the second premise only introduces possibility.  We don't have enough information to definitively say the remote is on the coffee table.\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

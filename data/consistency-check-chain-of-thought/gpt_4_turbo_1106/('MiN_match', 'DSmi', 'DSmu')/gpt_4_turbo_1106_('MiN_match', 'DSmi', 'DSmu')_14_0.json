@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 2: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"The shoes might not be lined up by the door\" suggests that there is a possibility that the shoes are not lined up by the door. This implies uncertainty about the position of the shoes. From this, we can infer that it is not a certainty or requirement (\"must\") that the shoes are lined up by the door. So, the answer to the first question is 'yes'.\n\nQuestion 2: We have two premises here. The first is \"Either the shoes are in the closet or they must be lined up by the door,\" which is an either/or statement, indicating that one of the two conditions must be true. The second premise is \"The shoes might not be lined up by the door,\" which introduces the possibility that the shoes are not lined up by the door but does not confirm it. Since the second premise does not definitively negate the possibility of the shoes being lined up by the door, we cannot conclude with certainty that the shoes are in the closet. Therefore, the answer to the second question is 'no'.\n\nQuestion 3: Again, we have the premise \"Either the shoes are in the closet or they must be lined up by the door.\" This time, it is combined with the statement \"It's not the case that the shoes must be lined up by the door,\" which definitively negates the second part of the first premise. Since the second condition (shoes must be lined up by the door) is negated, the only remaining possibility from the either/or statement is that the shoes are in the closet. Therefore, the answer to the third question is 'yes'.\n\nAnswer: yes, no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

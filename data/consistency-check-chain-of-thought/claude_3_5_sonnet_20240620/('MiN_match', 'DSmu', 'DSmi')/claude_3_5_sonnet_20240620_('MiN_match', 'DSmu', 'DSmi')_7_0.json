@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\nQuestion 2: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 3: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n\"The remote control might not be hiding under the couch\" means that there's a possibility that the remote is not under the couch. This is equivalent to saying that it's not certain or necessary that the remote is under the couch. Therefore, we can indeed infer that \"It's not the case that the remote control must be hiding under the couch.\" The statement \"might not\" directly implies that it's not a necessity.\n\nQuestion 2:\nWe have two premises here:\n1. \"Either the remote control is on the coffee table or it must be hiding under the couch\"\n2. \"It's not the case that the remote control must be hiding under the couch\"\n\nThe first premise gives us two options, and the second premise eliminates one of those options. Since it's not the case that the remote must be under the couch, the only remaining option from the first premise is that the remote is on the coffee table. This is a valid logical inference.\n\nQuestion 3:\nAgain, we have two premises:\n1. \"Either the remote control is on the coffee table or it must be hiding under the couch\"\n2. \"The remote control might not be hiding under the couch\"\n\nWhile the first premise is the same as in Question 2, the second premise is slightly different. \"Might not be\" is not as strong as \"It's not the case that it must be.\" The remote control might not be under the couch, but it also might be. This doesn't definitively rule out the possibility of it being under the couch. Therefore, we can't conclusively infer that the remote must be on the coffee table.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 2: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 3: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\". The second statement says \"B might not be true\". However, just because B might not be true doesn't necessarily mean it isn't true. It's still possible for B to be true. Therefore, we can't definitively conclude that A must be true. We don't have enough information to say for certain that the cookies are in the jar.\n\nQuestion 2:\nAgain, we have the disjunction \"Either A or B\". The second statement now says \"It's not the case that B\". This is a stronger statement than in Question 1. If we know for certain that B is not the case, and we know that either A or B must be true, then we can conclude that A must be true. In this case, we can infer that the cookies are in the jar.\n\nQuestion 3:\nThis question is about the relationship between \"might not\" and \"not must\". If something might not be the case, it means it's not necessarily true. This is equivalent to saying it's not the case that it must be true. \"Might not\" and \"not must\" are logically equivalent statements. Therefore, we can infer one from the other.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

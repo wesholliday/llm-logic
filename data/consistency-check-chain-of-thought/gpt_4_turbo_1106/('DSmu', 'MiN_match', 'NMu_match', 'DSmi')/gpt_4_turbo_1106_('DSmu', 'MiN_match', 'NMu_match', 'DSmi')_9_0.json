@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "NMu_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 2: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\nQuestion 3: From 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock might not be under the bed'?\nQuestion 4: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: We have two premises: \"Either the missing sock is in the laundry basket or it must be under the bed\" and \"It's not the case that the missing sock must be under the bed.\" The second premise negates one of the options presented in the first premise, leaving us with the only remaining possibility that the missing sock is in the laundry basket. Therefore, we can infer that the missing sock is in the laundry basket.\n\nQuestion 2: The statement \"The missing sock might not be under the bed\" suggests that there is a possibility that the sock is not under the bed. However, this does not necessarily mean that it must not be under the bed. \"Might not\" implies uncertainty, whereas \"must not\" implies certainty. Therefore, from the statement that the sock might not be under the bed, we cannot infer with certainty that it must not be under the bed.\n\nQuestion 3: The statement \"It's not the case that the missing sock must be under the bed\" indicates that there is no necessity for the sock to be under the bed. This implies that there is at least a possibility that the sock is not under the bed. Therefore, we can infer that the missing sock might not be under the bed.\n\nQuestion 4: The premises are \"Either the missing sock is in the laundry basket or it must be under the bed\" and \"The missing sock might not be under the bed.\" The second premise introduces uncertainty about the sock being under the bed but does not eliminate the possibility. Since the first premise presents an either/or scenario and the second premise does not confirm that the sock is definitely not under the bed, we cannot conclusively infer that the missing sock is in the laundry basket based on the information given.\n\nAnswer: yes, no, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

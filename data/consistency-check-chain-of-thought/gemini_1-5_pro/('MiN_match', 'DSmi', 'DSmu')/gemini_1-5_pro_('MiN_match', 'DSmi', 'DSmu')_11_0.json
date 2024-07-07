@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The jacket might not be hanging in the closet', can we infer 'It's not the case that the jacket must be hanging in the closet'?\nQuestion 2: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'The jacket might not be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 3: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket is draped over the chair'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'The jacket might not be hanging in the closet', can we infer 'It's not the case that the jacket must be hanging in the closet'?**\n\n* **Reasoning:** \"Might not\" implies that it's possible the jacket isn't in the closet.  If it's possible the jacket isn't there, then it can't be definitely true (\"must\") that the jacket is in the closet.\n\n**Question 2: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'The jacket might not be hanging in the closet', can we infer 'The jacket is draped over the chair'?**\n\n* **Reasoning:** We're told the jacket is either on the chair or in the closet. The second statement introduces the possibility that the jacket isn't in the closet. If it's not in the closet (as the second statement allows), then the first statement forces it to be on the chair.\n\n**Question 3: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket is draped over the chair'?**\n\n* **Reasoning:** This is identical to Question 2, just phrased slightly differently. The second statement confirms that the jacket doesn't have to be in the closet.  Therefore, it must be on the chair.\n\n**Answer: yes, yes, yes** \n"
+        }
+    ]
+}

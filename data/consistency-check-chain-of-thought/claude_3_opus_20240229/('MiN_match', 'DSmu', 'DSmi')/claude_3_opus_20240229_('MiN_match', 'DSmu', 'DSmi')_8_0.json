@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The missing puzzle piece might not be blending in on the floor', can we infer 'It's not the case that the missing puzzle piece must be blending in on the floor'?\nQuestion 2: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 3: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through this step-by-step:\n\nQuestion 1: \nThe original statement says the puzzle piece might not be blending in. This means there's a possibility it's not blending in. \nThe inferred statement says it's not the case that the piece must be blending in. In other words, it's not necessarily blending in.\nThese two statements are logically equivalent. If there's a chance it's not blending in, then it's not guaranteed to be blending in.\n\nQuestion 2:\nWe are given that either the piece is in the box or it must be blending in on the floor. This is an either/or statement.\nWe are also given that it's not the case that the piece must be blending in. \nIf we negate one of the either/or options, the other one must be true. Since it's not the case that the piece must be blending in, it must be in the box.\n\nQuestion 3:\nAgain, we have the either/or statement: the piece is either in the box or must be blending in.\nBut this time, we are given that the piece might not be blending in. This is not a definitive statement. There's still a chance it could be blending in.\nSince one of the either/or options is still possibly true, we cannot definitively conclude the other option (that the piece is in the box) is true.\n\nAnswer: yes,yes,no"
+        }
+    ]
+}

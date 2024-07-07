@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'The umbrella might not be tucked away in the closet', can we infer 'The umbrella is in the car'?\nQuestion 2: From 'Either the umbrella is in the car or it must be tucked away in the closet' together with 'It's not the case that the umbrella must be tucked away in the closet', can we infer 'The umbrella is in the car'?\nQuestion 3: From 'The umbrella might not be tucked away in the closet', can we infer 'It's not the case that the umbrella must be tucked away in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\n- We are told that either the umbrella is in the car or it must be in the closet. \n- We are also told that the umbrella might not be in the closet.\n- \"Might not be in the closet\" leaves open the possibility that it could still be in the closet. \n- So we can't definitively conclude the umbrella is in the car. It could be in either location.\n\nQuestion 2:\n- Again, we know either the umbrella is in the car or it must be in the closet.\n- This time, we are told it's not the case that the umbrella must be in the closet. \n- If it's not the case that it must be in the closet, then by the initial either/or statement, it must be in the car.\n- So in this case, we can infer the umbrella is in the car.\n\nQuestion 3:\n- We are told the umbrella might not be in the closet.\n- \"Might not be\" is different from \"must not be\". \"Might not be\" allows for the possibility that it could still be in the closet.\n- So from \"might not be in the closet\", we cannot infer \"it's not the case that it must be in the closet\". It could still possibly be required to be in the closet.\n\nAnswer: no, yes, no"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "NMu_match",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 2: From 'Either the phone is in the living room or it must be ringing in the kitchen' together with 'The phone might not be ringing in the kitchen', can we infer 'The phone is in the living room'?\nQuestion 3: From 'It's not the case that the phone must be ringing in the kitchen', can we infer 'The phone might not be ringing in the kitchen'?\nQuestion 4: From 'The phone might not be ringing in the kitchen', can we infer 'It's not the case that the phone must be ringing in the kitchen'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have two premises: \"Either the phone is in the living room or it must be ringing in the kitchen,\" and \"It's not the case that the phone must be ringing in the kitchen.\" If it's not the case that the phone must be ringing in the kitchen, then the only remaining option from the first premise is that the phone is in the living room. Therefore, we can infer that the phone is in the living room.\n\nQuestion 2: The premises are \"Either the phone is in the living room or it must be ringing in the kitchen,\" and \"The phone might not be ringing in the kitchen.\" The second premise introduces a possibility that the phone might not be ringing in the kitchen, but it does not eliminate the possibility that the phone could still be ringing in the kitchen. Since we do not have a definitive statement negating that the phone is ringing in the kitchen, we cannot conclusively infer that the phone is in the living room based on these premises.\n\nQuestion 3: The premise is \"It's not the case that the phone must be ringing in the kitchen.\" This statement implies that there is no necessity for the phone to be ringing in the kitchen, which means that it is possible that the phone might not be ringing in the kitchen. Therefore, we can infer that \"The phone might not be ringing in the kitchen.\"\n\nQuestion 4: The premise is \"The phone might not be ringing in the kitchen.\" This statement suggests that there is a possibility that the phone is not ringing in the kitchen, but it does not assert that it must not be ringing in the kitchen. However, if the phone might not be ringing, then it is not necessarily the case that it must be ringing. Therefore, we can infer that \"It's not the case that the phone must be ringing in the kitchen.\"\n\nAnswer: yes, no, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

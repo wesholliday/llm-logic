@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 2: From 'The jacket might not be hanging in the closet', can we infer 'It's not the case that the jacket must be hanging in the closet'?\nQuestion 3: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'The jacket might not be hanging in the closet', can we infer 'The jacket is draped over the chair'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: Let's break this down:\n- We are given that either the jacket is draped over the chair or it must be hanging in the closet. This is an either/or statement.\n- We are also told that it's not the case that the jacket must be hanging in the closet. In other words, the second part of the either/or statement is false.\n- In an either/or statement, if one part is false, the other part must be true.\n- Therefore, since the \"must be hanging in the closet\" part is false, the \"draped over the chair\" part must be true.\nSo yes, we can infer that the jacket is draped over the chair.\n\nQuestion 2: \n- \"The jacket might not be hanging in the closet\" means there's a possibility that the jacket is not hanging in the closet.\n- \"It's not the case that the jacket must be hanging in the closet\" means the jacket is not necessarily hanging in the closet.\n- If something might not be the case, then it's also true that it's not the case that it must be so.\n- Therefore, yes, from \"The jacket might not be hanging in the closet\", we can infer \"It's not the case that the jacket must be hanging in the closet\".\n\nQuestion 3:\n- We have the same either/or statement as in Question 1: either the jacket is draped over the chair or it must be hanging in the closet.\n- But now, instead of being told that the second part is definitely false, we are told that the jacket might not be hanging in the closet.\n- \"Might not\" is not as strong as \"must not\". There's still a possibility that the jacket is hanging in the closet.\n- So we can't rule out the second part of the either/or statement.\n- Therefore, we don't have enough information to infer that the jacket is definitely draped over the chair.\nSo no, in this case we cannot infer that the jacket is draped over the chair.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 2: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer that the shoes are in the closet.\n\nQuestion 2:\n\"The shoes might not be lined up by the door\" means it's possible they're not lined up by the door.\n\"It's not the case that the shoes must be lined up by the door\" also means it's possible they're not lined up by the door.\nThese statements are equivalent in modal logic.\nSo yes, we can infer the second statement from the first.\n\nQuestion 3:\nWe have \"Either A or B\" again.\n\"The shoes might not be lined up by the door\" is equivalent to \"It's not the case that the shoes must be lined up by the door\" (from Question 2).\nThis gives us the same situation as in Question 1.\nSo yes, we can infer that the shoes are in the closet.\n\nAnswer: yes, yes, yes"
+        }
+    ]
+}

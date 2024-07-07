@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 2: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 3: From 'The missing puzzle piece might not be blending in on the floor', can we infer 'It's not the case that the missing puzzle piece must be blending in on the floor'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first premise states that the puzzle piece is either in the box OR blending in on the floor. The second premise says it MIGHT NOT be blending in on the floor. This doesn't definitively rule out the floor option, so we can't conclusively say it must be in the box. The piece could still potentially be on the floor.\n\nQuestion 2:\nAgain, the first premise gives us two options: the box or the floor. The second premise now states that it's NOT the case that the piece MUST be blending in on the floor. This effectively eliminates the floor as a necessary location, leaving only the box as a possibility. Therefore, we can infer that the piece must be in the box.\n\nQuestion 3:\nThis question is about the relationship between \"might not be\" and \"not must be\". If something might not be the case, it logically follows that it's not a necessity. In other words, if there's a possibility that the piece is not blending in on the floor (might not be), then it cannot be a requirement that it is blending in on the floor (not must be). Therefore, we can infer the second statement from the first.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

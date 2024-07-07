@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "NMu_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 2: From 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes might not be lined up by the door'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 4: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: The statement \"The shoes might not be lined up by the door\" suggests that there is a possibility that the shoes are not lined up by the door, but it does not rule out the possibility that they could be. This contrasts with the statement \"It's not the case that the shoes must be lined up by the door,\" which definitively states that there is no requirement for the shoes to be lined up by the door. Thus, from the possibility that the shoes might not be lined up, we can infer that it is not necessarily required for them to be lined up. Therefore, the answer is \"yes.\"\n\nQuestion 2: The statement \"It's not the case that the shoes must be lined up by the door\" implies that there is no obligation or necessity for the shoes to be lined up by the door. This allows for the possibility that the shoes might not be lined up by the door, as there is no requirement preventing this scenario. Therefore, from the lack of necessity, we can infer the possibility of non-alignment. Hence, the answer is \"yes.\"\n\nQuestion 3: The statement \"Either the shoes are in the closet or they must be lined up by the door\" presents two possibilities. If it is also true that \"It's not the case that the shoes must be lined up by the door,\" then the requirement for the shoes to be lined up by the door is negated, leaving only the other part of the disjunction true. Therefore, if the shoes must not be lined up by the door, they must be in the closet. Thus, the answer is \"yes.\"\n\nQuestion 4: The statement \"Either the shoes are in the closet or they must be lined up by the door\" again presents two possibilities. However, the additional information \"The shoes might not be lined up by the door\" only suggests a possibility of the shoes not being lined up by the door but does not confirm it. Since this does not definitively negate the possibility of the shoes being lined up by the door, we cannot conclusively infer that the shoes must be in the closet based solely on the possibility that they might not be lined up. Therefore, the answer is \"no.\"\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

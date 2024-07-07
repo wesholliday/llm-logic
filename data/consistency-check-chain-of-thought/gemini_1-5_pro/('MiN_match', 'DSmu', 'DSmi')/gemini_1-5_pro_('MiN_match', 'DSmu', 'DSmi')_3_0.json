@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The cat might not be playing in the bedroom', can we infer 'It's not the case that the cat must be playing in the bedroom'?\nQuestion 2: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 3: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'The cat might not be playing in the bedroom', can we infer 'The cat is napping on the couch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Reasoning:**\n\n**Question 1:** \"The cat might not be playing in the bedroom\" means it's possible the cat isn't playing there. This aligns with \"It's not the case that the cat MUST be playing in the bedroom\" because the cat playing in the bedroom isn't a certainty.\n\n**Question 2:** We're given two pieces of information: 1) The cat is either napping or playing in the bedroom, and 2) It's not the case the cat must be playing in the bedroom. Since the second piece eliminates the \"playing in the bedroom\" option, we can definitively say the cat is napping on the couch.\n\n**Question 3:**  We know the cat is either napping or playing in the bedroom.  \"The cat might not be playing in the bedroom\" doesn't rule out the possibility of the cat playing there.  Therefore, we can't definitively say the cat is napping on the couch.\n\n**Answer: yes, yes, no** \n"
+        }
+    ]
+}

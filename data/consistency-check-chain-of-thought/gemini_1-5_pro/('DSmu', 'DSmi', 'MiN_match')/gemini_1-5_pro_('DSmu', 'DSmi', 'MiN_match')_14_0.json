@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 2: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 3: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1:**\n\n* **Premise 1:** Either the shoes are in the closet or they must be lined up by the door.\n* **Premise 2:** It's not the case that the shoes must be lined up by the door.\n\nSince the shoes are not lined up by the door (Premise 2), and the first premise states they must be in one of those two locations, we can conclude the shoes are in the closet.\n\n**Question 2:**\n\n* **Premise 1:** Either the shoes are in the closet or they must be lined up by the door.\n* **Premise 2:** The shoes might not be lined up by the door.\n\nWhile the shoes might not be lined up by the door, they also might be. This premise doesn't definitively rule out the possibility of the shoes being by the door. Therefore, we cannot definitively conclude the shoes are in the closet.\n\n**Question 3:**\n\n* **Premise:** The shoes might not be lined up by the door.\n\nSaying the shoes \"might not\" be lined up by the door is different from saying they are definitively NOT lined up by the door.  The shoes could still be lined up by the door, even if there's a possibility they aren't.\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

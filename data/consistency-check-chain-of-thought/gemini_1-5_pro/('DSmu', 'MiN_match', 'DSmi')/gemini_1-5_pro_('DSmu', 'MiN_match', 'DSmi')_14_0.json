@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 2: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\nQuestion 3: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Reasoning:**\n\n**Question 1:**\n\n* We are given \"Either the shoes are in the closet or they must be lined up by the door.\" This means one of these statements MUST be true.\n* We are also given \"It's not the case that the shoes must be lined up by the door.\" \n* Since the second part of the first statement is false, the first part MUST be true to satisfy the \"either/or\" condition.\n\n**Question 2:**\n\n* \"The shoes might not be lined up by the door\" means it's possible they are not lined up. \n* This does NOT rule out the possibility that they MUST be lined up by the door.  \"Might not\" and \"must not\" have different meanings.\n\n**Question 3:**\n\n* Similar to question 1, we have an \"either/or\" situation.\n* However, \"The shoes might not be lined up by the door\" doesn't definitively rule out the second part of the first statement. The shoes could still be lined up by the door even if they \"might not\" be.\n\n**Answer: yes, no, no** \n"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "user_prompt": "From 'The book was written by James' together with 'If the book was written by James, then the book is a mystery novel', can we infer 'The book is a mystery novel'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through this step-by-step:\n\n1) We are given two statements:\n   - \"The book was written by James\"\n   - \"If the book was written by James, then the book is a mystery novel\"\n\n2) The first statement directly asserts that James wrote the book. Let's call this statement P.\n\n3) The second statement is a conditional (an \"if-then\" statement). It states that if James wrote the book (the \"if\" part), then it must be a mystery novel (the \"then\" part). Let's call the \"if\" part Q, and the \"then\" part R.\n\n4) So we have:\n   - P: \"The book was written by James\"\n   - Q \u2192 R: \"If the book was written by James, then the book is a mystery novel\"\n\n5) In logic, there's a rule called Modus Ponens. It states that if we have a statement of the form \"If P, then Q\" (i.e., P \u2192 Q), and we also know that P is true, then we can infer that Q must be true.\n\n6) In our case, we have Q \u2192 R, and we also know that P is true. But P and Q are the same statement! So we can apply Modus Ponens.\n\n7) Therefore, since we know \"The book was written by James\" is true, and we have the conditional statement \"If the book was written by James, then the book is a mystery novel\", we can infer that \"The book is a mystery novel\" must be true.\n\nAnswer: yes"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\nQuestion 2: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 3: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: Yes, we can infer 'It's not the case that the remote control must be hiding under the couch' from 'The remote control might not be hiding under the couch'. If the remote might not be under the couch, then it's not the case that it must be under the couch.\n\nQuestion 2: Yes, we can infer 'The remote control is on the coffee table' given the two statements. The first statement sets up an either/or situation - the remote is either on the coffee table or under the couch. The second statement eliminates the 'under the couch' possibility. So by process of elimination, the remote must be on the coffee table.\n\nQuestion 3: No, we cannot definitively infer that 'The remote control is on the coffee table' in this case. While the first statement sets up the either/or, the second statement only says the remote MIGHT not be under the couch. There's still a possibility it could be under the couch, so we can't say for sure it must be on the coffee table.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

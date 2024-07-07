@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?\nQuestion 2: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 3: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 4: From 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies might not be hidden in the pantry'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4o-2024-05-13",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step.\n\n**Question 1:**\n- Statement: \"The cookies might not be hidden in the pantry.\"\n- Inference: \"It's not the case that the cookies must be hidden in the pantry.\"\n- Reasoning: If the cookies might not be hidden in the pantry, it implies that there is a possibility they are not there. Therefore, it is not necessary (or must) that they are hidden in the pantry.\n- Answer: Yes.\n\n**Question 2:**\n- Statements: \"Either the cookies are in the jar or they must be hidden in the pantry\" and \"The cookies might not be hidden in the pantry.\"\n- Inference: \"The cookies are in the jar.\"\n- Reasoning: The first statement is a disjunction (either/or). The second statement implies that it is possible the cookies are not hidden in the pantry, which means it is not certain they are in the pantry. Given the disjunction, if one part (must be hidden in the pantry) is not necessarily true, the other part (cookies are in the jar) must be true.\n- Answer: Yes.\n\n**Question 3:**\n- Statements: \"Either the cookies are in the jar or they must be hidden in the pantry\" and \"It's not the case that the cookies must be hidden in the pantry.\"\n- Inference: \"The cookies are in the jar.\"\n- Reasoning: The first statement is a disjunction (either/or). The second statement directly negates the necessity of the cookies being hidden in the pantry. Therefore, the only remaining option in the disjunction is that the cookies are in the jar.\n- Answer: Yes.\n\n**Question 4:**\n- Statement: \"It's not the case that the cookies must be hidden in the pantry.\"\n- Inference: \"The cookies might not be hidden in the pantry.\"\n- Reasoning: If it is not necessary for the cookies to be hidden in the pantry, it implies that there is a possibility they are not there. This aligns with the idea that they might not be hidden in the pantry.\n- Answer: Yes.\n\nAnswer: yes, yes, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

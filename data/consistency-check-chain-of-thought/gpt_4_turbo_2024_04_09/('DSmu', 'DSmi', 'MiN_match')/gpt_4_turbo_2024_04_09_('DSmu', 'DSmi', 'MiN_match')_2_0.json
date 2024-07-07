@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 3: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, the statement \"Either the keys are in the drawer or they must be dangling in the cabinet\" presents two possibilities. The additional statement \"It's not the case that the keys must be dangling in the cabinet\" negates the second possibility, leaving only the first possibility that the keys are in the drawer. Therefore, we can infer that the keys are in the drawer.\n\nFor Question 2, the statement \"Either the keys are in the drawer or they must be dangling in the cabinet\" again presents two possibilities. However, the additional statement \"The keys might not be dangling in the cabinet\" does not definitively negate the possibility that the keys are dangling in the cabinet; it only suggests that it's possible they are not. Since this does not rule out the possibility that the keys could still be dangling in the cabinet, we cannot definitively infer that the keys are in the drawer based solely on this information.\n\nFor Question 3, the statement \"The keys might not be dangling in the cabinet\" implies that there is a possibility that the keys are not dangling in the cabinet, but it does not assert this as a certainty. The statement \"It's not the case that the keys must be dangling in the cabinet\" means that it is definitely not true that the keys have to be dangling in the cabinet. The possibility (might not) does not equate to certainty (must not), so we cannot infer the latter from the former.\n\nAnswer: yes, no, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

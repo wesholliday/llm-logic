@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "NMu_match",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'It's not the case that the book must be resting on the table', can we infer 'The book might not be resting on the table'?\nQuestion 3: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 4: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have two premises: \"Either the book is on the shelf or it must be resting on the table\" and \"It's not the case that the book must be resting on the table.\" The first premise is a logical disjunction (either/or scenario). The second premise negates one of the parts of the disjunction. If it's not the case that the book must be resting on the table, then the only remaining possibility from the disjunction is that the book is on the shelf. Therefore, we can infer that the book is on the shelf.\n\nQuestion 2: The premise is \"It's not the case that the book must be resting on the table.\" This statement implies that there is a possibility that the book is not resting on the table, but it does not confirm it as a certainty. The statement \"The book might not be resting on the table\" aligns with this uncertainty, suggesting that it is indeed a possibility. Thus, we can infer that the book might not be resting on the table.\n\nQuestion 3: The premise is \"The book might not be resting on the table.\" This statement indicates a possibility that the book is not on the table, but it does not assert it as a definite fact. The statement \"It's not the case that the book must be resting on the table\" means that there is no necessity for the book to be on the table. Since the possibility (might not) does not contradict the lack of necessity (must not), we can infer that it's not the case that the book must be resting on the table.\n\nQuestion 4: We have two premises: \"Either the book is on the shelf or it must be resting on the table\" and \"The book might not be resting on the table.\" The second premise introduces uncertainty about the book resting on the table but does not eliminate the possibility that it could still be there. Since the premise does not definitively negate the possibility of the book being on the table, we cannot conclusively infer that the book is on the shelf based solely on the possibility that it might not be on the table.\n\nAnswer: yes, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

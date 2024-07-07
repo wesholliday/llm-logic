@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'The jacket might not be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 2: From 'The jacket might not be hanging in the closet', can we infer 'It's not the case that the jacket must be hanging in the closet'?\nQuestion 3: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket is draped over the chair'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: We are told that either the jacket is draped over the chair or it must be hanging in the closet. We are also told that the jacket might not be hanging in the closet. From this, we cannot definitively conclude that the jacket is draped over the chair. The fact that it might not be in the closet leaves open the possibility that it is draped over the chair, but does not guarantee it. So we cannot make that inference with certainty.\n\nQuestion 2: Yes, from the statement \"The jacket might not be hanging in the closet\", we can infer \"It's not the case that the jacket must be hanging in the closet\". If there's a possibility it's not in the closet, then it cannot be the case that it must be in the closet.\n\nQuestion 3: Here we have the additional information that it's not the case that the jacket must be hanging in the closet. Combined with the either/or statement from the first question, we can now infer that the jacket is draped over the chair. If those are the only two possibilities, and it's not the case that it must be in the closet, then by process of elimination it must be draped over the chair.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

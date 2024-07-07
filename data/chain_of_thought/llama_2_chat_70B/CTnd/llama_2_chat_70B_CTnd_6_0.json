@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If the clothes were washed, then they were not washed properly', can we infer 'If the clothes were washed properly, then they were not washed'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "llama 2 chat 70B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nMy reasoning is as follows:\n\n1. The premise \"If the clothes were washed, then they were not washed properly\" implies that if the clothes were washed, then they must not have been washed properly, since proper washing would have resulted in clean clothes.\n2. Now, let's consider the converse of this statement: \"If the clothes were not washed properly, then they were not washed.\" This statement is logically equivalent to the original premise, since if the clothes were not washed properly, then they must not have been washed at all.\n3. Therefore, we can infer that if the clothes were washed properly, then they were not washed, since proper washing would have resulted in clean clothes, and the fact that the clothes are not clean suggests that they were not washed at all.\n\nAnswer: Yes.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

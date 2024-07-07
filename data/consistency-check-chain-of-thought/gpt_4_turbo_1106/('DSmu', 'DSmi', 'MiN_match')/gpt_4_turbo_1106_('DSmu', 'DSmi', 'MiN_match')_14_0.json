@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'It's not the case that the shoes must be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 2: From 'Either the shoes are in the closet or they must be lined up by the door' together with 'The shoes might not be lined up by the door', can we infer 'The shoes are in the closet'?\nQuestion 3: From 'The shoes might not be lined up by the door', can we infer 'It's not the case that the shoes must be lined up by the door'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: We have a disjunction that says the shoes are either in one place or another: \"Either the shoes are in the closet or they must be lined up by the door.\" We are also given a negation: \"It's not the case that the shoes must be lined up by the door.\" If the second part of the disjunction is not true (the shoes must not be lined up by the door), then the first part of the disjunction must be true (the shoes are in the closet). Therefore, we can infer that the shoes are in the closet.\n\nQuestion 2: This time, the statement is \"The shoes might not be lined up by the door.\" This implies that there is a possibility that the shoes are not by the door, but it does not exclude the possibility that they could be. Since this statement does not definitively negate the second part of the original disjunction, we cannot be certain that the shoes are in the closet based on this information alone. There is still a possibility that the shoes could be lined up by the door.\n\nQuestion 3: \"The shoes might not be lined up by the door\" suggests uncertainty about the location of the shoes. It does not assert that the shoes must not be lined up by the door, only that they might not be. This does not equate to \"It's not the case that the shoes must be lined up by the door,\" which would be a definitive statement that the shoes cannot be by the door. Therefore, from the given statement, we cannot infer that it's not the case that the shoes must be lined up by the door.\n\nAnswer: yes, no, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

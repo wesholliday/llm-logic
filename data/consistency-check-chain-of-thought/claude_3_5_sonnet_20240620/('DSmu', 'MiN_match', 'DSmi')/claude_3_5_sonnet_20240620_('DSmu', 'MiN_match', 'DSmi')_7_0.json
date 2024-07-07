@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 2: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\nQuestion 3: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer that the remote control is on the coffee table.\n\nQuestion 2:\n\"The remote control might not be hiding under the couch\" means there's a possibility it's not under the couch.\nIf something might not be true, then it's not necessarily true.\nTherefore, we can indeed infer that \"It's not the case that the remote control must be hiding under the couch\".\n\nQuestion 3:\nWe have \"Either A or B\" again.\nBut this time, we only know that B might not be true (\"The remote control might not be hiding under the couch\").\nThis is not the same as knowing B is definitely not true.\nSince B might still be true, we can't definitively conclude A.\nTherefore, we cannot infer that the remote control is on the coffee table in this case.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

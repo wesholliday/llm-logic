@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmi",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 2: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1: \n- 'The book might not be resting on the table' means there is a possibility that the book is not on the table.\n- 'It's not the case that the book must be resting on the table' means the book is not necessarily on the table. \n- These two statements are logically equivalent. If there's a possibility the book is not on the table, then it's not necessarily on the table, and vice versa.\nSo the answer to Question 1 is yes.\n\nQuestion 2:\n- 'Either the book is on the shelf or it must be resting on the table' gives us two possibilities for the book's location.\n- 'The book might not be resting on the table' introduces uncertainty about whether the book is on the table.\n- However, this uncertainty alone is not enough to conclude with certainty that the book must be on the shelf. It could still possibly be on the table.\nSo the answer to Question 2 is no.\n\nQuestion 3:\n- Again, 'Either the book is on the shelf or it must be resting on the table' gives us two possibilities.\n- 'It's not the case that the book must be resting on the table' eliminates the necessity of the book being on the table.\n- With the table location eliminated as a necessity, the only remaining possibility from our initial statement is that the book is on the shelf.\nSo the answer to Question 3 is yes.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

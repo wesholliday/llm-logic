@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Sue chose pizza, then Bob chose pasta. Also, Bob chose pasta. Can we infer that Sue chose pizza?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "code llama instruct 34B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep 1: Identify the information given in the problem.\n\n* If Sue chose pizza, then Bob chose pasta. (Condition)\n* Bob chose pasta. (Statement)\n\nStep 2: Determine if the information is sufficient to make a conclusion.\n\n* The condition states that if Sue chose pizza, then Bob would choose pasta. However, it does not state what Bob's choice actually was. Therefore, we cannot conclude that Sue chose pizza based solely on this information.\n\nStep 3: Consider alternative possibilities.\n\n* It is possible that Bob chose something other than pasta, in which case the condition would not be met and we could not infer that Sue chose pizza.\n\nAnswer: No",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

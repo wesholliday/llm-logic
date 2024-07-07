@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?\nQuestion 2: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 3: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\n\"The newspaper might not be sitting on the porch\" implies that there's a possibility that the newspaper is not on the porch. If something might not be the case, then it's not necessarily true. Therefore, it's not the case that the newspaper must be sitting on the porch. The statement \"It's not the case that the newspaper must be sitting on the porch\" is a logical inference from the given statement.\n\nQuestion 2:\nWe have two premises:\n1. \"Either the newspaper is in the driveway or it must be sitting on the porch\"\n2. \"It's not the case that the newspaper must be sitting on the porch\"\n\nThe first premise gives us two options. The second premise eliminates one of these options (that it must be sitting on the porch). By the process of elimination, we can conclude that the newspaper is in the driveway.\n\nQuestion 3:\nWe have two premises:\n1. \"Either the newspaper is in the driveway or it must be sitting on the porch\"\n2. \"The newspaper might not be sitting on the porch\"\n\nWhile the second premise suggests that the newspaper might not be on the porch, it doesn't definitively rule out that possibility. The newspaper might still be on the porch, even if it's not certain. Therefore, we can't conclusively infer that the newspaper is in the driveway.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

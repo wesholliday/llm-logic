@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'The remote control might not be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 2: From 'Either the remote control is on the coffee table or it must be hiding under the couch' together with 'It's not the case that the remote control must be hiding under the couch', can we infer 'The remote control is on the coffee table'?\nQuestion 3: From 'The remote control might not be hiding under the couch', can we infer 'It's not the case that the remote control must be hiding under the couch'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement gives us two possibilities: either the remote is on the coffee table OR it must be under the couch.\nThe second statement says the remote might not be under the couch. This doesn't eliminate the possibility that it is under the couch; it just says it's not certain.\nTherefore, we can't definitively conclude that the remote is on the coffee table. Both options are still possible.\n\nQuestion 2:\nAgain, we start with two possibilities: either the remote is on the coffee table OR it must be under the couch.\nThe second statement here is stronger than in Question 1. It says it's not the case that the remote must be under the couch. This eliminates the second option entirely.\nIf the second option is eliminated and we only had two options to begin with, then the first option must be true.\nTherefore, we can conclude that the remote is on the coffee table.\n\nQuestion 3:\n\"The remote might not be hiding under the couch\" means there's a possibility it's not under the couch.\n\"It's not the case that the remote must be hiding under the couch\" means it's not certain or necessary that it's under the couch.\nIf something might not be the case, then it's definitely not certain or necessary.\nTherefore, we can infer the second statement from the first.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

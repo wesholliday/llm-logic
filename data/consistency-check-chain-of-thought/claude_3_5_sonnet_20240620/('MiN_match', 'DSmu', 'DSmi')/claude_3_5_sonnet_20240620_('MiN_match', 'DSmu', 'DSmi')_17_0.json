@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The notebook might not be sitting on the nightstand', can we infer 'It's not the case that the notebook must be sitting on the nightstand'?\nQuestion 2: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'It's not the case that the notebook must be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\nQuestion 3: From 'Either the notebook is in the drawer or it must be sitting on the nightstand' together with 'The notebook might not be sitting on the nightstand', can we infer 'The notebook is in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through these questions step by step:\n\nQuestion 1:\n\"The notebook might not be sitting on the nightstand\" implies that there's a possibility that the notebook is not on the nightstand. If something might not be the case, then it's not necessarily true. Therefore, it's not the case that the notebook must be sitting on the nightstand. The statement \"It's not the case that the notebook must be sitting on the nightstand\" is a logical inference from the given statement.\n\nQuestion 2:\nWe have two premises:\n1. \"Either the notebook is in the drawer or it must be sitting on the nightstand\"\n2. \"It's not the case that the notebook must be sitting on the nightstand\"\n\nThe first premise gives us two options, and the second premise eliminates one of those options. Since it's not the case that the notebook must be on the nightstand, the only remaining possibility from the first premise is that the notebook is in the drawer. This is a valid logical inference.\n\nQuestion 3:\nWe have two premises:\n1. \"Either the notebook is in the drawer or it must be sitting on the nightstand\"\n2. \"The notebook might not be sitting on the nightstand\"\n\nWhile the second premise suggests that the notebook might not be on the nightstand, it doesn't completely rule out the possibility that it is on the nightstand. The statement \"might not be\" is not as strong as \"is not\" or \"cannot be\". Therefore, we can't definitively conclude that the notebook is in the drawer. The possibility that it's on the nightstand still exists, even if it's not certain.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

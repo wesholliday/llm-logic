@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 2: From 'The watch might not be on his wrist', can we infer 'It's not the case that the watch must be on his wrist'?\nQuestion 3: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1:\nThe first premise states that either the watch is charging on the dresser or it must be on his wrist. This is a disjunction, meaning at least one of the two options must be true.\nThe second premise states that it's not the case that the watch must be on his wrist. In other words, the second option in the disjunction is false.\nIf one option in a disjunction is false, the other option must be true for the disjunction to hold.\nTherefore, we can infer that the watch is charging on the dresser.\n\nQuestion 2:\nThe premise states that the watch might not be on his wrist. This means there is a possibility that the watch is not on his wrist.\nIf there is a possibility that the watch is not on his wrist, then it cannot be the case that the watch must be on his wrist. \"Must\" implies certainty, while \"might not\" implies uncertainty.\nTherefore, we can infer that it's not the case that the watch must be on his wrist.\n\nQuestion 3:\nThe first premise is the same as in Question 1: either the watch is charging on the dresser or it must be on his wrist.\nThe second premise states that the watch might not be on his wrist, which we determined in Question 2 allows us to infer that it's not the case that the watch must be on his wrist.\nAs in Question 1, if one option in a disjunction is false (the watch must be on his wrist), the other option must be true for the disjunction to hold.\nTherefore, we can infer that the watch is charging on the dresser.\n\nAnswer: yes, yes, yes"
+        }
+    ]
+}

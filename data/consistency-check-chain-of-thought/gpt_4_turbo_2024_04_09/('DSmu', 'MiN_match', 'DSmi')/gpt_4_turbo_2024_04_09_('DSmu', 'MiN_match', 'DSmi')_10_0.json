@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 2: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?\nQuestion 3: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "For Question 1, the statement \"Either the newspaper is in the driveway or it must be sitting on the porch\" presents two possibilities. The additional statement \"It's not the case that the newspaper must be sitting on the porch\" negates the second possibility, leaving only the first possibility as true. Therefore, we can infer that \"The newspaper is in the driveway.\"\n\nFor Question 2, the statement \"The newspaper might not be sitting on the porch\" implies that there is a possibility that the newspaper is not on the porch, but it does not completely rule out the possibility that it must be sitting on the porch. The statement does not assert with certainty that the newspaper cannot be on the porch; it only opens up the possibility that it might not be. Therefore, we cannot infer that \"It's not the case that the newspaper must be sitting on the porch\" based solely on the possibility that it might not be.\n\nFor Question 3, the statement \"Either the newspaper is in the driveway or it must be sitting on the porch\" again presents two possibilities. The additional statement \"The newspaper might not be sitting on the porch\" suggests that there is a possibility that the newspaper is not on the porch, but it does not confirm it definitively. Since it does not rule out the possibility that the newspaper must be sitting on the porch, we cannot conclusively infer that \"The newspaper is in the driveway\" based solely on this information.\n\nAnswer: yes, no, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

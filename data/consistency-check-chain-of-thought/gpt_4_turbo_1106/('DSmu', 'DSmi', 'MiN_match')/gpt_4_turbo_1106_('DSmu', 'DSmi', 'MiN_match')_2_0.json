@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 3: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: We have two premises:\n- \"Either the keys are in the drawer or they must be dangling in the cabinet.\"\n- \"It's not the case that the keys must be dangling in the cabinet.\"\n\nFrom these premises, we can infer that if it's not the case that the keys must be dangling in the cabinet, then the only other option given by the first premise is that the keys are in the drawer. Therefore, the answer to the first question is 'yes'.\n\nQuestion 2: The premises are:\n- \"Either the keys are in the drawer or they must be dangling in the cabinet.\"\n- \"The keys might not be dangling in the cabinet.\"\n\nThe second premise introduces uncertainty about the location of the keys. It suggests that there is a possibility that the keys are not dangling in the cabinet, but it does not eliminate the possibility that they could be dangling there. Because there is still a possibility that the keys could be in the cabinet, we cannot definitively infer that they are in the drawer. Therefore, the answer to the second question is 'no'.\n\nQuestion 3: The premise is:\n- \"The keys might not be dangling in the cabinet.\"\n\nThis statement suggests that there is a possibility that the keys are not in the cabinet, but it does not assert that they definitely are not in the cabinet. The phrase \"might not be\" indicates uncertainty, not certainty. Therefore, we cannot infer that \"It's not the case that the keys must be dangling in the cabinet,\" which would imply certainty that the keys are not there. Thus, the answer to the third question is 'no'.\n\nAnswer: yes, no, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'It's not the case that the watch must be on his wrist', can we infer 'The watch is charging on the dresser'?\nQuestion 2: From 'The watch might not be on his wrist', can we infer 'It's not the case that the watch must be on his wrist'?\nQuestion 3: From 'Either the watch is charging on the dresser or it must be on his wrist' together with 'The watch might not be on his wrist', can we infer 'The watch is charging on the dresser'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer that the watch is charging on the dresser.\n\nQuestion 2:\n\"The watch might not be on his wrist\" implies that it's possible for the watch to not be on his wrist.\nIf something might not be the case, then it cannot be a necessity.\nTherefore, \"It's not the case that the watch must be on his wrist\" follows logically.\nSo yes, we can make this inference.\n\nQuestion 3:\nWe have the same disjunction as in Question 1: \"Either A or B\"\nBut now, instead of \"Not B\", we have \"B might not be true\"\nThis is not as strong as \"Not B\". It only suggests a possibility, not a certainty.\nWithout certainty that B is false, we cannot conclude with certainty that A is true.\nSo no, we cannot definitively infer that the watch is charging on the dresser from these statements.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

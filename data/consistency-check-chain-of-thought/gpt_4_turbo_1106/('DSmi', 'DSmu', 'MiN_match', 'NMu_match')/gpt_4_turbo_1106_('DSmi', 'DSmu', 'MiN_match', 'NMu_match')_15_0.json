@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the pen is in my bag or it must be on my desk' together with 'The pen might not be on my desk', can we infer 'The pen is in my bag'?\nQuestion 2: From 'Either the pen is in my bag or it must be on my desk' together with 'It's not the case that the pen must be on my desk', can we infer 'The pen is in my bag'?\nQuestion 3: From 'The pen might not be on my desk', can we infer 'It's not the case that the pen must be on my desk'?\nQuestion 4: From 'It's not the case that the pen must be on my desk', can we infer 'The pen might not be on my desk'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-1106-preview",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's consider each question step by step:\n\nQuestion 1: The first statement is a logical disjunction (an \"either/or\" statement), which means that at least one of the conditions must be true. The second statement introduces a possibility that the pen is not on the desk, but it does not exclude the pen being on the desk. Since the second statement does not definitively exclude the pen being on the desk, we cannot infer with certainty that the pen is in the bag. Therefore, the answer is no.\n\nQuestion 2: Again, the first statement is a logical disjunction. The second statement, however, definitively states that it is not the case that the pen must be on the desk, which means the pen cannot be on the desk. Since one of the conditions of the disjunction must be true and the pen cannot be on the desk, the pen must be in the bag. Therefore, the answer is yes.\n\nQuestion 3: The statement 'The pen might not be on my desk' introduces uncertainty about the location of the pen but does not definitively state that the pen must not be on the desk. It allows for the possibility that the pen could be on the desk or not. Therefore, we cannot infer that it is definitively not the case that the pen must be on the desk. The answer is no.\n\nQuestion 4: The statement 'It's not the case that the pen must be on my desk' definitively states that the pen is not necessarily on the desk. This implies that there is a possibility that the pen is not on the desk, which is what 'The pen might not be on my desk' suggests. Therefore, we can infer that 'The pen might not be on my desk' from the given statement. The answer is yes.\n\nAnswer: no, yes, no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

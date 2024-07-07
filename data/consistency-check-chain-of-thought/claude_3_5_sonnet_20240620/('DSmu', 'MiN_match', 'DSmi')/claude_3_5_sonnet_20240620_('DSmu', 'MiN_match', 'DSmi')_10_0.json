@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'It's not the case that the newspaper must be sitting on the porch', can we infer 'The newspaper is in the driveway'?\nQuestion 2: From 'The newspaper might not be sitting on the porch', can we infer 'It's not the case that the newspaper must be sitting on the porch'?\nQuestion 3: From 'Either the newspaper is in the driveway or it must be sitting on the porch' together with 'The newspaper might not be sitting on the porch', can we infer 'The newspaper is in the driveway'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first premise states: \"Either the newspaper is in the driveway or it must be sitting on the porch.\"\nThe second premise states: \"It's not the case that the newspaper must be sitting on the porch.\"\nThis is a classic example of disjunctive syllogism. If we have two options, and we know one is false, then the other must be true. Since we're told it's not the case that the newspaper must be on the porch, the only remaining option is that it's in the driveway. Therefore, we can infer that the newspaper is in the driveway.\n\nQuestion 2:\nThe statement \"The newspaper might not be sitting on the porch\" implies that there's a possibility that the newspaper is not on the porch. If something might not be the case, then it cannot be necessarily true. Therefore, we can indeed infer that \"It's not the case that the newspaper must be sitting on the porch.\" The word \"must\" implies necessity, which is contradicted by \"might not.\"\n\nQuestion 3:\nThis question combines elements from the previous two. We have:\n\"Either the newspaper is in the driveway or it must be sitting on the porch\"\n\"The newspaper might not be sitting on the porch\"\nFrom Question 2, we know that \"The newspaper might not be sitting on the porch\" implies \"It's not the case that the newspaper must be sitting on the porch.\" Once we've established this, the situation becomes identical to Question 1, where we can use disjunctive syllogism to conclude that the newspaper is in the driveway.\n\nAnswer: yes, yes, yes"
+        }
+    ]
+}

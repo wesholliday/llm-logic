@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'The cat might not be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 2: From 'Either the cat is napping on the couch or it must be playing in the bedroom' together with 'It's not the case that the cat must be playing in the bedroom', can we infer 'The cat is napping on the couch'?\nQuestion 3: From 'The cat might not be playing in the bedroom', can we infer 'It's not the case that the cat must be playing in the bedroom'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\". The second statement says \"B might not be true\". However, just because B might not be true doesn't necessarily mean it isn't true. The possibility of B being false doesn't guarantee that A is true. Therefore, we can't definitively conclude that the cat is napping on the couch.\n\nQuestion 2:\nAgain, we have the disjunction \"Either A or B\". The second statement here is stronger: \"It's not the case that B must be true\". This negates the necessity of B, which was stated in the original disjunction (\"it must be playing in the bedroom\"). If B is not necessarily true, and we know that either A or B must be true, then A must be true. Therefore, we can conclude that the cat is napping on the couch.\n\nQuestion 3:\n\"The cat might not be playing in the bedroom\" means there's a possibility that the cat is not playing in the bedroom. \"It's not the case that the cat must be playing in the bedroom\" means that it's not necessary for the cat to be playing in the bedroom. These statements are logically equivalent. If something might not be the case, then it's not necessarily the case. Conversely, if something is not necessarily the case, then it might not be the case. Therefore, we can infer one from the other.\n\nAnswer: no, yes, yes"
+        }
+    ]
+}

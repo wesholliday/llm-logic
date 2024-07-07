@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'It's not the case that the missing puzzle piece must be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\nQuestion 2: From 'The missing puzzle piece might not be blending in on the floor', can we infer 'It's not the case that the missing puzzle piece must be blending in on the floor'?\nQuestion 3: From 'Either the missing puzzle piece is in the box or it must be blending in on the floor' together with 'The missing puzzle piece might not be blending in on the floor', can we infer 'The missing puzzle piece is in the box'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-5-sonnet-20240620",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's think through each question step by step:\n\nQuestion 1:\nThe first statement is a disjunction: \"Either A or B\"\nThe second statement negates B: \"Not B\"\nIn logic, when we have \"A or B\" and \"Not B\", we can conclude A.\nSo yes, we can infer that the missing puzzle piece is in the box.\n\nQuestion 2:\n\"Might not be\" implies that it's possible that it's not blending in on the floor.\nIf something might not be the case, then it's not necessarily true.\n\"Must be\" implies necessity or certainty.\nIf something might not be true, then it's not the case that it must be true.\nSo yes, we can infer that it's not the case that the missing puzzle piece must be blending in on the floor.\n\nQuestion 3:\nThe first statement is the same as in Question 1: \"Either A or B\"\nThe second statement, \"might not be blending in on the floor\", is not as strong as \"It's not the case that it must be blending in on the floor\".\n\"Might not be\" allows for the possibility that it's not on the floor, but doesn't rule out that it could be.\nWithout definitively ruling out B, we can't conclusively infer A.\nSo no, we cannot infer with certainty that the missing puzzle piece is in the box.\n\nAnswer: yes, yes, no"
+        }
+    ]
+}

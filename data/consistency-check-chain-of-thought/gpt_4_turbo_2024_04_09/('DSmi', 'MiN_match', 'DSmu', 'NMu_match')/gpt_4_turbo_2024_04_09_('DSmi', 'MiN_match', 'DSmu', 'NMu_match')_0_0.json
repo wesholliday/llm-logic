@@ -1,0 +1,20 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu",
+        "NMu_match"
+    ],
+    "user_prompt": "Question 1: From 'Either Fido is inside or Fido must be in the garden' together with 'Fido might not be in the garden', can we infer 'Fido is inside'?\nQuestion 2: From 'Fido might not be in the garden', can we infer 'It's not the case that Fido must be in the garden'?\nQuestion 3: From 'Either Fido is inside or Fido must be in the garden' together with 'It's not the case that Fido must be in the garden', can we infer 'Fido is inside'?\nQuestion 4: From 'It's not the case that Fido must be in the garden', can we infer 'Fido might not be in the garden'?\n",
+    "system_prompt": "You will see a series of 4 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 4 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gpt-4-turbo-2024-04-09",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: The statement \"Either Fido is inside or Fido must be in the garden\" presents two possibilities. The additional information \"Fido might not be in the garden\" suggests that it is possible for Fido not to be in the garden, but it does not eliminate the possibility that Fido could still be in the garden. Therefore, we cannot definitively conclude that \"Fido is inside\" just because he might not be in the garden. Fido could still potentially be in the garden.\n\nQuestion 2: The statement \"Fido might not be in the garden\" implies that there is a possibility that Fido is not in the garden. This directly contradicts the assertion that \"Fido must be in the garden,\" which would imply no other possibility exists except Fido being in the garden. Therefore, from \"Fido might not be in the garden,\" we can infer that \"It's not the case that Fido must be in the garden.\"\n\nQuestion 3: Given the statement \"Either Fido is inside or Fido must be in the garden\" and the additional information \"It's not the case that Fido must be in the garden,\" we can eliminate the possibility that Fido must be in the garden. This leaves us with the only remaining option from the original statement, which is that \"Fido is inside.\" Therefore, we can infer that \"Fido is inside.\"\n\nQuestion 4: The statement \"It's not the case that Fido must be in the garden\" indicates that there is no necessity for Fido to be in the garden; however, it does not necessarily imply that Fido might not be in the garden. Fido could still possibly be in the garden voluntarily or by chance. Therefore, from \"It's not the case that Fido must be in the garden,\" we cannot directly infer that \"Fido might not be in the garden.\"\n\nAnswer: no, yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'It's not the case that the jacket must be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 2: From 'Either the jacket is draped over the chair or it must be hanging in the closet' together with 'The jacket might not be hanging in the closet', can we infer 'The jacket is draped over the chair'?\nQuestion 3: From 'The jacket might not be hanging in the closet', can we infer 'It's not the case that the jacket must be hanging in the closet'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: The first premise states that either the jacket is draped over the chair or it must be hanging in the closet. The second premise negates the second part of the disjunction, stating that it's not the case that the jacket must be hanging in the closet. Using the disjunctive syllogism rule, if we have a disjunction and one of the disjuncts is false, we can infer that the other disjunct must be true. Therefore, we can infer that the jacket is draped over the chair.\n\nQuestion 2: The first premise is the same as in Question 1. However, the second premise is different - it states that the jacket might not be hanging in the closet. This is not the same as saying it's not the case that the jacket must be hanging in the closet. \"Might not\" allows for the possibility that the jacket could still be hanging in the closet, whereas the previous \"not the case that it must\" rules out that possibility entirely. So in this case, we cannot infer with certainty that the jacket is draped over the chair.\n\nQuestion 3: If the jacket might not be hanging in the closet, that means there's a possibility that it's not hanging in the closet. If there's a possibility that it's not hanging in the closet, then it cannot be the case that it must be hanging in the closet. \"Must\" implies certainty, while \"might not\" implies uncertainty or possibility. They are incompatible. Therefore, we can infer that it's not the case that the jacket must be hanging in the closet.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

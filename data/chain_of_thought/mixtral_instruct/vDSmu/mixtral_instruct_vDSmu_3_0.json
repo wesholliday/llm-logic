@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Consider the argument whose first premise is 'Either the keys are in the drawer or they must be dangling in the cabinet', whose second premise is 'It's not the case that the keys must be dangling in the cabinet', and whose conclusion is 'The keys are in the drawer'. Is this form of argument logically valid?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "mixtral 8x instruct v0 1 7B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Step by step:\n\n1. The first premise presents two possibilities: either the keys are in the drawer or they must be dangling in the cabinet. This is a disjunction, represented as P v Q.\n2. The second premise negates one of those possibilities: it's not the case that the keys must be dangling in the cabinet. This is represented as ~Q.\n3. The conclusion asserts the remaining possibility: the keys are in the drawer. This is represented as P.\n4. In logic, if both premises are true and the argument follows a valid form, then the conclusion must also be true.\n5. In this case, the form of the argument is known as Disjunctive Syllogism, which is a valid form of argument in classical logic.\n6. Therefore, if both premises are true, the conclusion must also be true.\n\nAnswer: Yes, this form of argument is logically valid.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

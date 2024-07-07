@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'It's not the case that the toy must be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 2: From 'Either the toy is in the toy box or it must be sitting on the bookshelf' together with 'The toy might not be sitting on the bookshelf', can we infer 'The toy is in the toy box'?\nQuestion 3: From 'The toy might not be sitting on the bookshelf', can we infer 'It's not the case that the toy must be sitting on the bookshelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "claude-3-opus-20240229",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Question 1: The first premise states that the toy is either in the toy box or on the bookshelf. The second premise negates the second option, saying it's not the case that the toy must be on the bookshelf. If it's not on the bookshelf, then based on the first premise, it must be in the toy box. So yes, we can infer that the toy is in the toy box.\n\nQuestion 2: The first premise is the same as before. But the second premise is different - it says the toy might not be on the bookshelf. This leaves open the possibility that the toy could still be on the bookshelf, just not necessarily. So we cannot rule out the bookshelf option, and therefore cannot definitively conclude the toy must be in the toy box. The answer is no, we cannot make that inference.\n\nQuestion 3: If the toy might not be on the bookshelf, that means it's not necessarily on the bookshelf. Saying it might not be there is equivalent to saying it's not the case that it must be there. So yes, we can infer the second statement from the first.\n\nAnswer: yes, no, yes"
+        }
+    ]
+}

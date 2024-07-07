@@ -1,0 +1,16 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?\nQuestion 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?\nQuestion 3: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "gemini-1.5-pro",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "**Question 1: From 'The milk might not be chilling in the fridge', can we infer 'It's not the case that the milk must be chilling in the fridge'?**\n\n* **Reasoning:** If the milk *might not* be chilling in the fridge, it means there's a possibility it's not in there. This directly implies that it's not necessarily true (or \"must be\") chilling in the fridge. \n\n**Question 2: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'It's not the case that the milk must be chilling in the fridge', can we infer 'The milk is on the counter'?**\n\n* **Reasoning:** We're given two possibilities, and the second statement eliminates one of them.  Since the milk doesn't *have* to be in the fridge, the only remaining possibility is that it's on the counter.\n\n**Question 3: From 'Either the milk is on the counter or it must be chilling in the fridge' together with 'The milk might not be chilling in the fridge', can we infer 'The milk is on the counter'?**\n\n* **Reasoning:**  The second statement tells us the milk might not be in the fridge, but it doesn't rule out the possibility.  We still have two possibilities, so we can't definitively say the milk is on the counter.\n\n**Answer: yes, yes, no** \n"
+        }
+    ]
+}
