@@ -2,7 +2,7 @@
 
 ## Supplementary Material for "Conditional and Modal Reasoning in Large Language Models"
 
-Paper by Wesley H. Holliday (wesholliday@berkeley.edu) and Matthew Mandelkern (mandelkern@nyu.edu) available at https://arxiv.org/abs/2401.17169.
+Paper by Wesley H. Holliday (wesholliday@berkeley.edu), Matthew Mandelkern (mandelkern@nyu.edu), and Cedegao E. Zhang (cedzhang@mit.edu) available at https://arxiv.org/abs/2401.17169.
 
 ### Contents
 
@@ -11,6 +11,8 @@ Paper by Wesley H. Holliday (wesholliday@berkeley.edu) and Matthew Mandelkern (m
 - `prompts/`: Includes all of the inference pattern questions used in the experiments.
 
 - `data/`: Stores the LLM responses to the inference pattern questions.
+
+- `external_data/`: Stores the LMSYS Elo ratings for the tested models
 
 - `graphs/` and `results/`: These directories are generated upon running the "llm-logic" notebook and contain the graphs and results of experiments, respectively.
 
