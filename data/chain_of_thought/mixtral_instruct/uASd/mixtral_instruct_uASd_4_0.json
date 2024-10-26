@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If the dog is in the yard, then it is barking. Can we infer that if the dog is in the yard and it is asleep, then it is barking?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "mixtral 8x instruct v0 1 7B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": " Step 1: Analyze the given information.\n- If a dog is in the yard, then it is barking.\n\nStep 2: Consider the additional condition provided.\n- The dog is also said to be asleep.\n\nStep 3: Evaluate whether the conclusion follows from the given information and additional condition.\n- Since the dog being asleep contradicts the initial statement that if a dog is in the yard, then it is barking, we cannot infer that the dog would still be barking while asleep in the yard.\n\nAnswer: No.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

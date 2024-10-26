@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Sue chose pizza, then Bob chose pasta. Also, Bob did not choose pasta. Can we infer that Sue did not choose pizza?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-9b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\\\nExplanation: \nHere's how we can break down the logic:\n\n* **Premise 1:** If Sue chose pizza, then Bob chose pasta. (This is a conditional statement)\n* **Premise 2:** Bob did not choose pasta.\n\n* **Conclusion:**  We want to know if we can infer that Sue did not choose pizza.\n\nSince the first premise is a conditional statement, it tells us that if the first part is true (Sue chose pizza), then the second part must also be true (Bob chose pasta).  However, we know the second part is *not* true (Bob didn't choose pasta).  \n\nThis means the first part (Sue chose pizza) must also be false.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

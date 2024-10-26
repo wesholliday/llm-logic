@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Joe went to the park, then Lucy went to the zoo. Also, Lucy did not go to the zoo. Can we infer that Joe did not go to the park?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "codellama/CodeLlama-13b-Instruct-hf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "  Explanation:\n\nThe given information is:\n\n1. Joe went to the park.\n2. Lucy did not go to the zoo.\n3. Lucy went to the zoo.\n\nThe question is: Can we infer that Joe did not go to the park?\n\nTo answer this question, we need to analyze the given information and determine whether it is possible to infer that Joe did not go to the park.\n\nFirst, let's consider the information that Joe went to the park. This information is not contradictory, and it does not provide any information about Lucy's actions.\n\nNext, let's consider the information that Lucy did not go to the zoo. This information is not contradictory, and it does not provide any information about Joe's actions.\n\nFinally, let's consider the information that Lucy went to the zoo. This information is contradictory, as it contradicts the previous statement that Lucy did not go to the zoo. Therefore, we cannot infer that Joe did not go to the park based on this information.\n\nAnswer: No",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

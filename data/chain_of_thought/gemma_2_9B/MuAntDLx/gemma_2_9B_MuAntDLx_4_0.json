@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'The quorple must be at grooble frazzle or snork', can we infer 'The quorple must be at grooble frazzle'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-9b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\n\nExplanation: \nThe sentence \"The quorple must be at grooble frazzle or snork\" presents a disjunction, meaning it offers two possible locations for the quorple.  \n\nTo infer \"The quorple must be at grooble frazzle,\" we need to determine if the sentence *rules out* the possibility of the quorple being at snork.  \n\nThe sentence structure doesn't explicitly rule out snork. It simply states that the quorple *must* be at one of the two locations. \n\nAnswer: \nno \n\n\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

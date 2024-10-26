@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Sue chose pizza, then Bob chose pasta. Also, Bob chose pasta. Can we infer that Sue chose pizza?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": " Explanation: We are given two statements: (1) If Sue chose pizza, then Bob chose pasta; and (2) Bob chose pasta. From statement (1), we know that Sue choosing pizza is a sufficient condition for Bob to choose pasta. However, this does not mean that Sue choosing pizza is a necessary condition for Bob to choose pasta. In other words, Bob could have chosen pasta even if Sue did not choose pizza. Therefore, we cannot infer that Sue chose pizza just because Bob chose pasta.\n\nAnswer: No.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

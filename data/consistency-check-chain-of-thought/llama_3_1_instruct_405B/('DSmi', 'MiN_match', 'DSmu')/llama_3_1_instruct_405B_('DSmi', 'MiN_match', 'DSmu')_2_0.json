@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "MiN_match",
+        "DSmu"
+    ],
+    "user_prompt": "Question 1: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'The keys might not be dangling in the cabinet', can we infer 'The keys are in the drawer'?\nQuestion 2: From 'The keys might not be dangling in the cabinet', can we infer 'It's not the case that the keys must be dangling in the cabinet'?\nQuestion 3: From 'Either the keys are in the drawer or they must be dangling in the cabinet' together with 'It's not the case that the keys must be dangling in the cabinet', can we infer 'The keys are in the drawer'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"Either the keys are in the drawer or they must be dangling in the cabinet\" implies that if the keys are not in the drawer, then they must be dangling in the cabinet. However, the statement \"The keys might not be dangling in the cabinet\" introduces uncertainty about the keys being in the cabinet. It does not provide enough information to conclude that the keys are definitely in the drawer. Therefore, the answer is no.\n\nQuestion 2: The statement \"The keys might not be dangling in the cabinet\" directly implies that it's not necessary for the keys to be dangling in the cabinet. This means that the statement \"It's not the case that the keys must be dangling in the cabinet\" logically follows. Therefore, the answer is yes.\n\nQuestion 3: Given the statement \"Either the keys are in the drawer or they must be dangling in the cabinet\", if we know that \"It's not the case that the keys must be dangling in the cabinet\", then the only remaining option is that the keys are in the drawer. This is because the original statement presents only two possibilities, and one of them has been ruled out. Therefore, the answer is yes.\n\nAnswer: no, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Consider the argument whose first premise is 'If Sue chose pizza, then Bob chose pasta', whose second premise is 'Bob did not choose pasta', and whose conclusion is 'Sue did not choose pizza'. Is this form of argument logically valid?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-27b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: This argument follows the form of *modus tollens*. Modus tollens is a valid argument form that follows this structure:\n\n* If P, then Q.\n* Not Q.\n* Therefore, not P.\n\nIn this case:\n\n* P: Sue chose pizza.\n* Q: Bob chose pasta.\n\nThe argument correctly applies modus tollens because it states that if Sue chose pizza, then Bob chose pasta. It then states that Bob did not choose pasta. Therefore, it logically follows that Sue did not choose pizza.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

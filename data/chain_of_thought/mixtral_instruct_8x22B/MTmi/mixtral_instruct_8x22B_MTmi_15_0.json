@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If Sam took a plane, then Erin must have taken a train' together with 'Erin might not have taken a train', can we infer 'Sam did not take a plane'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": " Explanation: The statement 'If Sam took a plane, then Erin must have taken a train' is a conditional statement, where 'Sam took a plane' is the hypothesis and 'Erin must have taken a train' is the conclusion. The second statement 'Erin might not have taken a train' is a negation of the conclusion of the conditional statement. In logic, if the conclusion of a conditional statement is false, then the hypothesis must also be false. Therefore, if Erin did not take a train, then Sam could not have taken a plane.\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'The missing sock might not be under the bed' together with 'Either the missing sock must be under the bed or it's in the laundry basket', can we infer 'The missing sock is in the laundry basket'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "mixtral 8x instruct v0 1 7B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": " Step 1: We have two statements. The first one is \"The missing sock might not be under the bed.\" This statement suggests that the missing sock could be somewhere else other than under the bed.\n\nStep 2: The second statement is \"Either the missing sock must be under the bed or it's in the laundry basket.\" This statement is a disjunction, meaning one of the two options must be true.\n\nStep 3: From the first statement, we know that the missing sock might not be under the bed. So, if it's not under the bed, then by the second statement, it must be in the laundry basket.\n\nStep 4: However, just because the missing sock might not be under the bed and one of the options in the second statement must be true, we cannot definitively conclude that the missing sock is in the laundry basket. It could also mean that our initial assumption about the sock not being under the bed was incorrect.\n\nAnswer: No.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

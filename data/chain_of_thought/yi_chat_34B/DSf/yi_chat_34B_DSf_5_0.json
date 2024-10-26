@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'Either the cookies are hidden in the pantry or they are in the jar' together with 'The cookies aren't hidden in the pantry', can we infer 'The cookies are in the jar'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "yi chat 34B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\nStep by step reasoning:\n\n1. The statement \"Either the cookies are hidden in the pantry or they are in the jar\" is a logical disjunction, meaning that one of two possibilities must be true.\n2. We are given that \"The cookies aren't hidden in the pantry\" which means that the first possibility (cookies in the pantry) is false.\n3. If the first possibility is false, then according to the law of excluded middle (which states that in a disjunction, if one part is false, the other must be true), the second part must be true.\n4. The second part states \"The cookies are in the jar\". Since we have established that the first possibility is false, and according to the law of excluded middle, exactly one of the possibilities must be true, we can conclude that the cookies are indeed in the jar.\n\nAnswer: yes<|im_end|>\n\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

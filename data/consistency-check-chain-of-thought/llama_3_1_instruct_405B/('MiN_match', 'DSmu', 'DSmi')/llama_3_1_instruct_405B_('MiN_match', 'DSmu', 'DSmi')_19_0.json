@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "MiN_match",
+        "DSmu",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'The sunglasses might not be perched on her head', can we infer 'It's not the case that the sunglasses must be perched on her head'?\nQuestion 2: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'It's not the case that the sunglasses must be perched on her head', can we infer 'The sunglasses are in her bag'?\nQuestion 3: From 'Either the sunglasses are in her bag or they must be perched on her head' together with 'The sunglasses might not be perched on her head', can we infer 'The sunglasses are in her bag'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"The sunglasses might not be perched on her head\" implies that there is a possibility that the sunglasses are not on her head. This directly aligns with the statement \"It's not the case that the sunglasses must be perched on her head,\" because if there's even a possibility they're not on her head, then it cannot be a necessity (must) for them to be on her head. Therefore, we can infer \"It's not the case that the sunglasses must be perched on her head\" from the given statement.\n\nQuestion 2: Given \"Either the sunglasses are in her bag or they must be perched on her head\" and knowing \"It's not the case that the sunglasses must be perched on her head,\" we can logically conclude that since the necessity (must) of the sunglasses being on her head is negated, the only remaining option from the given either/or statement is that \"The sunglasses are in her bag.\" This is because in an either/or scenario, if one option is proven false, the other must be true.\n\nQuestion 3: This question combines \"Either the sunglasses are in her bag or they must be perched on her head\" with \"The sunglasses might not be perched on her head.\" The second statement only suggests a possibility and does not negate the necessity directly as in Question 2. It implies that there is a scenario where the sunglasses are not on her head, but it does not rule out the scenario where they must be on her head entirely. Therefore, we cannot conclusively infer that \"The sunglasses are in her bag\" based on the possibility alone, as the either/or statement requires a definitive negation of one option to affirm the other.\n\nAnswer: yes, yes, no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

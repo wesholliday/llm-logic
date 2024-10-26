@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'The blurble might be a crunk or it might be a flibbit', can we infer 'The blurble might be a crunk and it might be a flibbit'?",
+    "system_prompt": "Consider the following examples:\n\nFrom 'Ann went to the store', can we infer that 'Ann went to the store and Bob went to the beach'? Correct answer: No.\n\nFrom 'Ann went to the store', can we infer that 'Ann went to the store or Bob went to the beach'? Correct answer: Yes.\n\nFrom 'Ann went to the store and Bob went to the beach', can we infer that 'Ann went to the store'? Correct answer: Yes.\n\nFrom 'Ann went to the store or Bob went to the beach', can we infer that 'Ann went to the store'? Correct answer: No.\n\nNow here is a question for you, which you should answer with only 'yes' or 'no' and nothing else: ",
+    "model": "codellama/CodeLlama-34b-Instruct-hf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "  No.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

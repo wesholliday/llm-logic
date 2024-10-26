@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Suppose that a jantiz, a cramen, and a sulect are applying for one open zulision. The jantiz is considered the most qualified applicant, followed by the cramen, with the sulect having weaker qualifications. These are the only applicants, so if the cramen doesn\u2019t get the zulision, then if the jantiz doesn\u2019t, the sulect will. Moreover, the jantiz likely will get it and hence the cramen likely won\u2019t. Does it follow that it\u2019s likely that, if the jantiz doesn\u2019t get the zulision, the sulect will?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-9b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\n\nExplanation: \nLet's break down the information given:\n\n1. **Ranking:** Jantiz > Cramen > Sulect (in terms of qualifications)\n2. **Limited Applicants:** Only three candidates are applying.\n3. **Succession:** If the Jantiz doesn't get it, the Cramen will, and if the Cramen doesn't, the Sulect will.\n4. **Jantiz Likelihood:** The Jantiz is *likely* to get the zulision.\n5. **Cramen Likelihood:** The Cramen is *likely* to not get the zulision.\n\nNow, we need to determine if it follows that if the Jantiz *doesn't* get the zulision, the Sulect *will* get it.\n\n* **Scenario 1: Jantiz gets the zulision.**  This satisfies the first condition, and the rest are irrelevant.\n* **Scenario 2: Jantiz doesn't get the zulision.** This means the Cramen *must* get it, according to the succession rule.\n\nTherefore, the statement \"it's likely that, if the jantiz doesn\u2019t get the zulision, the sulect will\" is **false**.\n\n\nAnswer: no \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

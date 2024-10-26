@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If Joe went to the park, then Lucy went to the zoo' together with 'Lucy went to the zoo', can we infer 'Joe went to the park'?",
+    "system_prompt": "Consider the following examples:\n\nFrom 'Ann went to the store', can we infer that 'Ann went to the store and Bob went to the beach'? Correct answer: No.\n\nFrom 'Ann went to the store', can we infer that 'Ann went to the store or Bob went to the beach'? Correct answer: Yes.\n\nFrom 'Ann went to the store and Bob went to the beach', can we infer that 'Ann went to the store'? Correct answer: Yes.\n\nFrom 'Ann went to the store or Bob went to the beach', can we infer that 'Ann went to the store'? Correct answer: No.\n\nNow here is a question for you, which you should answer with only 'yes' or 'no' and nothing else: ",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Yes.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

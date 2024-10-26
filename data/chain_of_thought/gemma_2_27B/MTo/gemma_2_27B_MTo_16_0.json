@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'The pants were not denim' together with 'If the shirt was cotton, then the pants were denim', can we infer 'The shirt was not cotton'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-27b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: \n\nLet's break this down using logic:\n\n* **Premise 1:** The pants were not denim.\n* **Premise 2:** If the shirt was cotton, then the pants were denim.\n\nWe need to see if these premises lead us to the conclusion \"The shirt was not cotton.\"\n\nNotice that Premise 2 is a conditional statement. It says that *if* the shirt is cotton, *then* the pants are denim.  Since we know the pants are *not* denim (Premise 1), the condition in Premise 2 cannot be true.\n\nThis means the shirt cannot be cotton.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

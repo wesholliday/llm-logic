@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'The document might be signed', can we infer 'The document might be signed and notarized'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-9b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "\n\nExplanation: \nWe can't definitively say that a document that *might* be signed is also *might* be notarized.  \n\nHere's why:\n\n* **\"Might be signed\"** means there's a possibility the document has a signature, but it's not certain.\n* **\"Might be signed and notarized\"**  means there's a possibility the document has both a signature AND has been officially witnessed and verified by a notary.\n\nNotarization is an additional step beyond simply signing.  Just because something *might* be signed doesn't automatically mean it has gone through the extra process of notarization.\n\nAnswer: no \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

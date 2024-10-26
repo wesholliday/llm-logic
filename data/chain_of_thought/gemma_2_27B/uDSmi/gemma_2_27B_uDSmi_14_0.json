@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Either the milk is on the counter or it must be chilling in the fridge. Also, the milk might not be chilling in the fridge. Can we infer that the milk is on the counter?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-27b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: \n\nWe are given two pieces of information:\n\n1. **Either the milk is on the counter or it must be chilling in the fridge.** This statement presents two possibilities, and one of them *must* be true.\n2. **The milk might not be chilling in the fridge.** This statement tells us that the second possibility from the first statement might be false.\n\nSince the first statement says one of the possibilities *must* be true, and the second statement suggests the second possibility is false, we can conclude that the first possibility must be true.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

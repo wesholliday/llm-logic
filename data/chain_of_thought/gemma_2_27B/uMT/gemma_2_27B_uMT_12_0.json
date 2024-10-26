@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Joe went to the park, then Lucy went to the zoo. Also, Lucy did not go to the zoo. Can we infer that Joe did not go to the park?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-27b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: This is a classic example of a logical argument. We're given a conditional statement: \"If Joe went to the park, then Lucy went to the zoo.\" This doesn't mean Lucy *always* goes to the zoo when Joe goes to the park, just that if Joe goes to the park, Lucy going to the zoo is a guaranteed consequence.\n\nWe're also told Lucy did *not* go to the zoo. Since the original statement says Lucy going to the zoo is dependent on Joe going to the park, if Lucy didn't go to the zoo, it means the condition (Joe going to the park) must be false.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'Either the smonk must be plagged or it is vreebled' together with 'The smonk might not be plagged', can we infer 'The smonk is vreebled'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-27b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: \n\nLet's break down the statements:\n\n* **Statement 1:** \"Either the smonk must be plagged or it is vreebled.\" This is a disjunction, meaning one or both parts must be true.\n* **Statement 2:** \"The smonk might not be plagged.\" This means it's possible the smonk is not plagged.\n\nSince the first statement says the smonk *must* be either plagged or vreebled, and the second statement says it *might not* be plagged, the only way for the first statement to be true is if the smonk is vreebled.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

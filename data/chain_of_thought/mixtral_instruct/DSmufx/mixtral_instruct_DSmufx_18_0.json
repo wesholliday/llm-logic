@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'Either the shank must be nugged or it is plooked' together with 'It's not the case that the shank must be nugged', can we infer 'The shank is plooked'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Make sure not to answer with 'Answer:' until *after* you think step by step and explain your reasoning.",
+    "model": "mixtral 8x instruct v0 1 7B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": " Let's think through this step by step:\n\n1. We have the statement \"Either the shank must be nuggled or it is plooked.\" This is a disjunction, which means that at least one of the two statements must be true.\n2. The second statement we are given is \"It's not the case that the shank must be nugged.\" In other words, it is false that the shank must be nuggled.\n3. Since the first statement is a disjunction and the second part of the disjunction has been shown to be false, then the first part must be true. Therefore, the shank must be plooked.\n\nAnswer: Yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

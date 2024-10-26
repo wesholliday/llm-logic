@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Tom watched football, then Jen watched basketball. Also, Tom did not watch football. Can we infer that Jen did not watch basketball?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "codellama/CodeLlama-7b-Instruct-hf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "  Explanation:\n\nWe are given two statements:\n\n1. If Tom watched football, then Jen watched basketball.\n2. Tom did not watch football.\n\nWe need to use the first statement to infer whether or not Jen watched basketball.\n\nIf Tom watched football, then Jen watched basketball. (This is the premise we are given)\n\nTom did not watch football. (This is the second premise we are given)\n\nTherefore, we can infer that Jen did not watch basketball.\n\nAnswer: Yes.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'The whiffle tinked' together with 'If the whiffle was shanked, then the whiffle tinked', can we infer 'The whiffle was shanked'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "codellama/CodeLlama-7b-Instruct-hf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "  Explanation:\n\nThe given premises are:\n\n1. The whiffle tinked.\n2. If the whiffle was shanked, then the whiffle tinked.\n\nTo infer 'The whiffle was shanked', we need to use the syllogism:\n\nAll A are B.\nAll B are C.\nTherefore, all A are C.\n\nIn this case, we have:\n\n1. All whiffles are tinkable.\n2. All tinkable things are shanked.\n3. Therefore, all whiffles are shanked.\n\nSo, the answer is yes.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmi",
+        "DSmu",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'The cookies might not be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 2: From 'Either the cookies are in the jar or they must be hidden in the pantry' together with 'It's not the case that the cookies must be hidden in the pantry', can we infer 'The cookies are in the jar'?\nQuestion 3: From 'The cookies might not be hidden in the pantry', can we infer 'It's not the case that the cookies must be hidden in the pantry'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"Either the cookies are in the jar or they must be hidden in the pantry\" implies that if the cookies are not in the jar, then they must be hidden in the pantry. However, the statement \"The cookies might not be hidden in the pantry\" only suggests a possibility, not a certainty. It does not rule out the possibility that the cookies are indeed hidden in the pantry. Therefore, we cannot infer with certainty that \"The cookies are in the jar\".\n\nQuestion 2: The statement \"Either the cookies are in the jar or they must be hidden in the pantry\" is the same as before. However, the statement \"It's not the case that the cookies must be hidden in the pantry\" directly negates the second option, implying that it's not necessary for the cookies to be hidden in the pantry. Given that one of the two options must be true, and the second option is negated, we can infer that \"The cookies are in the jar\".\n\nQuestion 3: The statement \"The cookies might not be hidden in the pantry\" suggests that there is a possibility that the cookies are not hidden in the pantry. This implies that it's not necessary or must be the case that the cookies are hidden in the pantry. Therefore, we can infer that \"It's not the case that the cookies must be hidden in the pantry\".\n\nAnswer: no, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

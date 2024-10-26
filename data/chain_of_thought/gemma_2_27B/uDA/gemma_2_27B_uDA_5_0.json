@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If Jeff played basketball, then Amy played tennis. Also, Jeff did not play basketball. Can we infer that Amy did not play tennis?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-27b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: This is a classic example of a logical deduction using conditional statements. \n\n* We know \"If Jeff played basketball, then Amy played tennis.\" This is our premise.\n* We also know \"Jeff did not play basketball.\" This is our second premise.\n\nSince the first premise is a conditional statement, and the condition (Jeff playing basketball) is false, we can conclude that the consequence (Amy playing tennis) is not necessarily true.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

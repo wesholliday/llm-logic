@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If Mary was at the wedding, then Sue was at the wedding', can we infer 'If Mary was not at the wedding, then Sue was not at the wedding'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: The original statement \"If Mary was at the wedding, then Sue was at the wedding\" implies a relationship where Mary's presence guarantees Sue's presence, but it does not necessarily imply that Sue's presence is dependent solely on Mary's presence. There could be other conditions under which Sue would be at the wedding even if Mary is not. The statement does not provide enough information to conclude that Sue's absence is guaranteed by Mary's absence. This is a classic case of attempting to infer the inverse from the original conditional statement, which is not logically valid without additional information.\n\nAnswer: no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'If Sue chose pizza, then Bob chose pasta' together with 'Bob chose pasta', can we infer 'Sue chose pizza'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "codellama/CodeLlama-7b-Instruct-hf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "  Explanation:\n\nThe given statements are:\n\n1. If Sue chose pizza, then Bob chose pasta.\n2. Bob chose pasta.\n\nTo infer whether Sue chose pizza or not, we need to use the first statement and the second statement together.\n\nStep 1: Evaluate the first statement.\n\nIf Sue chose pizza, then Bob chose pasta.\n\nStep 2: Evaluate the second statement.\n\nBob chose pasta.\n\nStep 3: Apply the first statement to the second statement.\n\nIf Bob chose pasta, then Sue chose pizza.\n\nStep 4: Infer whether Sue chose pizza or not.\n\nTherefore, the answer is yes.\n\nAnswer: Yes.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

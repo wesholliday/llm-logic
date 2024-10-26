@@ -1,0 +1,14 @@
+{
+    "user_prompt": "From 'The package might be delivered', can we infer 'The package might be delayed or delivered'?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-27b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: The original statement says the package *might* be delivered. This implies there's a possibility of delivery. It doesn't exclude the possibility of a delay. A delay is simply a scenario where the delivery doesn't happen on the expected time. Therefore, the original statement encompasses the possibility of both delivery and delay.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

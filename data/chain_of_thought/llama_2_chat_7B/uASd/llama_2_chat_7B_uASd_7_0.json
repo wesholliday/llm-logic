@@ -1,0 +1,14 @@
+{
+    "user_prompt": "If the oven is on, then the kitchen is warm. Can we infer that if the oven is on and the pilot light is out, then the kitchen is warm?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning; then when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else.",
+    "model": "llama 2 chat 7B Q6_K gguf",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Okay, let me break down the argument step by step:\n1. If the oven is on, then the kitchen is warm. (Assumption)\n2. The pilot light is out. (Given)\n3. Therefore, the oven is not on. (From 1 and 2)\n4. If the oven is not on, then the kitchen is not warm. (From 1)\n5. So, we can infer that if the oven is on and the pilot light is out, then the kitchen is not warm. (From 3 and 4)\nAnswer: no",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

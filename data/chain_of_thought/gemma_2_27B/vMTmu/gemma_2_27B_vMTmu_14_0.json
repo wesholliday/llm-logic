@@ -1,0 +1,14 @@
+{
+    "user_prompt": "Consider the argument whose first premise is 'If the bear was in the cave, then the wolf must have been in the den', whose second premise is 'It's not the case that the wolf must have been in the den', and whose conclusion is 'The bear was not in the cave'. Is this form of argument logically valid?",
+    "system_prompt": "In response to the following question, think step by step and explain your reasoning, starting your response with 'Explanation: '; then *after* explaining your reasoning, when you are ready to answer, simply write 'Answer: ' followed by 'yes' or 'no' and nothing else. Please make sure to format your response by first explaining your reasoning and then writing 'Answer:' followed by 'yes' or 'no' at the very end.",
+    "model": "google/gemma-2-27b-it",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Explanation: This argument follows the form of *modus tollens*. Modus tollens is a valid argument form that follows this structure:\n\n* If P, then Q.\n* Not Q.\n* Therefore, not P.\n\nLet's break down the given argument:\n\n* **P:** The bear was in the cave.\n* **Q:** The wolf must have been in the den.\n\nThe argument states:\n\n* If the bear was in the cave (P), then the wolf must have been in the den (Q).\n* It's not the case that the wolf must have been in the den (Not Q).\n* Therefore, the bear was not in the cave (Not P).\n\nSince the argument follows the structure of modus tollens, it is logically valid.\n\nAnswer: yes \n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": []
+        }
+    ]
+}

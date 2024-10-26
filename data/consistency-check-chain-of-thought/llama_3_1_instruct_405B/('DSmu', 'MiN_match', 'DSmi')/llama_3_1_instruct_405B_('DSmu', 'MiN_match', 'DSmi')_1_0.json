@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "MiN_match",
+        "DSmi"
+    ],
+    "user_prompt": "Question 1: From 'Either the book is on the shelf or it must be resting on the table' together with 'It's not the case that the book must be resting on the table', can we infer 'The book is on the shelf'?\nQuestion 2: From 'The book might not be resting on the table', can we infer 'It's not the case that the book must be resting on the table'?\nQuestion 3: From 'Either the book is on the shelf or it must be resting on the table' together with 'The book might not be resting on the table', can we infer 'The book is on the shelf'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"Either the book is on the shelf or it must be resting on the table\" implies that there are only two possibilities: the book is on the shelf, or it is necessary that the book is resting on the table. The second statement, \"It's not the case that the book must be resting on the table\", eliminates the second possibility. Therefore, we can infer that \"The book is on the shelf\".\n\nQuestion 2: The statement \"The book might not be resting on the table\" implies that it is possible that the book is not resting on the table. This statement does not rule out the possibility that the book is resting on the table, but it does imply that it is not necessary that the book is resting on the table. Therefore, we can infer that \"It's not the case that the book must be resting on the table\".\n\nQuestion 3: From the analysis of Question 2, we know that \"The book might not be resting on the table\" implies \"It's not the case that the book must be resting on the table\". Combining this with the analysis of Question 1, we can infer that \"The book is on the shelf\".\n\nAnswer: yes, yes, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}

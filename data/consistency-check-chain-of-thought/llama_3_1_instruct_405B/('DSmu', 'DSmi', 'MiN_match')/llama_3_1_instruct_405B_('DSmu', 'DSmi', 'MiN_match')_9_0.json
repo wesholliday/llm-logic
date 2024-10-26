@@ -1,0 +1,19 @@
+{
+    "prompt_classes": [
+        "DSmu",
+        "DSmi",
+        "MiN_match"
+    ],
+    "user_prompt": "Question 1: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'It's not the case that the missing sock must be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 2: From 'Either the missing sock is in the laundry basket or it must be under the bed' together with 'The missing sock might not be under the bed', can we infer 'The missing sock is in the laundry basket'?\nQuestion 3: From 'The missing sock might not be under the bed', can we infer 'It's not the case that the missing sock must be under the bed'?\n",
+    "system_prompt": "You will see a series of 3 yes/no questions. Think step by step about each question and explain your reasoning. Then when you are ready to answer all the questions, please write 'Answer: ' followed by 3 answers separated by commas. The first answer is for the first question, the second answer is for the second question, etc. Each answer should be either 'yes' or 'no' and nothing else.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+    "temperature": 0,
+    "responses": [
+        {
+            "content": "Let's analyze each question step by step:\n\nQuestion 1: The statement \"Either the missing sock is in the laundry basket or it must be under the bed\" implies that there are only two possibilities for the missing sock's location. The second statement, \"It's not the case that the missing sock must be under the bed\", eliminates the option that the sock must be under the bed. Therefore, we can infer that the missing sock is in the laundry basket.\n\nQuestion 2: The statement \"Either the missing sock is in the laundry basket or it must be under the bed\" is the same as in Question 1. However, the second statement, \"The missing sock might not be under the bed\", only suggests a possibility, rather than eliminating the option entirely. Therefore, we cannot infer that the missing sock is in the laundry basket.\n\nQuestion 3: The statement \"The missing sock might not be under the bed\" implies that there is a possibility that the sock is not under the bed. This is equivalent to saying that it's not the case that the missing sock must be under the bed. Therefore, we can infer \"It's not the case that the missing sock must be under the bed\".\n\nAnswer: yes, no, yes",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+        }
+    ]
+}
