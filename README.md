@@ -2,7 +2,7 @@
 
 ## Supplementary Material for "Conditional and Modal Reasoning in Large Language Models"
 
-Paper by Wesley H. Holliday (wesholliday@berkeley.edu), Matthew Mandelkern (mandelkern@nyu.edu), and Cedegao E. Zhang (cedzhang@mit.edu) available at https://arxiv.org/abs/2401.17169, forthcoming in Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (https://2024.emnlp.org).
+Paper by Wesley H. Holliday (wesholliday@berkeley.edu), Matthew Mandelkern (mandelkern@nyu.edu), and Cedegao E. Zhang (cedzhang@mit.edu) available at https://arxiv.org/abs/2401.17169, forthcoming in *Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing* (https://2024.emnlp.org).
 
 ### Contents
 
