@@ -2,7 +2,7 @@
 
 ## Supplementary Material for "Conditional and Modal Reasoning in Large Language Models"
 
-Paper by Wesley H. Holliday (wesholliday@berkeley.edu), Matthew Mandelkern (mandelkern@nyu.edu), and Cedegao E. Zhang (cedzhang@mit.edu) available at https://arxiv.org/abs/2401.17169.
+Paper by Wesley H. Holliday (wesholliday@berkeley.edu), Matthew Mandelkern (mandelkern@nyu.edu), and Cedegao E. Zhang (cedzhang@mit.edu) available at https://arxiv.org/abs/2401.17169, forthcoming in *Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing* (https://2024.emnlp.org).
 
 ### Contents
 
@@ -12,7 +12,7 @@ Paper by Wesley H. Holliday (wesholliday@berkeley.edu), Matthew Mandelkern (mand
 
 - `data/`: Stores the LLM responses to the inference pattern questions.
 
-- `external_data/`: Stores the LMSYS Elo ratings for the tested models
+- `external_data/`: Stores the GSM8K and MMLU scores for the tested models
 
 - `graphs/` and `results/`: These directories are generated upon running the "llm-logic" notebook and contain the graphs and results of experiments, respectively.
 
@@ -23,5 +23,3 @@ To replicate the experiments or explore the results, open and run the "llm-logic
 ### Contact
 
 For any queries related to the paper or the supplementary material, please write to wesholliday@berkeley.edu.
-
-
